@@ -1,0 +1,461 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DF0DB57A1BCC66C400F7E96F /* LiveUpdatesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0DB5791BCC66C400F7E96F /* LiveUpdatesViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		DF20B1B21BC9B513007705BA /* TimelineTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF20B1B11BC9B513007705BA /* TimelineTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		DF20B1B81BCAE34A007705BA /* DelegateGuideTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF20B1B71BCAE34A007705BA /* DelegateGuideTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		DF20B1BB1BCAE380007705BA /* DelegateTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF20B1B91BCAE380007705BA /* DelegateTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
+		DF20B1BC1BCAE380007705BA /* DelegateTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF20B1BA1BCAE380007705BA /* DelegateTableViewCell.xib */; settings = {ASSET_TAGS = (); }; };
+		DF3160DF1BCB3C180058993A /* Caucus.pdf in Resources */ = {isa = PBXBuildFile; fileRef = DF3160D61BCB3C180058993A /* Caucus.pdf */; settings = {ASSET_TAGS = (); }; };
+		DF3160E01BCB3C180058993A /* CommitteeFundamentals.pdf in Resources */ = {isa = PBXBuildFile; fileRef = DF3160D71BCB3C180058993A /* CommitteeFundamentals.pdf */; settings = {ASSET_TAGS = (); }; };
+		DF3160E11BCB3C180058993A /* CommitteeStructure.pdf in Resources */ = {isa = PBXBuildFile; fileRef = DF3160D81BCB3C180058993A /* CommitteeStructure.pdf */; settings = {ASSET_TAGS = (); }; };
+		DF3160E21BCB3C180058993A /* Packing.pdf in Resources */ = {isa = PBXBuildFile; fileRef = DF3160D91BCB3C180058993A /* Packing.pdf */; settings = {ASSET_TAGS = (); }; };
+		DF3160E31BCB3C180058993A /* PositionPaper.pdf in Resources */ = {isa = PBXBuildFile; fileRef = DF3160DA1BCB3C180058993A /* PositionPaper.pdf */; settings = {ASSET_TAGS = (); }; };
+		DF3160E41BCB3C180058993A /* Research.pdf in Resources */ = {isa = PBXBuildFile; fileRef = DF3160DB1BCB3C180058993A /* Research.pdf */; settings = {ASSET_TAGS = (); }; };
+		DF3160E51BCB3C180058993A /* Resolutions.pdf in Resources */ = {isa = PBXBuildFile; fileRef = DF3160DC1BCB3C180058993A /* Resolutions.pdf */; settings = {ASSET_TAGS = (); }; };
+		DF3160E61BCB3C180058993A /* SpeechDelivery.pdf in Resources */ = {isa = PBXBuildFile; fileRef = DF3160DD1BCB3C180058993A /* SpeechDelivery.pdf */; settings = {ASSET_TAGS = (); }; };
+		DF3160E71BCB3C180058993A /* SpeechPreparation.pdf in Resources */ = {isa = PBXBuildFile; fileRef = DF3160DE1BCB3C180058993A /* SpeechPreparation.pdf */; settings = {ASSET_TAGS = (); }; };
+		DF3160EA1BCB432F0058993A /* ChecklistTableCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3160E81BCB432F0058993A /* ChecklistTableCellTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
+		DF3160EB1BCB432F0058993A /* ChecklistTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF3160E91BCB432F0058993A /* ChecklistTableViewCell.xib */; settings = {ASSET_TAGS = (); }; };
+		DF6071C21BC8B62F007B35CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6071C11BC8B62F007B35CC /* AppDelegate.swift */; };
+		DF6071C71BC8B62F007B35CC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF6071C51BC8B62F007B35CC /* Main.storyboard */; };
+		DF6071CA1BC8B62F007B35CC /* BMUNapp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DF6071C81BC8B62F007B35CC /* BMUNapp.xcdatamodeld */; };
+		DF6071CF1BC8B62F007B35CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF6071CD1BC8B62F007B35CC /* LaunchScreen.storyboard */; };
+		DF6071D91BC8BEF1007B35CC /* StartingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6071D81BC8BEF1007B35CC /* StartingViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		DF6071DB1BC8C871007B35CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF6071DA1BC8C871007B35CC /* Assets.xcassets */; settings = {ASSET_TAGS = (); }; };
+		DF6071E21BC8D2D9007B35CC /* ChecklistTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6071E11BC8D2D9007B35CC /* ChecklistTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		DF6071E41BC8D2F2007B35CC /* CreateTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6071E31BC8D2F2007B35CC /* CreateTaskViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		DF6071E71BC8EB2F007B35CC /* ConferenceChoicesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6071E61BC8EB2F007B35CC /* ConferenceChoicesViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		DF7A5EC11BCB99B900BDC91F /* TimelineTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7A5EBF1BCB99B900BDC91F /* TimelineTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
+		DF7A5EC21BCB99B900BDC91F /* TimelineTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF7A5EC01BCB99B900BDC91F /* TimelineTableViewCell.xib */; settings = {ASSET_TAGS = (); }; };
+		DF9A92E21BC8FDFE00BA3AE4 /* CommitteesTableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF9A92E11BC8FDFE00BA3AE4 /* CommitteesTableTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		DFCC5D9A1BC99F5A00A09A1A /* CommitteeTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFCC5D991BC99F5A00A09A1A /* CommitteeTableCell.xib */; settings = {ASSET_TAGS = (); }; };
+		DFCC5D9C1BC99F9900A09A1A /* CommitteeTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFCC5D9B1BC99F9900A09A1A /* CommitteeTableCell.swift */; settings = {ASSET_TAGS = (); }; };
+		DFE372AA1BCB0DC500490A34 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE372A81BCB0DC500490A34 /* WebViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		DFE372AB1BCB0DC500490A34 /* WebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFE372A91BCB0DC500490A34 /* WebViewController.xib */; settings = {ASSET_TAGS = (); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		DF0DB5791BCC66C400F7E96F /* LiveUpdatesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveUpdatesViewController.swift; sourceTree = "<group>"; };
+		DF20B1B11BC9B513007705BA /* TimelineTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimelineTableViewController.swift; sourceTree = "<group>"; };
+		DF20B1B71BCAE34A007705BA /* DelegateGuideTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DelegateGuideTableViewController.swift; sourceTree = "<group>"; };
+		DF20B1B91BCAE380007705BA /* DelegateTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DelegateTableViewCell.swift; sourceTree = "<group>"; };
+		DF20B1BA1BCAE380007705BA /* DelegateTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DelegateTableViewCell.xib; sourceTree = "<group>"; };
+		DF3160D61BCB3C180058993A /* Caucus.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = Caucus.pdf; path = ../../../DelegateGuide/Caucus.pdf; sourceTree = "<group>"; };
+		DF3160D71BCB3C180058993A /* CommitteeFundamentals.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = CommitteeFundamentals.pdf; path = ../../../DelegateGuide/CommitteeFundamentals.pdf; sourceTree = "<group>"; };
+		DF3160D81BCB3C180058993A /* CommitteeStructure.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = CommitteeStructure.pdf; path = ../../../DelegateGuide/CommitteeStructure.pdf; sourceTree = "<group>"; };
+		DF3160D91BCB3C180058993A /* Packing.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = Packing.pdf; path = ../../../DelegateGuide/Packing.pdf; sourceTree = "<group>"; };
+		DF3160DA1BCB3C180058993A /* PositionPaper.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = PositionPaper.pdf; path = ../../../DelegateGuide/PositionPaper.pdf; sourceTree = "<group>"; };
+		DF3160DB1BCB3C180058993A /* Research.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = Research.pdf; path = ../../../DelegateGuide/Research.pdf; sourceTree = "<group>"; };
+		DF3160DC1BCB3C180058993A /* Resolutions.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = Resolutions.pdf; path = ../../../DelegateGuide/Resolutions.pdf; sourceTree = "<group>"; };
+		DF3160DD1BCB3C180058993A /* SpeechDelivery.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = SpeechDelivery.pdf; path = ../../../DelegateGuide/SpeechDelivery.pdf; sourceTree = "<group>"; };
+		DF3160DE1BCB3C180058993A /* SpeechPreparation.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = SpeechPreparation.pdf; path = ../../../DelegateGuide/SpeechPreparation.pdf; sourceTree = "<group>"; };
+		DF3160E81BCB432F0058993A /* ChecklistTableCellTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChecklistTableCellTableViewCell.swift; sourceTree = "<group>"; };
+		DF3160E91BCB432F0058993A /* ChecklistTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChecklistTableViewCell.xib; sourceTree = "<group>"; };
+		DF6071BE1BC8B62F007B35CC /* BMUNapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BMUNapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF6071C11BC8B62F007B35CC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DF6071C61BC8B62F007B35CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DF6071C91BC8B62F007B35CC /* BMUNapp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BMUNapp.xcdatamodel; sourceTree = "<group>"; };
+		DF6071CE1BC8B62F007B35CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DF6071D01BC8B62F007B35CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DF6071D81BC8BEF1007B35CC /* StartingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartingViewController.swift; sourceTree = "<group>"; };
+		DF6071DA1BC8C871007B35CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DF6071E11BC8D2D9007B35CC /* ChecklistTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChecklistTableViewController.swift; sourceTree = "<group>"; };
+		DF6071E31BC8D2F2007B35CC /* CreateTaskViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateTaskViewController.swift; sourceTree = "<group>"; };
+		DF6071E61BC8EB2F007B35CC /* ConferenceChoicesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConferenceChoicesViewController.swift; sourceTree = "<group>"; };
+		DF7A5EBF1BCB99B900BDC91F /* TimelineTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimelineTableViewCell.swift; sourceTree = "<group>"; };
+		DF7A5EC01BCB99B900BDC91F /* TimelineTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TimelineTableViewCell.xib; sourceTree = "<group>"; };
+		DF9A92E11BC8FDFE00BA3AE4 /* CommitteesTableTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommitteesTableTableViewController.swift; sourceTree = "<group>"; };
+		DFCC5D991BC99F5A00A09A1A /* CommitteeTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommitteeTableCell.xib; sourceTree = "<group>"; };
+		DFCC5D9B1BC99F9900A09A1A /* CommitteeTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommitteeTableCell.swift; sourceTree = "<group>"; };
+		DFE372A81BCB0DC500490A34 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		DFE372A91BCB0DC500490A34 /* WebViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WebViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DF6071BB1BC8B62F007B35CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DF20B1A81BC9B464007705BA /* Committees */ = {
+			isa = PBXGroup;
+			children = (
+				DF9A92E11BC8FDFE00BA3AE4 /* CommitteesTableTableViewController.swift */,
+				DFCC5D9B1BC99F9900A09A1A /* CommitteeTableCell.swift */,
+				DFCC5D991BC99F5A00A09A1A /* CommitteeTableCell.xib */,
+			);
+			name = Committees;
+			sourceTree = "<group>";
+		};
+		DF20B1A91BC9B47E007705BA /* Timeline */ = {
+			isa = PBXGroup;
+			children = (
+				DF20B1B11BC9B513007705BA /* TimelineTableViewController.swift */,
+				DF7A5EBF1BCB99B900BDC91F /* TimelineTableViewCell.swift */,
+				DF7A5EC01BCB99B900BDC91F /* TimelineTableViewCell.xib */,
+			);
+			name = Timeline;
+			sourceTree = "<group>";
+		};
+		DF20B1AA1BC9B48F007705BA /* LiveUpdates */ = {
+			isa = PBXGroup;
+			children = (
+				DF0DB5791BCC66C400F7E96F /* LiveUpdatesViewController.swift */,
+			);
+			name = LiveUpdates;
+			sourceTree = "<group>";
+		};
+		DF6071B51BC8B62F007B35CC = {
+			isa = PBXGroup;
+			children = (
+				DF6071C01BC8B62F007B35CC /* BMUNapp */,
+				DF6071BF1BC8B62F007B35CC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DF6071BF1BC8B62F007B35CC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DF6071BE1BC8B62F007B35CC /* BMUNapp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DF6071C01BC8B62F007B35CC /* BMUNapp */ = {
+			isa = PBXGroup;
+			children = (
+				DF6071C11BC8B62F007B35CC /* AppDelegate.swift */,
+				DF6071C51BC8B62F007B35CC /* Main.storyboard */,
+				DF6071D81BC8BEF1007B35CC /* StartingViewController.swift */,
+				DF9A92EB1BC91FE900BA3AE4 /* DelegateGuide */,
+				DF6071E51BC8EB0C007B35CC /* Conference */,
+				DF6071DC1BC8D269007B35CC /* Checklist */,
+				DF6071CD1BC8B62F007B35CC /* LaunchScreen.storyboard */,
+				DF6071DA1BC8C871007B35CC /* Assets.xcassets */,
+				DF6071D01BC8B62F007B35CC /* Info.plist */,
+				DF6071C81BC8B62F007B35CC /* BMUNapp.xcdatamodeld */,
+				DF3160D61BCB3C180058993A /* Caucus.pdf */,
+				DF3160D71BCB3C180058993A /* CommitteeFundamentals.pdf */,
+				DF3160D81BCB3C180058993A /* CommitteeStructure.pdf */,
+				DF3160D91BCB3C180058993A /* Packing.pdf */,
+				DF3160DA1BCB3C180058993A /* PositionPaper.pdf */,
+				DF3160DB1BCB3C180058993A /* Research.pdf */,
+				DF3160DC1BCB3C180058993A /* Resolutions.pdf */,
+				DF3160DD1BCB3C180058993A /* SpeechDelivery.pdf */,
+				DF3160DE1BCB3C180058993A /* SpeechPreparation.pdf */,
+			);
+			path = BMUNapp;
+			sourceTree = "<group>";
+		};
+		DF6071DC1BC8D269007B35CC /* Checklist */ = {
+			isa = PBXGroup;
+			children = (
+				DF6071E11BC8D2D9007B35CC /* ChecklistTableViewController.swift */,
+				DF3160E81BCB432F0058993A /* ChecklistTableCellTableViewCell.swift */,
+				DF3160E91BCB432F0058993A /* ChecklistTableViewCell.xib */,
+				DF6071E31BC8D2F2007B35CC /* CreateTaskViewController.swift */,
+			);
+			name = Checklist;
+			sourceTree = "<group>";
+		};
+		DF6071E51BC8EB0C007B35CC /* Conference */ = {
+			isa = PBXGroup;
+			children = (
+				DF6071E61BC8EB2F007B35CC /* ConferenceChoicesViewController.swift */,
+				DF20B1AA1BC9B48F007705BA /* LiveUpdates */,
+				DF20B1A91BC9B47E007705BA /* Timeline */,
+				DF20B1A81BC9B464007705BA /* Committees */,
+			);
+			name = Conference;
+			sourceTree = "<group>";
+		};
+		DF9A92EB1BC91FE900BA3AE4 /* DelegateGuide */ = {
+			isa = PBXGroup;
+			children = (
+				DF20B1B71BCAE34A007705BA /* DelegateGuideTableViewController.swift */,
+				DF20B1B91BCAE380007705BA /* DelegateTableViewCell.swift */,
+				DF20B1BA1BCAE380007705BA /* DelegateTableViewCell.xib */,
+				DFE372A81BCB0DC500490A34 /* WebViewController.swift */,
+				DFE372A91BCB0DC500490A34 /* WebViewController.xib */,
+			);
+			name = DelegateGuide;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DF6071BD1BC8B62F007B35CC /* BMUNapp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DF6071D31BC8B62F007B35CC /* Build configuration list for PBXNativeTarget "BMUNapp" */;
+			buildPhases = (
+				DF6071BA1BC8B62F007B35CC /* Sources */,
+				DF6071BB1BC8B62F007B35CC /* Frameworks */,
+				DF6071BC1BC8B62F007B35CC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BMUNapp;
+			productName = BMUNapp;
+			productReference = DF6071BE1BC8B62F007B35CC /* BMUNapp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DF6071B61BC8B62F007B35CC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Jake Moskowitz";
+				TargetAttributes = {
+					DF6071BD1BC8B62F007B35CC = {
+						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = 8Q39HTS948;
+					};
+				};
+			};
+			buildConfigurationList = DF6071B91BC8B62F007B35CC /* Build configuration list for PBXProject "BMUNapp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DF6071B51BC8B62F007B35CC;
+			productRefGroup = DF6071BF1BC8B62F007B35CC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DF6071BD1BC8B62F007B35CC /* BMUNapp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DF6071BC1BC8B62F007B35CC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF6071CF1BC8B62F007B35CC /* LaunchScreen.storyboard in Resources */,
+				DF3160E51BCB3C180058993A /* Resolutions.pdf in Resources */,
+				DF3160E71BCB3C180058993A /* SpeechPreparation.pdf in Resources */,
+				DF6071DB1BC8C871007B35CC /* Assets.xcassets in Resources */,
+				DF3160E01BCB3C180058993A /* CommitteeFundamentals.pdf in Resources */,
+				DF3160E11BCB3C180058993A /* CommitteeStructure.pdf in Resources */,
+				DF3160E21BCB3C180058993A /* Packing.pdf in Resources */,
+				DF3160EB1BCB432F0058993A /* ChecklistTableViewCell.xib in Resources */,
+				DF3160E61BCB3C180058993A /* SpeechDelivery.pdf in Resources */,
+				DF20B1BC1BCAE380007705BA /* DelegateTableViewCell.xib in Resources */,
+				DFE372AB1BCB0DC500490A34 /* WebViewController.xib in Resources */,
+				DF3160DF1BCB3C180058993A /* Caucus.pdf in Resources */,
+				DF6071C71BC8B62F007B35CC /* Main.storyboard in Resources */,
+				DF3160E31BCB3C180058993A /* PositionPaper.pdf in Resources */,
+				DFCC5D9A1BC99F5A00A09A1A /* CommitteeTableCell.xib in Resources */,
+				DF7A5EC21BCB99B900BDC91F /* TimelineTableViewCell.xib in Resources */,
+				DF3160E41BCB3C180058993A /* Research.pdf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DF6071BA1BC8B62F007B35CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF7A5EC11BCB99B900BDC91F /* TimelineTableViewCell.swift in Sources */,
+				DF6071D91BC8BEF1007B35CC /* StartingViewController.swift in Sources */,
+				DF6071CA1BC8B62F007B35CC /* BMUNapp.xcdatamodeld in Sources */,
+				DFCC5D9C1BC99F9900A09A1A /* CommitteeTableCell.swift in Sources */,
+				DF20B1B81BCAE34A007705BA /* DelegateGuideTableViewController.swift in Sources */,
+				DF6071E21BC8D2D9007B35CC /* ChecklistTableViewController.swift in Sources */,
+				DF3160EA1BCB432F0058993A /* ChecklistTableCellTableViewCell.swift in Sources */,
+				DF20B1BB1BCAE380007705BA /* DelegateTableViewCell.swift in Sources */,
+				DF6071E71BC8EB2F007B35CC /* ConferenceChoicesViewController.swift in Sources */,
+				DF6071C21BC8B62F007B35CC /* AppDelegate.swift in Sources */,
+				DF6071E41BC8D2F2007B35CC /* CreateTaskViewController.swift in Sources */,
+				DF20B1B21BC9B513007705BA /* TimelineTableViewController.swift in Sources */,
+				DFE372AA1BCB0DC500490A34 /* WebViewController.swift in Sources */,
+				DF9A92E21BC8FDFE00BA3AE4 /* CommitteesTableTableViewController.swift in Sources */,
+				DF0DB57A1BCC66C400F7E96F /* LiveUpdatesViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DF6071C51BC8B62F007B35CC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DF6071C61BC8B62F007B35CC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DF6071CD1BC8B62F007B35CC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DF6071CE1BC8B62F007B35CC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DF6071D11BC8B62F007B35CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DF6071D21BC8B62F007B35CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DF6071D41BC8B62F007B35CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = BMUNapp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jmoskowitz.BMUNapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		DF6071D51BC8B62F007B35CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = BMUNapp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jmoskowitz.BMUNapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DF6071B91BC8B62F007B35CC /* Build configuration list for PBXProject "BMUNapp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF6071D11BC8B62F007B35CC /* Debug */,
+				DF6071D21BC8B62F007B35CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DF6071D31BC8B62F007B35CC /* Build configuration list for PBXNativeTarget "BMUNapp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF6071D41BC8B62F007B35CC /* Debug */,
+				DF6071D51BC8B62F007B35CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		DF6071C81BC8B62F007B35CC /* BMUNapp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				DF6071C91BC8B62F007B35CC /* BMUNapp.xcdatamodel */,
+			);
+			currentVersion = DF6071C91BC8B62F007B35CC /* BMUNapp.xcdatamodel */;
+			path = BMUNapp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = DF6071B61BC8B62F007B35CC /* Project object */;
+}

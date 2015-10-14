@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CommitteeTableCell" rowHeight="250" id="4eh-Rn-VeH" customClass="CommitteeTableCell" customModule="BMUNapp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="250"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="4eh-Rn-VeH" id="yGr-1i-JnH">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="249"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Committee" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="naw-cE-h6j">
+                        <rect key="frame" x="8" y="8" width="304" height="50"/>
+                        <color key="backgroundColor" red="0.39311302889999999" green="0.62932045960000005" blue="0.77391098479999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <accessibility key="accessibilityConfiguration" identifier="CommitteeTableCell"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="EsS-7C-K0c"/>
+                            <constraint firstAttribute="width" constant="304" id="ux1-Eh-UAs"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="18"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Head Chair:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zfv-4S-nbJ">
+                        <rect key="frame" x="8" y="66" width="100" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="6d0-Oa-tWW"/>
+                            <constraint firstAttribute="width" constant="100" id="sBs-9Q-yNY"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="15"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vice Chairs:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cLj-Bv-9cM">
+                        <rect key="frame" x="8" y="104" width="100" height="99"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="99" id="AKP-qN-AmZ"/>
+                            <constraint firstAttribute="width" constant="100" id="TOw-dW-1ej"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="15"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Topics:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wV9-DF-7D1">
+                        <rect key="frame" x="8" y="211" width="100" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="100" id="8Vy-Uj-04g"/>
+                            <constraint firstAttribute="height" constant="30" id="kFa-z3-kNU"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="15"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="name" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="59g-tG-iUD">
+                        <rect key="frame" x="116" y="66" width="196" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="196" id="YQN-Sq-5AF"/>
+                            <constraint firstAttribute="height" constant="30" id="Zso-iM-DDV"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="15"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="names" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nDR-wP-Ka5">
+                        <rect key="frame" x="116" y="104" width="196" height="99"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="196" id="Ifu-dy-oeV"/>
+                            <constraint firstAttribute="height" constant="99" id="Osz-kc-I2u"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="15"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Udu-LF-1rs">
+                        <rect key="frame" x="116" y="211" width="196" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="UUV-5p-0Ct"/>
+                            <constraint firstAttribute="width" constant="196" id="zuF-YY-Jv3"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="15"/>
+                        <state key="normal" title="...">
+                            <color key="titleColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                    </button>
+                </subviews>
+                <color key="tintColor" red="0.095868879680000005" green="0.2879048387" blue="0.54906486730000004" alpha="1" colorSpace="calibratedRGB"/>
+                <constraints>
+                    <constraint firstItem="Udu-LF-1rs" firstAttribute="top" secondItem="nDR-wP-Ka5" secondAttribute="bottom" constant="8" id="0Kf-uj-v2X"/>
+                    <constraint firstItem="cLj-Bv-9cM" firstAttribute="top" secondItem="Zfv-4S-nbJ" secondAttribute="bottom" constant="8" id="4yx-3z-2Lz"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="Udu-LF-1rs" secondAttribute="trailing" id="A2Q-3e-2Xf"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="wV9-DF-7D1" secondAttribute="bottom" id="BHO-gf-nDT"/>
+                    <constraint firstAttribute="leadingMargin" secondItem="cLj-Bv-9cM" secondAttribute="leading" id="CW4-LL-bD5"/>
+                    <constraint firstItem="59g-tG-iUD" firstAttribute="top" secondItem="naw-cE-h6j" secondAttribute="bottom" constant="8" id="FLW-BK-Qf7"/>
+                    <constraint firstItem="cLj-Bv-9cM" firstAttribute="leading" secondItem="naw-cE-h6j" secondAttribute="leading" id="Gcq-ZB-zUS"/>
+                    <constraint firstAttribute="leadingMargin" secondItem="naw-cE-h6j" secondAttribute="leading" id="LGX-MB-jrv"/>
+                    <constraint firstItem="Zfv-4S-nbJ" firstAttribute="leading" secondItem="naw-cE-h6j" secondAttribute="leading" id="LJh-Mv-bPW"/>
+                    <constraint firstItem="wV9-DF-7D1" firstAttribute="top" secondItem="cLj-Bv-9cM" secondAttribute="bottom" constant="8" id="Lnr-S9-vv2"/>
+                    <constraint firstAttribute="leadingMargin" secondItem="Zfv-4S-nbJ" secondAttribute="leading" id="MZ8-5h-hYl"/>
+                    <constraint firstItem="nDR-wP-Ka5" firstAttribute="top" secondItem="59g-tG-iUD" secondAttribute="bottom" constant="8" id="MxI-eq-v20"/>
+                    <constraint firstItem="59g-tG-iUD" firstAttribute="top" secondItem="naw-cE-h6j" secondAttribute="bottom" constant="8" id="NlJ-aG-jeg"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="Udu-LF-1rs" secondAttribute="bottom" id="OyU-Ym-rvf"/>
+                    <constraint firstItem="nDR-wP-Ka5" firstAttribute="trailing" secondItem="naw-cE-h6j" secondAttribute="trailing" id="PG2-ko-h0i"/>
+                    <constraint firstItem="cLj-Bv-9cM" firstAttribute="top" secondItem="Zfv-4S-nbJ" secondAttribute="bottom" constant="8" id="RDU-be-vTH"/>
+                    <constraint firstItem="nDR-wP-Ka5" firstAttribute="leading" secondItem="cLj-Bv-9cM" secondAttribute="trailing" constant="8" id="XN9-dN-JB0"/>
+                    <constraint firstAttribute="leadingMargin" secondItem="wV9-DF-7D1" secondAttribute="leading" id="apk-bZ-R3b"/>
+                    <constraint firstItem="Zfv-4S-nbJ" firstAttribute="top" secondItem="naw-cE-h6j" secondAttribute="bottom" constant="8" id="dXI-pg-XWF"/>
+                    <constraint firstItem="nDR-wP-Ka5" firstAttribute="top" secondItem="59g-tG-iUD" secondAttribute="bottom" constant="8" id="fiw-5V-tev"/>
+                    <constraint firstItem="Udu-LF-1rs" firstAttribute="top" secondItem="nDR-wP-Ka5" secondAttribute="bottom" constant="8" id="kZR-ms-A42"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="nDR-wP-Ka5" secondAttribute="trailing" id="ooo-ze-xhh"/>
+                    <constraint firstItem="Udu-LF-1rs" firstAttribute="leading" secondItem="wV9-DF-7D1" secondAttribute="trailing" constant="8" id="rvL-WE-GIS"/>
+                    <constraint firstItem="wV9-DF-7D1" firstAttribute="leading" secondItem="naw-cE-h6j" secondAttribute="leading" id="sBl-9V-dXF"/>
+                    <constraint firstItem="59g-tG-iUD" firstAttribute="trailing" secondItem="naw-cE-h6j" secondAttribute="trailing" id="tQV-xa-N7E"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="59g-tG-iUD" secondAttribute="trailing" id="u3G-7E-uTW"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="naw-cE-h6j" secondAttribute="trailing" id="u9n-qX-AV6"/>
+                    <constraint firstItem="wV9-DF-7D1" firstAttribute="top" secondItem="cLj-Bv-9cM" secondAttribute="bottom" constant="8" id="vWz-CV-z1b"/>
+                    <constraint firstAttribute="topMargin" secondItem="naw-cE-h6j" secondAttribute="top" id="yFp-Lz-Uaq"/>
+                    <constraint firstItem="59g-tG-iUD" firstAttribute="leading" secondItem="Zfv-4S-nbJ" secondAttribute="trailing" constant="8" id="zcg-ZJ-Ixi"/>
+                    <constraint firstItem="Udu-LF-1rs" firstAttribute="trailing" secondItem="naw-cE-h6j" secondAttribute="trailing" id="zvE-2v-3KJ"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="MZ8-5h-hYl"/>
+                        <exclude reference="CW4-LL-bD5"/>
+                        <exclude reference="RDU-be-vTH"/>
+                        <exclude reference="NlJ-aG-jeg"/>
+                        <exclude reference="MxI-eq-v20"/>
+                        <exclude reference="Lnr-S9-vv2"/>
+                        <exclude reference="apk-bZ-R3b"/>
+                        <exclude reference="0Kf-uj-v2X"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.095868879680000005" green="0.2879048387" blue="0.54906486730000004" alpha="1" colorSpace="calibratedRGB"/>
+            <color key="tintColor" red="0.095868879680000005" green="0.2879048387" blue="0.54906486730000004" alpha="1" colorSpace="calibratedRGB"/>
+            <connections>
+                <outlet property="committee" destination="naw-cE-h6j" id="Po2-4c-leG"/>
+                <outlet property="headChair" destination="59g-tG-iUD" id="4aX-qf-HHc"/>
+                <outlet property="topicsButton" destination="Udu-LF-1rs" id="ejx-CP-852"/>
+                <outlet property="viceChairs" destination="nDR-wP-Ka5" id="pVF-NM-m2N"/>
+            </connections>
+            <point key="canvasLocation" x="267" y="251"/>
+        </tableViewCell>
+    </objects>
+</document>
