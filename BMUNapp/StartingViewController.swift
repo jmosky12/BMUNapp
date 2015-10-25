@@ -14,11 +14,13 @@ TO DO:
 - when you click a checklist item, go to create task with info filled in to text fields
 - implement live updates twitter feed linking
 - fix iphone 5 pdf badness
-- shoot danny
 - make sure textview starts at top in checklist table view
 - extend bmun logo all the way to frame so i can make things below it a different color
-- make tablecells for timeline, delegateguide, and committees expandable
+- make tablecells for timeline and committees expandable
 - incorporate room number into committees
+- include map
+- more checklist info (deadlines)
+- message opi capabilities
 */
 
 class StartingViewController: UIViewController {

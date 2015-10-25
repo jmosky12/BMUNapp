@@ -1094,7 +1094,9 @@
                                 <rect key="frame" x="-42" y="-21" width="42" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="360" id="Kbb-EV-zZi"/>
-                                    <constraint firstAttribute="height" constant="33" id="phO-Ig-nDJ"/>
+                                    <constraint firstAttribute="height" constant="33" id="phO-Ig-nDJ">
+                                        <variation key="widthClass=compact" constant="30"/>
+                                    </constraint>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="15"/>
                                 <color key="textColor" red="0.093640572990000004" green="0.27307289039999999" blue="0.58177477899999996" alpha="1" colorSpace="calibratedRGB"/>
@@ -1230,7 +1232,9 @@
                             <constraint firstAttribute="trailingMargin" secondItem="fW4-3I-4tb" secondAttribute="trailing" id="pke-7V-0G9"/>
                             <constraint firstItem="BIy-Bl-eqz" firstAttribute="centerX" secondItem="k8L-Ge-waw" secondAttribute="centerX" id="qzH-2N-gkr"/>
                             <constraint firstItem="znr-1Z-c6p" firstAttribute="centerY" secondItem="N5W-wI-GbT" secondAttribute="centerY" id="rUs-yG-CBR"/>
-                            <constraint firstItem="4c2-x0-SYA" firstAttribute="top" secondItem="iOD-eM-tgT" secondAttribute="bottom" priority="750" constant="35" id="u2Z-Yc-6Il"/>
+                            <constraint firstItem="4c2-x0-SYA" firstAttribute="top" secondItem="iOD-eM-tgT" secondAttribute="bottom" priority="750" constant="35" id="u2Z-Yc-6Il">
+                                <variation key="widthClass=compact" constant="38"/>
+                            </constraint>
                             <constraint firstAttribute="trailingMargin" secondItem="BIy-Bl-eqz" secondAttribute="trailing" id="v93-Az-k3e"/>
                             <constraint firstItem="lZr-S4-gaH" firstAttribute="leading" secondItem="BIy-Bl-eqz" secondAttribute="leading" id="vVj-2z-J9Z"/>
                             <constraint firstItem="N5W-wI-GbT" firstAttribute="top" secondItem="fW4-3I-4tb" secondAttribute="top" id="vcj-ZF-d8K"/>

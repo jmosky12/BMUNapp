@@ -23,6 +23,9 @@
 		DF3160E71BCB3C180058993A /* SpeechPreparation.pdf in Resources */ = {isa = PBXBuildFile; fileRef = DF3160DE1BCB3C180058993A /* SpeechPreparation.pdf */; settings = {ASSET_TAGS = (); }; };
 		DF3160EA1BCB432F0058993A /* ChecklistTableCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3160E81BCB432F0058993A /* ChecklistTableCellTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
 		DF3160EB1BCB432F0058993A /* ChecklistTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF3160E91BCB432F0058993A /* ChecklistTableViewCell.xib */; settings = {ASSET_TAGS = (); }; };
+		DF3203D41BDD74080080A5C0 /* StartingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3203D21BDD74080080A5C0 /* StartingTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
+		DF3203D51BDD74080080A5C0 /* StartingTableCellTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF3203D31BDD74080080A5C0 /* StartingTableCellTableViewCell.xib */; settings = {ASSET_TAGS = (); }; };
+		DF3203D71BDD763C0080A5C0 /* StartingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3203D61BDD763C0080A5C0 /* StartingTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		DF6071C21BC8B62F007B35CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6071C11BC8B62F007B35CC /* AppDelegate.swift */; };
 		DF6071C71BC8B62F007B35CC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF6071C51BC8B62F007B35CC /* Main.storyboard */; };
 		DF6071CA1BC8B62F007B35CC /* BMUNapp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DF6071C81BC8B62F007B35CC /* BMUNapp.xcdatamodeld */; };
@@ -58,6 +61,9 @@
 		DF3160DE1BCB3C180058993A /* SpeechPreparation.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = SpeechPreparation.pdf; path = ../../../DelegateGuide/SpeechPreparation.pdf; sourceTree = "<group>"; };
 		DF3160E81BCB432F0058993A /* ChecklistTableCellTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChecklistTableCellTableViewCell.swift; sourceTree = "<group>"; };
 		DF3160E91BCB432F0058993A /* ChecklistTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChecklistTableViewCell.xib; sourceTree = "<group>"; };
+		DF3203D21BDD74080080A5C0 /* StartingTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartingTableViewCell.swift; sourceTree = "<group>"; };
+		DF3203D31BDD74080080A5C0 /* StartingTableCellTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StartingTableCellTableViewCell.xib; sourceTree = "<group>"; };
+		DF3203D61BDD763C0080A5C0 /* StartingTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartingTableViewController.swift; sourceTree = "<group>"; };
 		DF6071BE1BC8B62F007B35CC /* BMUNapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BMUNapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF6071C11BC8B62F007B35CC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DF6071C61BC8B62F007B35CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -139,6 +145,9 @@
 				DF6071C11BC8B62F007B35CC /* AppDelegate.swift */,
 				DF6071C51BC8B62F007B35CC /* Main.storyboard */,
 				DF6071D81BC8BEF1007B35CC /* StartingViewController.swift */,
+				DF3203D61BDD763C0080A5C0 /* StartingTableViewController.swift */,
+				DF3203D21BDD74080080A5C0 /* StartingTableViewCell.swift */,
+				DF3203D31BDD74080080A5C0 /* StartingTableCellTableViewCell.xib */,
 				DF9A92EB1BC91FE900BA3AE4 /* DelegateGuide */,
 				DF6071E51BC8EB0C007B35CC /* Conference */,
 				DF6071DC1BC8D269007B35CC /* Checklist */,
@@ -253,6 +262,7 @@
 			files = (
 				DF6071CF1BC8B62F007B35CC /* LaunchScreen.storyboard in Resources */,
 				DF3160E51BCB3C180058993A /* Resolutions.pdf in Resources */,
+				DF3203D51BDD74080080A5C0 /* StartingTableCellTableViewCell.xib in Resources */,
 				DF3160E71BCB3C180058993A /* SpeechPreparation.pdf in Resources */,
 				DF6071DB1BC8C871007B35CC /* Assets.xcassets in Resources */,
 				DF3160E01BCB3C180058993A /* CommitteeFundamentals.pdf in Resources */,
@@ -284,7 +294,9 @@
 				DFCC5D9C1BC99F9900A09A1A /* CommitteeTableCell.swift in Sources */,
 				DF20B1B81BCAE34A007705BA /* DelegateGuideTableViewController.swift in Sources */,
 				DF6071E21BC8D2D9007B35CC /* ChecklistTableViewController.swift in Sources */,
+				DF3203D71BDD763C0080A5C0 /* StartingTableViewController.swift in Sources */,
 				DF3160EA1BCB432F0058993A /* ChecklistTableCellTableViewCell.swift in Sources */,
+				DF3203D41BDD74080080A5C0 /* StartingTableViewCell.swift in Sources */,
 				DF20B1BB1BCAE380007705BA /* DelegateTableViewCell.swift in Sources */,
 				DF6071E71BC8EB2F007B35CC /* ConferenceChoicesViewController.swift in Sources */,
 				DF6071C21BC8B62F007B35CC /* AppDelegate.swift in Sources */,

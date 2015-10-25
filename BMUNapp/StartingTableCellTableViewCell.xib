@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="startingCell" rowHeight="140" id="KGk-i7-Jjw" customClass="StartingTableViewCell" customModule="BMUNapp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="140"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="139"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xZ9-e5-da1">
+                        <rect key="frame" x="8" y="8" width="80" height="80"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="80" id="L2f-ij-wMb"/>
+                            <constraint firstAttribute="height" constant="80" id="go5-Yo-Qud"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z58-a3-MMO">
+                        <rect key="frame" x="8" y="96" width="304" height="35"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="304" id="IB8-Gs-BXP"/>
+                            <constraint firstAttribute="height" constant="35" id="xji-J0-Fey"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="15"/>
+                        <color key="textColor" red="0.095868879680000005" green="0.2879048387" blue="0.54906486730000004" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&gt;" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B04-Mq-QaW">
+                        <rect key="frame" x="292" y="8" width="20" height="80"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="76g-Nf-xS0"/>
+                            <constraint firstAttribute="height" constant="80" id="Eyk-P1-Pxl"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Thonburi-Bold" family="Thonburi" pointSize="25"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Jf-PX-0y3">
+                        <rect key="frame" x="96" y="8" width="188" height="80"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="188" id="GlJ-DM-GrU"/>
+                            <constraint firstAttribute="height" constant="80" id="s1M-7c-yOk"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="23"/>
+                        <color key="textColor" red="0.095868879680000005" green="0.2879048387" blue="0.54906486730000004" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" red="0.99319365530000003" green="0.99319365530000003" blue="0.99319365530000003" alpha="1" colorSpace="calibratedRGB"/>
+                <constraints>
+                    <constraint firstItem="B04-Mq-QaW" firstAttribute="leading" secondItem="9Jf-PX-0y3" secondAttribute="trailing" constant="8" id="1Mz-Oc-Wp5"/>
+                    <constraint firstItem="Z58-a3-MMO" firstAttribute="top" secondItem="9Jf-PX-0y3" secondAttribute="bottom" constant="8" id="2xW-Bb-KEE"/>
+                    <constraint firstItem="B04-Mq-QaW" firstAttribute="centerY" secondItem="xZ9-e5-da1" secondAttribute="centerY" id="D3b-Qd-rKf"/>
+                    <constraint firstItem="9Jf-PX-0y3" firstAttribute="leading" secondItem="xZ9-e5-da1" secondAttribute="trailing" constant="8" id="DVC-WE-3re"/>
+                    <constraint firstItem="9Jf-PX-0y3" firstAttribute="centerY" secondItem="xZ9-e5-da1" secondAttribute="centerY" id="W30-tt-RX4"/>
+                    <constraint firstItem="Z58-a3-MMO" firstAttribute="leading" secondItem="xZ9-e5-da1" secondAttribute="leading" id="mUO-FJ-kY1"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.99319365530000003" green="0.99319365530000003" blue="0.99319365530000003" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="9Jf-PX-0y3" firstAttribute="top" secondItem="KGk-i7-Jjw" secondAttribute="top" constant="8" id="4TO-1Y-FTd"/>
+                <constraint firstAttribute="bottom" secondItem="Z58-a3-MMO" secondAttribute="bottom" constant="9" id="PWe-h9-deQ"/>
+                <constraint firstAttribute="trailing" secondItem="B04-Mq-QaW" secondAttribute="trailing" constant="8" id="fLf-Bz-1Lg"/>
+                <constraint firstItem="xZ9-e5-da1" firstAttribute="leading" secondItem="KGk-i7-Jjw" secondAttribute="leading" constant="8" id="sJS-GS-eo3"/>
+            </constraints>
+            <connections>
+                <outlet property="bmunLogo" destination="xZ9-e5-da1" id="uCF-KN-jge"/>
+                <outlet property="detailsLabel" destination="Z58-a3-MMO" id="z3n-72-Fbq"/>
+                <outlet property="titleLabel" destination="9Jf-PX-0y3" id="y8x-Ax-cuT"/>
+            </connections>
+            <point key="canvasLocation" x="410" y="266"/>
+        </tableViewCell>
+    </objects>
+</document>

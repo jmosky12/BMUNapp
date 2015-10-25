@@ -83,8 +83,8 @@
                             <constraint firstAttribute="width" constant="196" id="zuF-YY-Jv3"/>
                         </constraints>
                         <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="15"/>
-                        <state key="normal" title="...">
-                            <color key="titleColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <state key="normal" title="more info...">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         </state>
                     </button>
                 </subviews>
