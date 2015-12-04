@@ -9,10 +9,22 @@
 import UIKit
 
 class TimelineTableViewController: UITableViewController {
+    
+    let textColor = UIColor.whiteColor()
+    let textFont = UIFont(name: "Avenir", size: 40.0)
+    
+    init() {
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        view.backgroundColor = UIColor(red: 24.0/255.0, green: 70.0/255.0, blue: 148.0/255.0, alpha: 1.0)
+        edgesForExtendedLayout = .None
         let nib: UINib = UINib(nibName: "TimelineTableViewCell", bundle: nil)
         self.tableView.registerNib(nib, forCellReuseIdentifier: "TimelineTableViewCell")
         
@@ -20,10 +32,13 @@ class TimelineTableViewController: UITableViewController {
         tableView.preservesSuperviewLayoutMargins = false
         tableView.layoutMargins = UIEdgeInsetsZero
         tableView.rowHeight = 200
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
+        
+        let titleTextAttributes: [String:NSObject] = [
+            NSFontAttributeName: textFont!,
+            NSForegroundColorAttributeName: textColor,
+        ]
+        
+        self.navigationController!.navigationBar.titleTextAttributes = titleTextAttributes
     }
 
     // MARK: - Table view data source

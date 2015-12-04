@@ -9,20 +9,18 @@
 import UIKit
 
 class DelegateTableViewCell: UITableViewCell {
-    
-    @IBOutlet weak var bmunLogo: UIImageView!
-    @IBOutlet weak var sectionLabel: UILabel!
 
+    @IBOutlet weak var backgroundImage: UIImageView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        let img = UIImage(named: "bmunlogo")
-        bmunLogo.image = img
-        bmunLogo.contentMode = UIViewContentMode.ScaleAspectFit
-        bmunLogo.clipsToBounds = true
         
         self.separatorInset = UIEdgeInsetsZero
         self.preservesSuperviewLayoutMargins = false
         self.layoutMargins = UIEdgeInsetsZero
+        backgroundImage.clipsToBounds = true
+        
+        self.backgroundColor = UIColor.clearColor()
     }
 
     override func setSelected(selected: Bool, animated: Bool) {

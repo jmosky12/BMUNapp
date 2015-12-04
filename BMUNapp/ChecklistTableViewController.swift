@@ -17,7 +17,15 @@ class ChecklistTableViewController: UITableViewController, ChecklistTableViewCon
     
     var cellData: NSMutableArray = []
     var addButton: UIBarButtonItem!
-    let defaults: NSUserDefaults = NSUserDefaults.standardUserDefaults()
+    let darkBlue = UIColor(red: 24.0/255.0, green: 73.0/255.0, blue: 140.0/255.0, alpha: 1.0)
+    
+    init() {
+        super.init(nibName: nil, bundle: nil)
+    }
+
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,22 +34,15 @@ class ChecklistTableViewController: UITableViewController, ChecklistTableViewCon
         tableView.separatorInset = UIEdgeInsetsZero
         tableView.preservesSuperviewLayoutMargins = false
         tableView.layoutMargins = UIEdgeInsetsZero
+        tableView.backgroundColor = darkBlue
         
         self.tableView.allowsMultipleSelectionDuringEditing = false
-        addButton = UIBarButtonItem(barButtonSystemItem: .Add, target: self, action: "goToSegue")
+        addButton = UIBarButtonItem(barButtonSystemItem: .Add, target: self, action: "didPressAddButton")
         self.navigationItem.rightBarButtonItem = addButton
+        
         let nib: UINib = UINib(nibName: "ChecklistTableViewCell", bundle: nil)
         self.tableView.registerNib(nib, forCellReuseIdentifier: "ChecklistTableViewCell")
-        if defaults.objectForKey("cellData") == nil {
-            defaults.setObject(cellData, forKey: "cellData")
-        }/* else {
-            cellData = defaults.objectForKey("cellData") as! NSMutableArray
-        }*/
         
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
     }
     
     // MARK: - Table view data source
@@ -49,6 +50,7 @@ class ChecklistTableViewController: UITableViewController, ChecklistTableViewCon
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return cellData.count
     }
+    
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("ChecklistTableViewCell") as! ChecklistTableViewCell
@@ -69,7 +71,6 @@ class ChecklistTableViewController: UITableViewController, ChecklistTableViewCon
     override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
         if editingStyle == UITableViewCellEditingStyle.Delete {
             cellData.removeObjectAtIndex(indexPath.row)
-            defaults.setObject(cellData, forKey: "cellData")
             tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Automatic)
         }
     }
@@ -79,23 +80,30 @@ class ChecklistTableViewController: UITableViewController, ChecklistTableViewCon
     }
     
     override func viewWillDisappear(animated: Bool) {
-        defaults.setObject(cellData, forKey: "cellData")
+        
     }
 
 
 
     // MARK: - Navigation
-
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if segue.identifier == "checklistToCreateTask" {
-            let vc = segue.destinationViewController as! CreateTaskViewController
-            vc.delegate = self
-        }
+    
+    func didPressAddButton() {
+        let vc = CreateTaskViewController()
+        vc.delegate = self
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     
-    func goToSegue() {
-        performSegueWithIdentifier("checklistToCreateTask", sender: self)
+    // MARK: - NSCoding
+    
+    override func encodeWithCoder(aCoder: NSCoder) {
+        aCoder.encodeObject(cellData, forKey: "cellData")
     }
+    
+    /*required convenience init?(coder aDecoder: NSCoder) {
+        cellData = aDecoder.decodeObjectForKey("cellData") as! NSMutableArray
+        self.init()
+    }*/
+    
     
     //MARK: - Delegate
 
@@ -106,7 +114,6 @@ class ChecklistTableViewController: UITableViewController, ChecklistTableViewCon
     
     func replaceCellData(data: NSMutableArray) {
         cellData = data
-        //defaults.setObject(cellData, forKey: "cellData")
         tableView.reloadData()
     }
 

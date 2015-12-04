@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <objects>
@@ -45,6 +45,11 @@
                         <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="15"/>
                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="AKP-qN-AmZ"/>
+                            </mask>
+                        </variation>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Topics:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wV9-DF-7D1">
                         <rect key="frame" x="8" y="211" width="100" height="30"/>
@@ -75,6 +80,11 @@
                         <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="15"/>
                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Osz-kc-I2u"/>
+                            </mask>
+                        </variation>
                     </label>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Udu-LF-1rs">
                         <rect key="frame" x="116" y="211" width="196" height="30"/>
@@ -83,7 +93,7 @@
                             <constraint firstAttribute="width" constant="196" id="zuF-YY-Jv3"/>
                         </constraints>
                         <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="15"/>
-                        <state key="normal" title="more info...">
+                        <state key="normal" title="[more info]">
                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         </state>
                     </button>
@@ -139,11 +149,14 @@
             <color key="tintColor" red="0.095868879680000005" green="0.2879048387" blue="0.54906486730000004" alpha="1" colorSpace="calibratedRGB"/>
             <connections>
                 <outlet property="committee" destination="naw-cE-h6j" id="Po2-4c-leG"/>
+                <outlet property="head" destination="Zfv-4S-nbJ" id="qFg-BG-5ze"/>
                 <outlet property="headChair" destination="59g-tG-iUD" id="4aX-qf-HHc"/>
+                <outlet property="topic" destination="wV9-DF-7D1" id="6w2-o1-Rew"/>
                 <outlet property="topicsButton" destination="Udu-LF-1rs" id="ejx-CP-852"/>
+                <outlet property="vice" destination="cLj-Bv-9cM" id="yAj-8A-LTh"/>
                 <outlet property="viceChairs" destination="nDR-wP-Ka5" id="pVF-NM-m2N"/>
             </connections>
-            <point key="canvasLocation" x="267" y="251"/>
+            <point key="canvasLocation" x="279" y="202"/>
         </tableViewCell>
     </objects>
 </document>

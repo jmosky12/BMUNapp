@@ -16,9 +16,18 @@ class CreateTaskViewController: UIViewController, UITextFieldDelegate {
     var delegate: ChecklistTableViewControllerDelegate?
     var info = NSMutableArray()
     let defaults = NSUserDefaults.standardUserDefaults()
+    
+    init() {
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        edgesForExtendedLayout = .None
         createButton.layer.cornerRadius = 7.0
         detailsTextView.layer.cornerRadius = 7.0
         titleTextField.layer.cornerRadius = 7.0
@@ -28,8 +37,6 @@ class CreateTaskViewController: UIViewController, UITextFieldDelegate {
         
         let tapOutside = UITapGestureRecognizer(target: self, action: "hideKeyboard")
         view.addGestureRecognizer(tapOutside)
-
-        // Do any additional setup after loading the view.
     }
     
     func textFieldShouldReturn(textField: UITextField) -> Bool {
@@ -46,7 +53,6 @@ class CreateTaskViewController: UIViewController, UITextFieldDelegate {
             info.addObject(detailsString)
             cellData.addObject(info)
             delegate!.replaceCellData(cellData)
-            defaults.setObject(cellData, forKey: "cellData")
             self.navigationController?.popViewControllerAnimated(true)
         }
     }

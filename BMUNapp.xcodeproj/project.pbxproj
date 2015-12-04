@@ -7,45 +7,47 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DF0DB57A1BCC66C400F7E96F /* LiveUpdatesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0DB5791BCC66C400F7E96F /* LiveUpdatesViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		DF20B1B21BC9B513007705BA /* TimelineTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF20B1B11BC9B513007705BA /* TimelineTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		DF20B1B81BCAE34A007705BA /* DelegateGuideTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF20B1B71BCAE34A007705BA /* DelegateGuideTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		DF20B1BB1BCAE380007705BA /* DelegateTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF20B1B91BCAE380007705BA /* DelegateTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
-		DF20B1BC1BCAE380007705BA /* DelegateTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF20B1BA1BCAE380007705BA /* DelegateTableViewCell.xib */; settings = {ASSET_TAGS = (); }; };
-		DF3160DF1BCB3C180058993A /* Caucus.pdf in Resources */ = {isa = PBXBuildFile; fileRef = DF3160D61BCB3C180058993A /* Caucus.pdf */; settings = {ASSET_TAGS = (); }; };
-		DF3160E01BCB3C180058993A /* CommitteeFundamentals.pdf in Resources */ = {isa = PBXBuildFile; fileRef = DF3160D71BCB3C180058993A /* CommitteeFundamentals.pdf */; settings = {ASSET_TAGS = (); }; };
-		DF3160E11BCB3C180058993A /* CommitteeStructure.pdf in Resources */ = {isa = PBXBuildFile; fileRef = DF3160D81BCB3C180058993A /* CommitteeStructure.pdf */; settings = {ASSET_TAGS = (); }; };
-		DF3160E21BCB3C180058993A /* Packing.pdf in Resources */ = {isa = PBXBuildFile; fileRef = DF3160D91BCB3C180058993A /* Packing.pdf */; settings = {ASSET_TAGS = (); }; };
-		DF3160E31BCB3C180058993A /* PositionPaper.pdf in Resources */ = {isa = PBXBuildFile; fileRef = DF3160DA1BCB3C180058993A /* PositionPaper.pdf */; settings = {ASSET_TAGS = (); }; };
-		DF3160E41BCB3C180058993A /* Research.pdf in Resources */ = {isa = PBXBuildFile; fileRef = DF3160DB1BCB3C180058993A /* Research.pdf */; settings = {ASSET_TAGS = (); }; };
-		DF3160E51BCB3C180058993A /* Resolutions.pdf in Resources */ = {isa = PBXBuildFile; fileRef = DF3160DC1BCB3C180058993A /* Resolutions.pdf */; settings = {ASSET_TAGS = (); }; };
-		DF3160E61BCB3C180058993A /* SpeechDelivery.pdf in Resources */ = {isa = PBXBuildFile; fileRef = DF3160DD1BCB3C180058993A /* SpeechDelivery.pdf */; settings = {ASSET_TAGS = (); }; };
-		DF3160E71BCB3C180058993A /* SpeechPreparation.pdf in Resources */ = {isa = PBXBuildFile; fileRef = DF3160DE1BCB3C180058993A /* SpeechPreparation.pdf */; settings = {ASSET_TAGS = (); }; };
-		DF3160EA1BCB432F0058993A /* ChecklistTableCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3160E81BCB432F0058993A /* ChecklistTableCellTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
-		DF3160EB1BCB432F0058993A /* ChecklistTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF3160E91BCB432F0058993A /* ChecklistTableViewCell.xib */; settings = {ASSET_TAGS = (); }; };
-		DF3203D41BDD74080080A5C0 /* StartingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3203D21BDD74080080A5C0 /* StartingTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
-		DF3203D51BDD74080080A5C0 /* StartingTableCellTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF3203D31BDD74080080A5C0 /* StartingTableCellTableViewCell.xib */; settings = {ASSET_TAGS = (); }; };
-		DF3203D71BDD763C0080A5C0 /* StartingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3203D61BDD763C0080A5C0 /* StartingTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		4EF22D4DEDDA95194F186CFF /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18A63B60C131A465D6F95EC2 /* Pods.framework */; };
+		DF0DB57A1BCC66C400F7E96F /* LiveUpdatesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0DB5791BCC66C400F7E96F /* LiveUpdatesTableViewController.swift */; };
+		DF20B1B21BC9B513007705BA /* TimelineTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF20B1B11BC9B513007705BA /* TimelineTableViewController.swift */; };
+		DF20B1B81BCAE34A007705BA /* DelegateGuideTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF20B1B71BCAE34A007705BA /* DelegateGuideTableViewController.swift */; };
+		DF20B1BB1BCAE380007705BA /* DelegateTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF20B1B91BCAE380007705BA /* DelegateTableViewCell.swift */; };
+		DF20B1BC1BCAE380007705BA /* DelegateTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF20B1BA1BCAE380007705BA /* DelegateTableViewCell.xib */; };
+		DF3160DF1BCB3C180058993A /* Caucus.pdf in Resources */ = {isa = PBXBuildFile; fileRef = DF3160D61BCB3C180058993A /* Caucus.pdf */; };
+		DF3160E01BCB3C180058993A /* CommitteeFundamentals.pdf in Resources */ = {isa = PBXBuildFile; fileRef = DF3160D71BCB3C180058993A /* CommitteeFundamentals.pdf */; };
+		DF3160E11BCB3C180058993A /* CommitteeStructure.pdf in Resources */ = {isa = PBXBuildFile; fileRef = DF3160D81BCB3C180058993A /* CommitteeStructure.pdf */; };
+		DF3160E21BCB3C180058993A /* Packing.pdf in Resources */ = {isa = PBXBuildFile; fileRef = DF3160D91BCB3C180058993A /* Packing.pdf */; };
+		DF3160E31BCB3C180058993A /* PositionPaper.pdf in Resources */ = {isa = PBXBuildFile; fileRef = DF3160DA1BCB3C180058993A /* PositionPaper.pdf */; };
+		DF3160E41BCB3C180058993A /* Research.pdf in Resources */ = {isa = PBXBuildFile; fileRef = DF3160DB1BCB3C180058993A /* Research.pdf */; };
+		DF3160E51BCB3C180058993A /* Resolutions.pdf in Resources */ = {isa = PBXBuildFile; fileRef = DF3160DC1BCB3C180058993A /* Resolutions.pdf */; };
+		DF3160E61BCB3C180058993A /* SpeechDelivery.pdf in Resources */ = {isa = PBXBuildFile; fileRef = DF3160DD1BCB3C180058993A /* SpeechDelivery.pdf */; };
+		DF3160E71BCB3C180058993A /* SpeechPreparation.pdf in Resources */ = {isa = PBXBuildFile; fileRef = DF3160DE1BCB3C180058993A /* SpeechPreparation.pdf */; };
+		DF5C89731BDD9B600005AC62 /* map.pdf in Resources */ = {isa = PBXBuildFile; fileRef = DF5C89721BDD9B600005AC62 /* map.pdf */; };
 		DF6071C21BC8B62F007B35CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6071C11BC8B62F007B35CC /* AppDelegate.swift */; };
-		DF6071C71BC8B62F007B35CC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF6071C51BC8B62F007B35CC /* Main.storyboard */; };
 		DF6071CA1BC8B62F007B35CC /* BMUNapp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DF6071C81BC8B62F007B35CC /* BMUNapp.xcdatamodeld */; };
 		DF6071CF1BC8B62F007B35CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF6071CD1BC8B62F007B35CC /* LaunchScreen.storyboard */; };
-		DF6071D91BC8BEF1007B35CC /* StartingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6071D81BC8BEF1007B35CC /* StartingViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		DF6071DB1BC8C871007B35CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF6071DA1BC8C871007B35CC /* Assets.xcassets */; settings = {ASSET_TAGS = (); }; };
-		DF6071E21BC8D2D9007B35CC /* ChecklistTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6071E11BC8D2D9007B35CC /* ChecklistTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		DF6071E41BC8D2F2007B35CC /* CreateTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6071E31BC8D2F2007B35CC /* CreateTaskViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		DF6071E71BC8EB2F007B35CC /* ConferenceChoicesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6071E61BC8EB2F007B35CC /* ConferenceChoicesViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		DF7A5EC11BCB99B900BDC91F /* TimelineTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7A5EBF1BCB99B900BDC91F /* TimelineTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
-		DF7A5EC21BCB99B900BDC91F /* TimelineTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF7A5EC01BCB99B900BDC91F /* TimelineTableViewCell.xib */; settings = {ASSET_TAGS = (); }; };
-		DF9A92E21BC8FDFE00BA3AE4 /* CommitteesTableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF9A92E11BC8FDFE00BA3AE4 /* CommitteesTableTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		DFCC5D9A1BC99F5A00A09A1A /* CommitteeTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFCC5D991BC99F5A00A09A1A /* CommitteeTableCell.xib */; settings = {ASSET_TAGS = (); }; };
-		DFCC5D9C1BC99F9900A09A1A /* CommitteeTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFCC5D9B1BC99F9900A09A1A /* CommitteeTableCell.swift */; settings = {ASSET_TAGS = (); }; };
-		DFE372AA1BCB0DC500490A34 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE372A81BCB0DC500490A34 /* WebViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		DFE372AB1BCB0DC500490A34 /* WebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFE372A91BCB0DC500490A34 /* WebViewController.xib */; settings = {ASSET_TAGS = (); }; };
+		DF6071DB1BC8C871007B35CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF6071DA1BC8C871007B35CC /* Assets.xcassets */; };
+		DF7A5EC11BCB99B900BDC91F /* TimelineTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7A5EBF1BCB99B900BDC91F /* TimelineTableViewCell.swift */; };
+		DF7A5EC21BCB99B900BDC91F /* TimelineTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF7A5EC01BCB99B900BDC91F /* TimelineTableViewCell.xib */; };
+		DF9A92E21BC8FDFE00BA3AE4 /* CommitteesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF9A92E11BC8FDFE00BA3AE4 /* CommitteesTableViewController.swift */; };
+		DFCC5D9A1BC99F5A00A09A1A /* CommitteeTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFCC5D991BC99F5A00A09A1A /* CommitteeTableCell.xib */; };
+		DFCC5D9C1BC99F9900A09A1A /* CommitteeTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFCC5D9B1BC99F9900A09A1A /* CommitteeTableCell.swift */; };
+		DFDC32661BE565D100729449 /* LiveUpdatesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFDC32641BE565D100729449 /* LiveUpdatesTableViewCell.swift */; };
+		DFDC32691BE56CA400729449 /* LiveUpdatesTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFDC32681BE56CA400729449 /* LiveUpdatesTableViewController.xib */; };
+		DFDF6EA61BE544CD009244FE /* TwitterManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFDF6EA51BE544CD009244FE /* TwitterManager.swift */; };
+		DFDF6EA81BE5530C009244FE /* Tweet.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFDF6EA71BE5530C009244FE /* Tweet.swift */; };
+		DFDF6EAA1BE55760009244FE /* DateFormatterManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFDF6EA91BE55760009244FE /* DateFormatterManager.swift */; };
+		DFE372AA1BCB0DC500490A34 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE372A81BCB0DC500490A34 /* WebViewController.swift */; };
+		DFE372AB1BCB0DC500490A34 /* WebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFE372A91BCB0DC500490A34 /* WebViewController.xib */; };
+		DFF33C191BE9D1A500D7228D /* LiveUpdatesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFF33C171BE9D1A500D7228D /* LiveUpdatesTableViewCell.xib */; };
+		DFF33C1B1BE9DE6400D7228D /* twitterAvatar.png in Resources */ = {isa = PBXBuildFile; fileRef = DFF33C1A1BE9DE6400D7228D /* twitterAvatar.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		DF0DB5791BCC66C400F7E96F /* LiveUpdatesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveUpdatesViewController.swift; sourceTree = "<group>"; };
+		18A63B60C131A465D6F95EC2 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D2846E32CA8DE795A46F3C5 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		8FB3152DB09847D73955AEE0 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		DF0DB5791BCC66C400F7E96F /* LiveUpdatesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveUpdatesTableViewController.swift; sourceTree = "<group>"; };
 		DF20B1B11BC9B513007705BA /* TimelineTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimelineTableViewController.swift; sourceTree = "<group>"; };
 		DF20B1B71BCAE34A007705BA /* DelegateGuideTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DelegateGuideTableViewController.swift; sourceTree = "<group>"; };
 		DF20B1B91BCAE380007705BA /* DelegateTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DelegateTableViewCell.swift; sourceTree = "<group>"; };
@@ -59,29 +61,27 @@
 		DF3160DC1BCB3C180058993A /* Resolutions.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = Resolutions.pdf; path = ../../../DelegateGuide/Resolutions.pdf; sourceTree = "<group>"; };
 		DF3160DD1BCB3C180058993A /* SpeechDelivery.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = SpeechDelivery.pdf; path = ../../../DelegateGuide/SpeechDelivery.pdf; sourceTree = "<group>"; };
 		DF3160DE1BCB3C180058993A /* SpeechPreparation.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = SpeechPreparation.pdf; path = ../../../DelegateGuide/SpeechPreparation.pdf; sourceTree = "<group>"; };
-		DF3160E81BCB432F0058993A /* ChecklistTableCellTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChecklistTableCellTableViewCell.swift; sourceTree = "<group>"; };
-		DF3160E91BCB432F0058993A /* ChecklistTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChecklistTableViewCell.xib; sourceTree = "<group>"; };
-		DF3203D21BDD74080080A5C0 /* StartingTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartingTableViewCell.swift; sourceTree = "<group>"; };
-		DF3203D31BDD74080080A5C0 /* StartingTableCellTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StartingTableCellTableViewCell.xib; sourceTree = "<group>"; };
-		DF3203D61BDD763C0080A5C0 /* StartingTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartingTableViewController.swift; sourceTree = "<group>"; };
+		DF5C89721BDD9B600005AC62 /* map.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = map.pdf; path = ../../map.pdf; sourceTree = "<group>"; };
 		DF6071BE1BC8B62F007B35CC /* BMUNapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BMUNapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF6071C11BC8B62F007B35CC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DF6071C61BC8B62F007B35CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DF6071C91BC8B62F007B35CC /* BMUNapp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BMUNapp.xcdatamodel; sourceTree = "<group>"; };
 		DF6071CE1BC8B62F007B35CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DF6071D01BC8B62F007B35CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DF6071D81BC8BEF1007B35CC /* StartingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartingViewController.swift; sourceTree = "<group>"; };
 		DF6071DA1BC8C871007B35CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		DF6071E11BC8D2D9007B35CC /* ChecklistTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChecklistTableViewController.swift; sourceTree = "<group>"; };
-		DF6071E31BC8D2F2007B35CC /* CreateTaskViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateTaskViewController.swift; sourceTree = "<group>"; };
-		DF6071E61BC8EB2F007B35CC /* ConferenceChoicesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConferenceChoicesViewController.swift; sourceTree = "<group>"; };
 		DF7A5EBF1BCB99B900BDC91F /* TimelineTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimelineTableViewCell.swift; sourceTree = "<group>"; };
 		DF7A5EC01BCB99B900BDC91F /* TimelineTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TimelineTableViewCell.xib; sourceTree = "<group>"; };
-		DF9A92E11BC8FDFE00BA3AE4 /* CommitteesTableTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommitteesTableTableViewController.swift; sourceTree = "<group>"; };
+		DF9A92E11BC8FDFE00BA3AE4 /* CommitteesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommitteesTableViewController.swift; sourceTree = "<group>"; };
 		DFCC5D991BC99F5A00A09A1A /* CommitteeTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommitteeTableCell.xib; sourceTree = "<group>"; };
 		DFCC5D9B1BC99F9900A09A1A /* CommitteeTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommitteeTableCell.swift; sourceTree = "<group>"; };
+		DFDC32641BE565D100729449 /* LiveUpdatesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveUpdatesTableViewCell.swift; sourceTree = "<group>"; };
+		DFDC32681BE56CA400729449 /* LiveUpdatesTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LiveUpdatesTableViewController.xib; sourceTree = "<group>"; };
+		DFDF6EA51BE544CD009244FE /* TwitterManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwitterManager.swift; sourceTree = "<group>"; };
+		DFDF6EA71BE5530C009244FE /* Tweet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tweet.swift; sourceTree = "<group>"; };
+		DFDF6EA91BE55760009244FE /* DateFormatterManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateFormatterManager.swift; sourceTree = "<group>"; };
 		DFE372A81BCB0DC500490A34 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		DFE372A91BCB0DC500490A34 /* WebViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WebViewController.xib; sourceTree = "<group>"; };
+		DFF33C171BE9D1A500D7228D /* LiveUpdatesTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LiveUpdatesTableViewCell.xib; sourceTree = "<group>"; };
+		DFF33C1A1BE9DE6400D7228D /* twitterAvatar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = twitterAvatar.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,16 +89,34 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4EF22D4DEDDA95194F186CFF /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		302BA906696314B2F8415B51 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				18A63B60C131A465D6F95EC2 /* Pods.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7DABF7E807028E7C1343D1F1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8FB3152DB09847D73955AEE0 /* Pods.debug.xcconfig */,
+				8D2846E32CA8DE795A46F3C5 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		DF20B1A81BC9B464007705BA /* Committees */ = {
 			isa = PBXGroup;
 			children = (
-				DF9A92E11BC8FDFE00BA3AE4 /* CommitteesTableTableViewController.swift */,
+				DF9A92E11BC8FDFE00BA3AE4 /* CommitteesTableViewController.swift */,
 				DFCC5D9B1BC99F9900A09A1A /* CommitteeTableCell.swift */,
 				DFCC5D991BC99F5A00A09A1A /* CommitteeTableCell.xib */,
 			);
@@ -118,9 +136,30 @@
 		DF20B1AA1BC9B48F007705BA /* LiveUpdates */ = {
 			isa = PBXGroup;
 			children = (
-				DF0DB5791BCC66C400F7E96F /* LiveUpdatesViewController.swift */,
+				DF0DB5791BCC66C400F7E96F /* LiveUpdatesTableViewController.swift */,
+				DFDC32681BE56CA400729449 /* LiveUpdatesTableViewController.xib */,
+				DFDC32641BE565D100729449 /* LiveUpdatesTableViewCell.swift */,
+				DFF33C171BE9D1A500D7228D /* LiveUpdatesTableViewCell.xib */,
 			);
 			name = LiveUpdates;
+			sourceTree = "<group>";
+		};
+		DF29E9931BDDA188006EAAC0 /* Files */ = {
+			isa = PBXGroup;
+			children = (
+				DFF33C1A1BE9DE6400D7228D /* twitterAvatar.png */,
+				DF5C89721BDD9B600005AC62 /* map.pdf */,
+				DF3160D61BCB3C180058993A /* Caucus.pdf */,
+				DF3160D71BCB3C180058993A /* CommitteeFundamentals.pdf */,
+				DF3160D81BCB3C180058993A /* CommitteeStructure.pdf */,
+				DF3160D91BCB3C180058993A /* Packing.pdf */,
+				DF3160DA1BCB3C180058993A /* PositionPaper.pdf */,
+				DF3160DB1BCB3C180058993A /* Research.pdf */,
+				DF3160DC1BCB3C180058993A /* Resolutions.pdf */,
+				DF3160DD1BCB3C180058993A /* SpeechDelivery.pdf */,
+				DF3160DE1BCB3C180058993A /* SpeechPreparation.pdf */,
+			);
+			name = Files;
 			sourceTree = "<group>";
 		};
 		DF6071B51BC8B62F007B35CC = {
@@ -128,6 +167,8 @@
 			children = (
 				DF6071C01BC8B62F007B35CC /* BMUNapp */,
 				DF6071BF1BC8B62F007B35CC /* Products */,
+				7DABF7E807028E7C1343D1F1 /* Pods */,
+				302BA906696314B2F8415B51 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -142,52 +183,21 @@
 		DF6071C01BC8B62F007B35CC /* BMUNapp */ = {
 			isa = PBXGroup;
 			children = (
+				DFDF6EA41BE544B3009244FE /* Models */,
+				DFE372A81BCB0DC500490A34 /* WebViewController.swift */,
+				DFE372A91BCB0DC500490A34 /* WebViewController.xib */,
 				DF6071C11BC8B62F007B35CC /* AppDelegate.swift */,
-				DF6071C51BC8B62F007B35CC /* Main.storyboard */,
-				DF6071D81BC8BEF1007B35CC /* StartingViewController.swift */,
-				DF3203D61BDD763C0080A5C0 /* StartingTableViewController.swift */,
-				DF3203D21BDD74080080A5C0 /* StartingTableViewCell.swift */,
-				DF3203D31BDD74080080A5C0 /* StartingTableCellTableViewCell.xib */,
 				DF9A92EB1BC91FE900BA3AE4 /* DelegateGuide */,
-				DF6071E51BC8EB0C007B35CC /* Conference */,
-				DF6071DC1BC8D269007B35CC /* Checklist */,
+				DF20B1A81BC9B464007705BA /* Committees */,
+				DF20B1AA1BC9B48F007705BA /* LiveUpdates */,
+				DF20B1A91BC9B47E007705BA /* Timeline */,
 				DF6071CD1BC8B62F007B35CC /* LaunchScreen.storyboard */,
 				DF6071DA1BC8C871007B35CC /* Assets.xcassets */,
 				DF6071D01BC8B62F007B35CC /* Info.plist */,
 				DF6071C81BC8B62F007B35CC /* BMUNapp.xcdatamodeld */,
-				DF3160D61BCB3C180058993A /* Caucus.pdf */,
-				DF3160D71BCB3C180058993A /* CommitteeFundamentals.pdf */,
-				DF3160D81BCB3C180058993A /* CommitteeStructure.pdf */,
-				DF3160D91BCB3C180058993A /* Packing.pdf */,
-				DF3160DA1BCB3C180058993A /* PositionPaper.pdf */,
-				DF3160DB1BCB3C180058993A /* Research.pdf */,
-				DF3160DC1BCB3C180058993A /* Resolutions.pdf */,
-				DF3160DD1BCB3C180058993A /* SpeechDelivery.pdf */,
-				DF3160DE1BCB3C180058993A /* SpeechPreparation.pdf */,
+				DF29E9931BDDA188006EAAC0 /* Files */,
 			);
 			path = BMUNapp;
-			sourceTree = "<group>";
-		};
-		DF6071DC1BC8D269007B35CC /* Checklist */ = {
-			isa = PBXGroup;
-			children = (
-				DF6071E11BC8D2D9007B35CC /* ChecklistTableViewController.swift */,
-				DF3160E81BCB432F0058993A /* ChecklistTableCellTableViewCell.swift */,
-				DF3160E91BCB432F0058993A /* ChecklistTableViewCell.xib */,
-				DF6071E31BC8D2F2007B35CC /* CreateTaskViewController.swift */,
-			);
-			name = Checklist;
-			sourceTree = "<group>";
-		};
-		DF6071E51BC8EB0C007B35CC /* Conference */ = {
-			isa = PBXGroup;
-			children = (
-				DF6071E61BC8EB2F007B35CC /* ConferenceChoicesViewController.swift */,
-				DF20B1AA1BC9B48F007705BA /* LiveUpdates */,
-				DF20B1A91BC9B47E007705BA /* Timeline */,
-				DF20B1A81BC9B464007705BA /* Committees */,
-			);
-			name = Conference;
 			sourceTree = "<group>";
 		};
 		DF9A92EB1BC91FE900BA3AE4 /* DelegateGuide */ = {
@@ -196,10 +206,18 @@
 				DF20B1B71BCAE34A007705BA /* DelegateGuideTableViewController.swift */,
 				DF20B1B91BCAE380007705BA /* DelegateTableViewCell.swift */,
 				DF20B1BA1BCAE380007705BA /* DelegateTableViewCell.xib */,
-				DFE372A81BCB0DC500490A34 /* WebViewController.swift */,
-				DFE372A91BCB0DC500490A34 /* WebViewController.xib */,
 			);
 			name = DelegateGuide;
+			sourceTree = "<group>";
+		};
+		DFDF6EA41BE544B3009244FE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DFDF6EA51BE544CD009244FE /* TwitterManager.swift */,
+				DFDF6EA71BE5530C009244FE /* Tweet.swift */,
+				DFDF6EA91BE55760009244FE /* DateFormatterManager.swift */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -209,9 +227,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DF6071D31BC8B62F007B35CC /* Build configuration list for PBXNativeTarget "BMUNapp" */;
 			buildPhases = (
+				47DA2319AB93C6CF974B05BB /* Check Pods Manifest.lock */,
 				DF6071BA1BC8B62F007B35CC /* Sources */,
 				DF6071BB1BC8B62F007B35CC /* Frameworks */,
 				DF6071BC1BC8B62F007B35CC /* Resources */,
+				A249A6FC09519FE98D4C9131 /* Embed Pods Frameworks */,
+				C3D9270B9A7EE6951A001B10 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -262,26 +283,75 @@
 			files = (
 				DF6071CF1BC8B62F007B35CC /* LaunchScreen.storyboard in Resources */,
 				DF3160E51BCB3C180058993A /* Resolutions.pdf in Resources */,
-				DF3203D51BDD74080080A5C0 /* StartingTableCellTableViewCell.xib in Resources */,
 				DF3160E71BCB3C180058993A /* SpeechPreparation.pdf in Resources */,
 				DF6071DB1BC8C871007B35CC /* Assets.xcassets in Resources */,
 				DF3160E01BCB3C180058993A /* CommitteeFundamentals.pdf in Resources */,
 				DF3160E11BCB3C180058993A /* CommitteeStructure.pdf in Resources */,
 				DF3160E21BCB3C180058993A /* Packing.pdf in Resources */,
-				DF3160EB1BCB432F0058993A /* ChecklistTableViewCell.xib in Resources */,
+				DFF33C191BE9D1A500D7228D /* LiveUpdatesTableViewCell.xib in Resources */,
 				DF3160E61BCB3C180058993A /* SpeechDelivery.pdf in Resources */,
+				DF5C89731BDD9B600005AC62 /* map.pdf in Resources */,
 				DF20B1BC1BCAE380007705BA /* DelegateTableViewCell.xib in Resources */,
 				DFE372AB1BCB0DC500490A34 /* WebViewController.xib in Resources */,
 				DF3160DF1BCB3C180058993A /* Caucus.pdf in Resources */,
-				DF6071C71BC8B62F007B35CC /* Main.storyboard in Resources */,
+				DFDC32691BE56CA400729449 /* LiveUpdatesTableViewController.xib in Resources */,
 				DF3160E31BCB3C180058993A /* PositionPaper.pdf in Resources */,
 				DFCC5D9A1BC99F5A00A09A1A /* CommitteeTableCell.xib in Resources */,
 				DF7A5EC21BCB99B900BDC91F /* TimelineTableViewCell.xib in Resources */,
+				DFF33C1B1BE9DE6400D7228D /* twitterAvatar.png in Resources */,
 				DF3160E41BCB3C180058993A /* Research.pdf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		47DA2319AB93C6CF974B05BB /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A249A6FC09519FE98D4C9131 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C3D9270B9A7EE6951A001B10 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		DF6071BA1BC8B62F007B35CC /* Sources */ = {
@@ -289,36 +359,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				DF7A5EC11BCB99B900BDC91F /* TimelineTableViewCell.swift in Sources */,
-				DF6071D91BC8BEF1007B35CC /* StartingViewController.swift in Sources */,
 				DF6071CA1BC8B62F007B35CC /* BMUNapp.xcdatamodeld in Sources */,
+				DFDC32661BE565D100729449 /* LiveUpdatesTableViewCell.swift in Sources */,
 				DFCC5D9C1BC99F9900A09A1A /* CommitteeTableCell.swift in Sources */,
 				DF20B1B81BCAE34A007705BA /* DelegateGuideTableViewController.swift in Sources */,
-				DF6071E21BC8D2D9007B35CC /* ChecklistTableViewController.swift in Sources */,
-				DF3203D71BDD763C0080A5C0 /* StartingTableViewController.swift in Sources */,
-				DF3160EA1BCB432F0058993A /* ChecklistTableCellTableViewCell.swift in Sources */,
-				DF3203D41BDD74080080A5C0 /* StartingTableViewCell.swift in Sources */,
+				DFDF6EA81BE5530C009244FE /* Tweet.swift in Sources */,
 				DF20B1BB1BCAE380007705BA /* DelegateTableViewCell.swift in Sources */,
-				DF6071E71BC8EB2F007B35CC /* ConferenceChoicesViewController.swift in Sources */,
+				DFDF6EAA1BE55760009244FE /* DateFormatterManager.swift in Sources */,
 				DF6071C21BC8B62F007B35CC /* AppDelegate.swift in Sources */,
-				DF6071E41BC8D2F2007B35CC /* CreateTaskViewController.swift in Sources */,
 				DF20B1B21BC9B513007705BA /* TimelineTableViewController.swift in Sources */,
 				DFE372AA1BCB0DC500490A34 /* WebViewController.swift in Sources */,
-				DF9A92E21BC8FDFE00BA3AE4 /* CommitteesTableTableViewController.swift in Sources */,
-				DF0DB57A1BCC66C400F7E96F /* LiveUpdatesViewController.swift in Sources */,
+				DFDF6EA61BE544CD009244FE /* TwitterManager.swift in Sources */,
+				DF9A92E21BC8FDFE00BA3AE4 /* CommitteesTableViewController.swift in Sources */,
+				DF0DB57A1BCC66C400F7E96F /* LiveUpdatesTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		DF6071C51BC8B62F007B35CC /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DF6071C61BC8B62F007B35CC /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		DF6071CD1BC8B62F007B35CC /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -413,9 +472,11 @@
 		};
 		DF6071D41BC8B62F007B35CC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8FB3152DB09847D73955AEE0 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = BMUNapp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jmoskowitz.BMUNapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -424,9 +485,11 @@
 		};
 		DF6071D51BC8B62F007B35CC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8D2846E32CA8DE795A46F3C5 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = BMUNapp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jmoskowitz.BMUNapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";

@@ -24,16 +24,28 @@ class WebViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        edgesForExtendedLayout = .None
+        
         let path: String = NSBundle.mainBundle().pathForResource(fileName, ofType: "pdf")!
         let targetURL: NSURL = NSURL(fileURLWithPath: path)
         let request: NSURLRequest = NSURLRequest(URL: targetURL)
         webView.loadRequest(request)
         webView.scalesPageToFit = true
         view.addSubview(webView)
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
+        
+        let textColor = UIColor.whiteColor()
+        let textFont = UIFont(name: "Avenir", size: 40.0)
+        
+        if fileName == "map" {
+            let titleTextAttributes: [String:NSObject] = [
+                NSFontAttributeName: textFont!,
+                NSForegroundColorAttributeName: textColor,
+            ]
+            self.navigationController!.navigationBar.titleTextAttributes = titleTextAttributes
+        } else {
+            self.navigationController!.navigationBar.tintColor = UIColor.whiteColor()
+        }
     }
 
 }

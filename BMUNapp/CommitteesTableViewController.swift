@@ -11,12 +11,35 @@ import UIKit
 class CommitteesTableViewController: UITableViewController {
     
     let topics = ["Extremist Groups in sub-Saharan Africa, Disarmament of the Arctic Circle", "Workers Rights, Evaluating the Impacts of Sex Tourism", "International Law in Post-Confict regions, Cultural law in a time of western law", "Climate Change-Induced Agricultural Disasters, Prevention and Mitigation of Food-borne Diseases", "Most Effective Use of Aid: Malaria vs. HIV, Drug Addiction: Crime or Health Issue?", "Gender Equity in Education, Electoral Violence in Africa", "Democratization and Ensuring Participation in Fair Elections, Preserving Sovereignty in Times of Disaster Relief", "Cash Transfers as a Form of Aid, Structural Adjustment Programs", "The Syrian Civil War, Open Agenda", "Russia v. Ukraine", "Unrest in the West: Tibet & Xianjiang (Chinese), Foreign Investment in Latin America (English)", "Reducing the Incidence of the Unbanked, Developing Frameworks to Address Infrastructure Gap in Asia", "Situation in Yemen, Protection of Cultural Property in Armed Conflict", "Economic Impacts of Cyber Warfare, Treatment of Immigrants in the European Union", "Open Agenda", "Economic Development Policy: Alternatives to Neoliberalism? (English), Preparing for Environmental Change:  Disaster Risk Management Strategies (Español)", "Cold War Berlin", "Heir to England: Preservation of the House of Tudor", "Entrepreneurship"]
+    
+    let textColor = UIColor.whiteColor()
+    let textFont = UIFont(name: "Avenir", size: 40.0)
+    //var selectedIndexPath: NSIndexPath?
+    
+    init() {
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        view.backgroundColor = UIColor(red: 24.0/255.0, green: 70.0/255.0, blue: 148.0/255.0, alpha: 1.0)
+        edgesForExtendedLayout = .None
         let nib: UINib = UINib(nibName: "CommitteeTableCell", bundle: nil)
         self.tableView.registerNib(nib, forCellReuseIdentifier: "CommitteeTableCell")
+        
+        tableView.estimatedRowHeight = 140
+        tableView.rowHeight = UITableViewAutomaticDimension
+        
+        let titleTextAttributes: [String:NSObject] = [
+            NSFontAttributeName: textFont!,
+            NSForegroundColorAttributeName: textColor,
+        ]
+        
+        self.navigationController!.navigationBar.titleTextAttributes = titleTextAttributes
     }
 
     override func didReceiveMemoryWarning() {
@@ -34,6 +57,14 @@ class CommitteesTableViewController: UITableViewController {
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return 4
+    }
+    
+    override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        /*if indexPath == selectedIndexPath {
+            return 250
+        }
+        return 30*/
+        return 200
     }
     
     override func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
@@ -169,7 +200,8 @@ class CommitteesTableViewController: UITableViewController {
                 viceChairs.text = "Sey Kim, Ashley Njoroge, Emma Lautanen, Hyunwook Kim"
                 cell.topicsButton.tag = 14
             case 7:
-                committee.text = "The Community of Latin American and Caribbean States (Spanish Bilingual)"
+                //fix this, too long
+                committee.text = "The Community of Latin American and Caribbean States (Spanish)"
                 headChair.text = "Brett Buckingham"
                 viceChairs.text = "Adrian Hernandez, Jane Kim"
                 cell.topicsButton.tag = 15
@@ -208,9 +240,58 @@ class CommitteesTableViewController: UITableViewController {
         cell.selectionStyle = .None
         return cell
     }
+    
 
-    override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
-        return true
+    /*override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        let previousIndexPath = selectedIndexPath
+        if indexPath == selectedIndexPath {
+            selectedIndexPath = nil
+        } else {
+            selectedIndexPath = indexPath
+        }
+        
+        var indexPaths: Array<NSIndexPath> = []
+        if let previous = previousIndexPath {
+            indexPaths += [previous]
+        }
+        if let current = selectedIndexPath {
+            indexPaths += [current]
+        }
+        if indexPaths.count > 0 {
+            tableView.reloadRowsAtIndexPaths(indexPaths, withRowAnimation: .Automatic)
+        }
+    }
+    
+    override func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
+        (cell as! CommitteeTableCell).watchFrameChanges()
+    }
+    
+    override func tableView(tableView: UITableView, didEndDisplayingCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
+        (cell as! CommitteeTableCell).ignoreFrameChanges()
+    }*/
+    
+    override func tableView(tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let headerView: UIView = UIView()
+        headerView.frame = CGRectMake(0, 0, 320, 30)
+        headerView.backgroundColor = UIColor(red: 100.0/255.0, green: 160.0/255.0, blue: 197.0/255.0, alpha: 1.0)
+        
+        let titleLabel = UILabel(frame: CGRectMake(3, 0, 320, 30))
+        titleLabel.font = UIFont(name: "Thonburi-Bold", size: 18)
+        titleLabel.textColor = UIColor.blackColor()
+        switch(section) {
+        case 0:
+            titleLabel.text = "Bloc A"
+        case 1:
+            titleLabel.text = "Bloc B"
+        case 2:
+            titleLabel.text = "Specialized"
+        case 3:
+            titleLabel.text = "Crisis"
+        default:
+            titleLabel.text = "No"
+        }
+        headerView.addSubview(titleLabel)
+        return headerView
     }
 
 }

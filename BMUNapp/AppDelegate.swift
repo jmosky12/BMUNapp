@@ -16,9 +16,59 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        UINavigationBar.appearance().barTintColor = UIColor(red: 253.0/255.0, green: 253.0/255.0, blue: 253.0/255.0, alpha: 1.0)
-        UINavigationBar.appearance().tintColor = UIColor(red: 24.0/255.0, green: 73.0/255.0, blue: 140.0/255.0, alpha: 1.0)
-        UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName : UIColor(red: 24.0/255.0, green: 73.0/255.0, blue: 140.0/255.0, alpha: 1.0)]
+        
+        self.window = UIWindow.init(frame: UIScreen.mainScreen().bounds)
+        //let icon = UIImage(named: "bmunIcon")
+        
+        let delegateGuide = DelegateGuideTableViewController()
+        let delegateGuideNC = UINavigationController(rootViewController: delegateGuide)
+        delegateGuideNC.tabBarItem.title = "Guide"
+        delegateGuideNC.tabBarItem.tag = 1
+        delegateGuideNC.navigationBar.barTintColor = UIColor.blackColor()
+        delegateGuideNC.navigationBar.topItem?.title = "Delegate Guide"
+
+        
+        let committees = CommitteesTableViewController()
+        let committeesNC = UINavigationController(rootViewController: committees)
+        committeesNC.tabBarItem.title = "Committees"
+        committeesNC.tabBarItem.tag = 2
+        committeesNC.navigationBar.barTintColor = UIColor.blackColor()
+        committeesNC.navigationBar.topItem?.title = "Committees"
+        
+        let liveUpdates = LiveUpdatesTableViewController()
+        let liveUpdatesNC = UINavigationController(rootViewController: liveUpdates)
+        liveUpdatesNC.tabBarItem.title = "Updates"
+        liveUpdatesNC.tabBarItem.tag = 3
+        liveUpdatesNC.navigationBar.barTintColor = UIColor.blackColor()
+        liveUpdatesNC.navigationBar.topItem?.title = "Live Updates"
+        
+        let timeline = TimelineTableViewController()
+        let timelineNC = UINavigationController(rootViewController: timeline)
+        timelineNC.tabBarItem.title = "Timeline"
+        timelineNC.tabBarItem.tag = 4
+        timelineNC.navigationBar.barTintColor = UIColor.blackColor()
+        timelineNC.navigationBar.topItem?.title = "Timeline"
+
+        let campusMap = WebViewController(file: "map")
+        let campusMapNC = UINavigationController(rootViewController: campusMap)
+        campusMapNC.tabBarItem.title = "Map"
+        campusMapNC.tabBarItem.tag = 5
+        campusMapNC.navigationBar.barTintColor = UIColor.blackColor()
+        campusMapNC.navigationBar.topItem?.title = "Campus Map"
+        
+        let controllers = [delegateGuideNC, committeesNC, liveUpdatesNC, timelineNC, campusMapNC]
+        
+        let tabBarController = UITabBarController()
+        tabBarController.viewControllers = controllers
+        self.window?.addSubview(tabBarController.view)
+        window?.rootViewController = tabBarController
+        self.window?.makeKeyAndVisible()
+        
+        UITabBar.appearance().tintColor = UIColor.whiteColor()
+        UITabBar.appearance().barTintColor = UIColor.blackColor()
+        UITabBar.appearance().tintColor = UIColor.blueColor()
+        UITabBar.appearance().translucent = false
+        
         return true
     }
 
