@@ -11,6 +11,9 @@ import UIKit
 class DelegateTableViewCell: UITableViewCell {
 
     @IBOutlet weak var backgroundImage: UIImageView!
+    @IBOutlet weak var cellLabel: UILabel!
+    
+    var type: DelegateGuideTableViewController.DelegateCellType!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -23,10 +26,15 @@ class DelegateTableViewCell: UITableViewCell {
         self.backgroundColor = UIColor.clearColor()
     }
 
-    override func setSelected(selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+    func bindData(imageName: String, text: String) {
+        backgroundImage.image = UIImage(named: imageName)
+        cellLabel.text = text
+    }
+    
+    func bindData2(type: DelegateGuideTableViewController.DelegateCellType) {
+        self.type = type
+        backgroundImage.image = type.backgroundImage()
+        cellLabel.text = type.rawValue
     }
     
 }

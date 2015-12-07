@@ -14,20 +14,29 @@
                 <rect key="frame" x="0.0" y="0.0" width="400" height="151"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="EsE-0B-gZ1">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="EsE-0B-gZ1">
                         <rect key="frame" x="0.0" y="0.0" width="400" height="151"/>
                     </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ejy-xS-bOh">
+                        <rect key="frame" x="179" y="65" width="42" height="21"/>
+                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="27"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
                 <constraints>
                     <constraint firstAttribute="leadingMargin" secondItem="EsE-0B-gZ1" secondAttribute="leading" constant="8" id="1ph-aR-ICP"/>
                     <constraint firstItem="EsE-0B-gZ1" firstAttribute="centerX" secondItem="ZYI-Zu-XMH" secondAttribute="centerX" id="3C0-0U-hNq"/>
                     <constraint firstAttribute="topMargin" secondItem="EsE-0B-gZ1" secondAttribute="top" constant="8" id="6L9-o6-v1F"/>
+                    <constraint firstItem="Ejy-xS-bOh" firstAttribute="centerY" secondItem="ZYI-Zu-XMH" secondAttribute="centerY" id="9Pb-aw-eRt"/>
                     <constraint firstItem="EsE-0B-gZ1" firstAttribute="centerY" secondItem="ZYI-Zu-XMH" secondAttribute="centerY" id="EmQ-to-yPd"/>
+                    <constraint firstItem="Ejy-xS-bOh" firstAttribute="centerX" secondItem="ZYI-Zu-XMH" secondAttribute="centerX" id="d7Z-ri-RyP"/>
                 </constraints>
             </tableViewCellContentView>
             <inset key="separatorInset" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
             <connections>
                 <outlet property="backgroundImage" destination="EsE-0B-gZ1" id="luH-wC-nrN"/>
+                <outlet property="cellLabel" destination="Ejy-xS-bOh" id="tmN-5T-QdT"/>
             </connections>
             <point key="canvasLocation" x="105" y="213"/>
         </tableViewCell>

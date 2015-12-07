@@ -19,14 +19,7 @@ class Tweet: NSObject {
     init?(dict: NSDictionary) {
         if let user = dict["user"] as? NSDictionary, txt = dict["text"] as? String, crt = dict["created_at"] as? String {
             text = txt
-            print(crt)
-            //fix below
-            let dateFormatter = NSDateFormatter()
-            dateFormatter.dateFormat = "LL dd yy"
-            let date = dateFormatter.dateFromString(crt)
-            print(date)
-            createdAt = date
-            print(createdAt)
+            createdAt = DateFormatterManager.sharedInstance.format(crt)
             if let name = user["name"] as? String, let imageURL = user["profile_image_url"] as? String, let sn = user["screen_name"] as? String {
                 username = name
                 screenName = sn

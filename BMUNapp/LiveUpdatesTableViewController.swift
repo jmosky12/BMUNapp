@@ -58,7 +58,6 @@ class LiveUpdatesTableViewController: UIViewController, UITableViewDataSource {
             NSFontAttributeName: textFont!,
             NSForegroundColorAttributeName: textColor,
         ]
-        
         self.navigationController!.navigationBar.titleTextAttributes = titleTextAttributes
     }
     
@@ -84,10 +83,9 @@ class LiveUpdatesTableViewController: UIViewController, UITableViewDataSource {
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("liveUpdates") as! LiveUpdatesTableViewCell
         let tweet = tweets[indexPath.row]
-        let dateString = String(tweet.createdAt)
         
         cell.tweetText.text = tweet.text
-        cell.date.text = dateString
+        cell.date.text = tweet.createdAt?.shortTimeAgoSinceNow()
         cell.screenName.text = "@\(tweet.screenName)"
         cell.userName.text = tweet.username
         cell.avatar.image = UIImage(named: "twitterAvatar")

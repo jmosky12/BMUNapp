@@ -16,7 +16,7 @@ class DateFormatterManager: NSObject {
     let prettyFormatter = NSDateFormatter()
     
     override init() {
-        formatter.dateFormat = "EEE MMM d HH:mm: ss Z y"
+        formatter.dateFormat = "EEE MMM d HH:mm:ss Z y"
         prettyFormatter.dateStyle = .ShortStyle
         prettyFormatter.timeStyle = .ShortStyle
         super.init()

@@ -53,34 +53,62 @@ class DelegateGuideTableViewController: UITableViewController {
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 9
     }
-
+    
+    enum DelegateCellType: String {
+        case Research = "Research"
+        case PositionPapers = "Position Papers"
+        //case Packing = "Packing"
+        
+        func backgroundImage() -> UIImage? {
+            switch self {
+            case .Research:
+                return UIImage(named: "berk2")
+            case .PositionPapers:
+                return UIImage(named: "campanile2")
+            //case .Packing:
+                //return UIImage(named: "sathergate2")
+            //case .CommitteeFundamentals
+            }
+        }
+        
+        func webViewFileName() -> String {
+            switch self {
+            case .Research:
+                return "Research"
+            case .PositionPapers:
+                return "PositionPaper"
+            }
+        }
+    }
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("DelegateTableViewCell", forIndexPath: indexPath) as! DelegateTableViewCell
         cell.selectionStyle = .None
-        let img = cell.backgroundImage
-            switch(indexPath.row) {
-            case 0:
-                setImage(img, fileName: "berk2", text: "Research")
-            case 1:
-                setImage(img, fileName: "campanile2", text: "Position Papers")
-            case 2:
-                setImage(img, fileName: "goldengate2", text: "Speech Preparation")
-            case 3:
-                setImage(img, fileName: "sathergate2", text: "Packing")
-            case 4:
-                setImage(img, fileName: "campanilebay2", text: "Committee Fundamentals")
-            case 5:
-                setImage(img, fileName: "mun2", text: "Committee Structure")
-            case 6:
-                setImage(img, fileName: "coit", text: "Speech Delivery")
-            case 7:
-                setImage(img, fileName: "sf2", text: "Caucusing")
-            case 8:
-                setImage(img, fileName: "ladies", text: "Resolutions")
-            default:
-                setImage(img, fileName: "ladies", text: "Resolutions")
-            }
+        
+        DelegateCellType.Research.rawValue
+        switch(indexPath.row) {
+        case 0:
+            //cell.bindData("berk2", text: "Research")
+            cell.bindData2(.Research)
+        case 1:
+            cell.bindData("campanile2", text: "Position Papers")
+        case 2:
+            cell.bindData("goldengate2", text: "Speech Preparation")
+        case 3:
+            cell.bindData("sathergate2", text: "Packing")
+        case 4:
+            cell.bindData("campanilebay2", text: "Committee Fundamentals")
+        case 5:
+            cell.bindData("mun2", text: "Committee Structure")
+        case 6:
+            cell.bindData("coit", text: "Speech Delivery")
+        case 7:
+            cell.bindData("sf2", text: "Caucusing")
+        case 8:
+            cell.bindData("ladies", text: "Resolutions")
+        default:
+            cell.bindData("ladies", text: "Resolutions")
+        }
         return cell
     }
     
@@ -109,6 +137,7 @@ class DelegateGuideTableViewController: UITableViewController {
                 fileName = "Title"
             }
         let vc = WebViewController(file: fileName)
+        //let cell = tableView.cellForRowAtIndexPath(indexPath) as
         self.navigationController?.pushViewController(vc, animated: true)
     }
     
@@ -116,7 +145,7 @@ class DelegateGuideTableViewController: UITableViewController {
         return 152.0
     }
     
-    func textToImage(text: NSString, image: UIImage, point: CGPoint) -> UIImage {
+    /*func textToImage(text: NSString, image: UIImage, point: CGPoint) -> UIImage {
         
         UIGraphicsBeginImageContext(image.size)
         let imgTextColor = UIColor.whiteColor()
@@ -136,13 +165,13 @@ class DelegateGuideTableViewController: UITableViewController {
         text.drawInRect(rect, withAttributes: textFontAttributes)
         let newImage = UIGraphicsGetImageFromCurrentImageContext()
         return newImage
-    }
+    }*/
     
-    func setImage(iv: UIImageView, fileName: String, text: NSString) {
+    /*func setImage(iv: UIImageView, fileName: String, text: NSString) {
         iv.image = UIImage(named: fileName)
-        iv.image = textToImage(text, image: iv.image!, point: CGPoint(x: 0, y: 75))
+        //iv.image = textToImage(text, image: iv.image!, point: CGPoint(x: 0, y: 75))
         
-    }
+    }*/
     
     /*override func tableView(tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
             let img: UIImage = UIImage(named: "startinglonglogo")!

@@ -8,6 +8,7 @@
 
 import UIKit
 import CoreData
+import Parse
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -17,46 +18,63 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         
+        Parse.setApplicationId("INbyDC9BcrJRZiBzuPT2p2oquTMZq9tuTiAqRNOf", clientKey: "FoOfryHoH7L6L6VMH0qltbZuAzE37D4e2PZDgoc3")
+        
         self.window = UIWindow.init(frame: UIScreen.mainScreen().bounds)
-        //let icon = UIImage(named: "bmunIcon")
+        let icon = UIImage(named: "bmunIcon")?.imageWithRenderingMode(.AlwaysOriginal)
+        
+        let textFont = UIFont(name: "Avenir", size: 13.0)
+        let titleTextAttributes: [String:NSObject] = [
+            NSFontAttributeName: textFont!
+        ]
         
         let delegateGuide = DelegateGuideTableViewController()
         let delegateGuideNC = UINavigationController(rootViewController: delegateGuide)
-        delegateGuideNC.tabBarItem.title = "Guide"
-        delegateGuideNC.tabBarItem.tag = 1
+        let item1 = UITabBarItem(title: "Guide", image: nil, tag: 1)
+        item1.setTitleTextAttributes(titleTextAttributes, forState: .Normal)
+        item1.titlePositionAdjustment = UIOffset(horizontal: 0.0, vertical: -12.0)
+        delegateGuideNC.tabBarItem = item1
         delegateGuideNC.navigationBar.barTintColor = UIColor.blackColor()
         delegateGuideNC.navigationBar.topItem?.title = "Delegate Guide"
 
         
         let committees = CommitteesTableViewController()
         let committeesNC = UINavigationController(rootViewController: committees)
-        committeesNC.tabBarItem.title = "Committees"
-        committeesNC.tabBarItem.tag = 2
+        let item2 = UITabBarItem(title: "Committees", image: nil, tag: 2)
+        item2.setTitleTextAttributes(titleTextAttributes, forState: .Normal)
+        item2.titlePositionAdjustment = UIOffset(horizontal: 0.0, vertical: -12.0)
+        committeesNC.tabBarItem = item2
         committeesNC.navigationBar.barTintColor = UIColor.blackColor()
         committeesNC.navigationBar.topItem?.title = "Committees"
         
         let liveUpdates = LiveUpdatesTableViewController()
         let liveUpdatesNC = UINavigationController(rootViewController: liveUpdates)
-        liveUpdatesNC.tabBarItem.title = "Updates"
-        liveUpdatesNC.tabBarItem.tag = 3
+        let item3 = UITabBarItem(title: "Updates", image: nil, tag: 3)
+        item3.setTitleTextAttributes(titleTextAttributes, forState: .Normal)
+        item3.titlePositionAdjustment = UIOffset(horizontal: 0.0, vertical: -12.0)
+        liveUpdatesNC.tabBarItem = item3
         liveUpdatesNC.navigationBar.barTintColor = UIColor.blackColor()
         liveUpdatesNC.navigationBar.topItem?.title = "Live Updates"
+
+        let questions = QuestionsViewController()
+        let questionsNC = UINavigationController(rootViewController: questions)
+        let item4 = UITabBarItem(title: "Questions", image: nil, tag: 4)
+        item4.setTitleTextAttributes(titleTextAttributes, forState: .Normal)
+        item4.titlePositionAdjustment = UIOffset(horizontal: 0.0, vertical: -12.0)
+        questionsNC.tabBarItem = item4
+        questionsNC.navigationBar.barTintColor = UIColor.blackColor()
+        questionsNC.navigationBar.topItem?.title = "Questions"
         
         let timeline = TimelineTableViewController()
         let timelineNC = UINavigationController(rootViewController: timeline)
-        timelineNC.tabBarItem.title = "Timeline"
-        timelineNC.tabBarItem.tag = 4
+        let item5 = UITabBarItem(title: "Timeline", image: nil, tag: 5)
+        item5.setTitleTextAttributes(titleTextAttributes, forState: .Normal)
+        item5.titlePositionAdjustment = UIOffset(horizontal: 0.0, vertical: -12.0)
+        timelineNC.tabBarItem = item5
         timelineNC.navigationBar.barTintColor = UIColor.blackColor()
         timelineNC.navigationBar.topItem?.title = "Timeline"
-
-        let campusMap = WebViewController(file: "map")
-        let campusMapNC = UINavigationController(rootViewController: campusMap)
-        campusMapNC.tabBarItem.title = "Map"
-        campusMapNC.tabBarItem.tag = 5
-        campusMapNC.navigationBar.barTintColor = UIColor.blackColor()
-        campusMapNC.navigationBar.topItem?.title = "Campus Map"
         
-        let controllers = [delegateGuideNC, committeesNC, liveUpdatesNC, timelineNC, campusMapNC]
+        let controllers = [delegateGuideNC, committeesNC, liveUpdatesNC, questionsNC, timelineNC]
         
         let tabBarController = UITabBarController()
         tabBarController.viewControllers = controllers
