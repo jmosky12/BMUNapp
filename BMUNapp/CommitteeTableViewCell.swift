@@ -1,17 +1,16 @@
 //
-//  TimelineTableViewCell.swift
+//  CommitteeTableViewCell.swift
 //  BMUNapp
 //
-//  Created by Jake Moskowitz on 10/12/15.
+//  Created by Jake Moskowitz on 12/8/15.
 //  Copyright © 2015 Jake Moskowitz. All rights reserved.
 //
 
 import UIKit
 
-class TimelineTableViewCell: UITableViewCell {
+class CommitteeTableViewCell: UITableViewCell {
     
-    @IBOutlet weak var eventTitle: UILabel!
-    @IBOutlet weak var eventTime: UILabel!
+    @IBOutlet weak var committeeLabel: UILabel!
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -21,6 +20,5 @@ class TimelineTableViewCell: UITableViewCell {
         self.layoutMargins = UIEdgeInsetsZero
         self.selectionStyle = .None
     }
-
     
 }

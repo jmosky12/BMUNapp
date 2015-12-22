@@ -10,9 +10,6 @@ import UIKit
 
 class TimelineTableViewController: UITableViewController {
     
-    let textColor = UIColor.whiteColor()
-    let textFont = UIFont(name: "Avenir", size: 40.0)
-    
     init() {
         super.init(nibName: nil, bundle: nil)
     }
@@ -31,35 +28,128 @@ class TimelineTableViewController: UITableViewController {
         tableView.separatorInset = UIEdgeInsetsZero
         tableView.preservesSuperviewLayoutMargins = false
         tableView.layoutMargins = UIEdgeInsetsZero
-        tableView.rowHeight = 200
         
+        tableView.estimatedRowHeight = 100
+        tableView.rowHeight = UITableViewAutomaticDimension
+        
+        let textColor = UIColor.whiteColor()
+        let textFont = UIFont(name: "Avenir", size: 40.0)
         let titleTextAttributes: [String:NSObject] = [
             NSFontAttributeName: textFont!,
             NSForegroundColorAttributeName: textColor,
         ]
-        
         self.navigationController!.navigationBar.titleTextAttributes = titleTextAttributes
     }
 
     // MARK: - Table view data source
+    
+    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+        return 3
+    }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 4
+        switch(section) {
+        case 0:
+            return 2
+        case 1:
+            return 4
+        case 2:
+            return 2
+        default:
+            return 1
+        }
     }
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("TimelineTableViewCell", forIndexPath: indexPath) as! TimelineTableViewCell
-        cell.selectionStyle = .None
+        let event = cell.eventTitle
+        let time = cell.eventTime
+        switch(indexPath.section) {
+        case 0:
+            switch(indexPath.row) {
+            case 0:
+                event.text = "Opening Ceremonies (Pauley Ballroom)"
+                time.text = " 5:30pm-6:30pm"
+            case 1:
+                event.text = "First Committee Session"
+                time.text = " 7:00pm-9:45pm"
+            default:
+                event.text = "Uh Oh"
+                time.text = "Default"
+            }
+        case 1:
+            switch(indexPath.row) {
+            case 0:
+                event.text = "Second Committee Session"
+                time.text = " 9:00am-12:45pm"
+            case 1:
+                event.text = "Lunch"
+                time.text = " 12:45pm-2:00pm"
+            case 2:
+                event.text = "Third Committee Session"
+                time.text = " 2:00pm-5:00pm"
+            case 3:
+                event.text = "Delegate Dance (Pauley Ballroom)"
+                time.text = " 7:30pm-10:30pm"
+            default:
+                event.text = "Uh Oh"
+                time.text = "Default"
+            }
+        case 2:
+            switch(indexPath.row) {
+            case 0:
+                event.text = "Fourth Committee Session"
+                time.text = " 9:30am-12:30pm"
+            case 1:
+                event.text = "Closing Ceremonies (Pauley Ballroom)"
+                time.text = " 2:00pm-3:30pm"
+            default:
+                event.text = "Uh Oh"
+                time.text = "Default"
+            }
+        default:
+            event.text = "Uh Oh"
+            time.text = "Default"
+        }
+        
         return cell
     }
-
-    override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
-        return false
+    
+    override func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        let title: String!
+        switch(section) {
+        case 0:
+            title = "Friday, March 4"
+        case 1:
+            title = "Saturday, March 5"
+        case 2:
+            title = "Sunday, March 6"
+        default:
+            title = "Something's wrong"
+        }
+        return title
     }
     
-    override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-        return 200.0
+    override func tableView(tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let headerView: UIView = UIView()
+        headerView.frame = CGRectMake(0, 0, 320, 30)
+        headerView.backgroundColor = UIColor.blackColor()
+        
+        let titleLabel = UILabel(frame: CGRectMake(5, 0, 320, 30))
+        titleLabel.font = UIFont(name: "Thonburi", size: 18)
+        titleLabel.textColor = UIColor.whiteColor()
+        switch(section) {
+        case 0:
+            titleLabel.text = "Friday, March 4"
+        case 1:
+            titleLabel.text = "Saturday, March 5"
+        case 2:
+            titleLabel.text = "Sunday, March 6"
+        default:
+            titleLabel.text = "No"
+        }
+        headerView.addSubview(titleLabel)
+        return headerView
     }
-    
 
 }

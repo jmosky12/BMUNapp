@@ -27,6 +27,7 @@ class LiveUpdatesTableViewCell: UITableViewCell {
         self.separatorInset = UIEdgeInsetsZero
         self.preservesSuperviewLayoutMargins = false
         self.layoutMargins = UIEdgeInsetsZero
+        self.selectionStyle = .None
     }
 
     

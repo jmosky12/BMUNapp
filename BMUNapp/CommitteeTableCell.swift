@@ -33,36 +33,12 @@ class CommitteeTableCell: UITableViewCell {
         self.separatorInset = UIEdgeInsetsZero
         self.preservesSuperviewLayoutMargins = false
         self.layoutMargins = UIEdgeInsetsZero
+        self.selectionStyle = .None
     }
 
     override func setSelected(selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
     }
     
-    /*func checkHeight() {
-        if frame.size.height < expandedHeight {
-            head.hidden = true
-            headChair.hidden = true
-            vice.hidden = true
-            viceChairs.hidden = true
-            topic.hidden = true
-            topicsButton.hidden = true
-        }
-    }
-    
-    func watchFrameChanges() {
-        addObserver(self, forKeyPath: "frame", options: .New, context: nil)
-        checkHeight()
-    }
-    
-    func ignoreFrameChanges() {
-        removeObserver(self, forKeyPath: "frame")
-    }
-    
-    override func observeValueForKeyPath(keyPath: String?, ofObject object: AnyObject?, change: [String : AnyObject]?, context: UnsafeMutablePointer<Void>) {
-        if keyPath == "frame" {
-            checkHeight()
-        }
-    }*/
 
 }

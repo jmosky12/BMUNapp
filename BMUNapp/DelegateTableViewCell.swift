@@ -24,14 +24,11 @@ class DelegateTableViewCell: UITableViewCell {
         backgroundImage.clipsToBounds = true
         
         self.backgroundColor = UIColor.clearColor()
+        self.selectionStyle = .None
     }
 
-    func bindData(imageName: String, text: String) {
-        backgroundImage.image = UIImage(named: imageName)
-        cellLabel.text = text
-    }
     
-    func bindData2(type: DelegateGuideTableViewController.DelegateCellType) {
+    func bindData(type: DelegateGuideTableViewController.DelegateCellType) {
         self.type = type
         backgroundImage.image = type.backgroundImage()
         cellLabel.text = type.rawValue

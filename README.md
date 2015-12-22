@@ -11,7 +11,7 @@ BMUNapp is an app specifically designed to prepare and enhance the experience of
 * List of committees and their relevant information
 * Live updates pulled from the BMUN Twitter feed to inform delegates of any important information
 * Timeline of events for conference weekend
-* Form for delegates to email BMUN staff questions or feedback
+* Form for delegates to email BMUN staff questions or feedback, in which BMUN will email you back
 
 
 

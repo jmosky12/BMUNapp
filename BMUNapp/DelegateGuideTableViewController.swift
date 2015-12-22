@@ -8,11 +8,14 @@
 
 import UIKit
 
+/*TO DO:
+ -fix CommitteeDetailViewController
+ -make icon for app
+ -prep for app store
+ -change questions email
+*/
+
 class DelegateGuideTableViewController: UITableViewController {
-    
-    let darkBlue = UIColor(red: 24.0/255.0, green: 70.0/255.0, blue: 148.0/255.0, alpha: 1.0)
-    let textColor = UIColor.whiteColor()
-    let textFont = UIFont(name: "Avenir", size: 40.0)
     
     init() {
         super.init(nibName: nil, bundle: nil)
@@ -34,6 +37,8 @@ class DelegateGuideTableViewController: UITableViewController {
         tableView.preservesSuperviewLayoutMargins = false
         tableView.layoutMargins = UIEdgeInsetsZero
         
+        let textColor = UIColor.whiteColor()
+        let textFont = UIFont(name: "Avenir", size: 40.0)
         let titleTextAttributes: [String:NSObject] = [
             NSFontAttributeName: textFont!,
             NSForegroundColorAttributeName: textColor,
@@ -41,11 +46,6 @@ class DelegateGuideTableViewController: UITableViewController {
         
         self.navigationController!.navigationBar.titleTextAttributes = titleTextAttributes
         
-    }
-    
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
     }
 
     // MARK: - Table view data source
@@ -56,61 +56,67 @@ class DelegateGuideTableViewController: UITableViewController {
     
     enum DelegateCellType: String {
         case Research = "Research"
-        case PositionPapers = "Position Papers"
-        //case Packing = "Packing"
+        case Papers = "Position Papers"
+        case SpeechPrep = "Speech Preparation"
+        case Packing = "Packing"
+        case Fundamentals = "Committee Fundamentals"
+        case Structure = "Committee Structure"
+        case SpeechDelivery = "Speech Delivery"
+        case Caucusing = "Caucusing"
+        case Resolutions = "Resolutions"
         
         func backgroundImage() -> UIImage? {
             switch self {
             case .Research:
-                return UIImage(named: "berk2")
-            case .PositionPapers:
                 return UIImage(named: "campanile2")
-            //case .Packing:
-                //return UIImage(named: "sathergate2")
-            //case .CommitteeFundamentals
+            case .Papers:
+                return UIImage(named: "berk2")
+            case .SpeechPrep:
+                return UIImage(named: "goldengate2")
+            case .Packing:
+                return UIImage(named: "sathergate2")
+            case .Fundamentals:
+                return UIImage(named: "campanilebay2")
+            case .Structure:
+                return UIImage(named: "mun2")
+            case .SpeechDelivery:
+                return UIImage(named: "coit")
+            case .Caucusing:
+                return UIImage(named: "sf2")
+            case .Resolutions:
+                return UIImage(named: "ladies")
             }
         }
-        
-        func webViewFileName() -> String {
-            switch self {
-            case .Research:
-                return "Research"
-            case .PositionPapers:
-                return "PositionPaper"
-            }
-        }
+    
     }
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("DelegateTableViewCell", forIndexPath: indexPath) as! DelegateTableViewCell
-        cell.selectionStyle = .None
-        
-        DelegateCellType.Research.rawValue
         switch(indexPath.row) {
         case 0:
-            //cell.bindData("berk2", text: "Research")
-            cell.bindData2(.Research)
+            cell.bindData(.Research)
         case 1:
-            cell.bindData("campanile2", text: "Position Papers")
+            cell.bindData(.Papers)
         case 2:
-            cell.bindData("goldengate2", text: "Speech Preparation")
+            cell.bindData(.SpeechPrep)
         case 3:
-            cell.bindData("sathergate2", text: "Packing")
+            cell.bindData(.Packing)
         case 4:
-            cell.bindData("campanilebay2", text: "Committee Fundamentals")
+            cell.bindData(.Fundamentals)
         case 5:
-            cell.bindData("mun2", text: "Committee Structure")
+            cell.bindData(.Structure)
         case 6:
-            cell.bindData("coit", text: "Speech Delivery")
+            cell.bindData(.SpeechDelivery)
         case 7:
-            cell.bindData("sf2", text: "Caucusing")
+            cell.bindData(.Caucusing)
         case 8:
-            cell.bindData("ladies", text: "Resolutions")
+            cell.bindData(.Resolutions)
         default:
-            cell.bindData("ladies", text: "Resolutions")
+            cell.bindData(.Resolutions)
         }
         return cell
     }
+
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         let fileName: String!
@@ -137,52 +143,11 @@ class DelegateGuideTableViewController: UITableViewController {
                 fileName = "Title"
             }
         let vc = WebViewController(file: fileName)
-        //let cell = tableView.cellForRowAtIndexPath(indexPath) as
         self.navigationController?.pushViewController(vc, animated: true)
     }
     
     override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
         return 152.0
     }
-    
-    /*func textToImage(text: NSString, image: UIImage, point: CGPoint) -> UIImage {
-        
-        UIGraphicsBeginImageContext(image.size)
-        let imgTextColor = UIColor.whiteColor()
-        let imgTextFont = UIFont(name: "Avenir", size: 50.0)
-        let style: NSMutableParagraphStyle = NSParagraphStyle.defaultParagraphStyle().mutableCopy() as! NSMutableParagraphStyle
-        style.alignment = NSTextAlignment.Center
-        
-        let textFontAttributes: [String:NSObject] = [
-            NSFontAttributeName: imgTextFont!,
-            NSForegroundColorAttributeName: imgTextColor,
-            NSParagraphStyleAttributeName: style,
-        ]
-        
-        image.drawInRect(CGRectMake(0, 0, image.size.width, image.size.width))
-        let rect = CGRectMake(point.x, point.y, image.size.width, image.size.height)
-        
-        text.drawInRect(rect, withAttributes: textFontAttributes)
-        let newImage = UIGraphicsGetImageFromCurrentImageContext()
-        return newImage
-    }*/
-    
-    /*func setImage(iv: UIImageView, fileName: String, text: NSString) {
-        iv.image = UIImage(named: fileName)
-        //iv.image = textToImage(text, image: iv.image!, point: CGPoint(x: 0, y: 75))
-        
-    }*/
-    
-    /*override func tableView(tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-            let img: UIImage = UIImage(named: "startinglonglogo")!
-            let imgView: UIImageView = UIImageView(image: img)
-            imgView.frame = CGRectMake(10, 10, 320, 100)
-            return imgView
-    }
-    
-    override func tableView(tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 100.0
-    }*/
-
 
 }

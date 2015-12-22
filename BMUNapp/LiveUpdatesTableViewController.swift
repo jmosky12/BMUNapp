@@ -16,11 +16,6 @@ class LiveUpdatesTableViewController: UIViewController, UITableViewDataSource {
     
     var tweets: [Tweet] = []
     var refreshControl: UIRefreshControl!
-    let textColor = UIColor.whiteColor()
-    let textFont = UIFont(name: "Avenir", size: 40.0)
-    
-    
-    // MARK: API
     
     init() {
         super.init(nibName: "LiveUpdatesTableViewController", bundle: nil)
@@ -54,6 +49,8 @@ class LiveUpdatesTableViewController: UIViewController, UITableViewDataSource {
         let nib: UINib = UINib(nibName: "LiveUpdatesTableViewCell", bundle: nil)
         self.tableView.registerNib(nib, forCellReuseIdentifier: "liveUpdates")
         
+        let textColor = UIColor.whiteColor()
+        let textFont = UIFont(name: "Avenir", size: 40.0)
         let titleTextAttributes: [String:NSObject] = [
             NSFontAttributeName: textFont!,
             NSForegroundColorAttributeName: textColor,
@@ -90,7 +87,6 @@ class LiveUpdatesTableViewController: UIViewController, UITableViewDataSource {
         cell.userName.text = tweet.username
         cell.avatar.image = UIImage(named: "twitterAvatar")
         
-        cell.selectionStyle = .None
         return cell
     }
     

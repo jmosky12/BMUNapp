@@ -21,7 +21,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         Parse.setApplicationId("INbyDC9BcrJRZiBzuPT2p2oquTMZq9tuTiAqRNOf", clientKey: "FoOfryHoH7L6L6VMH0qltbZuAzE37D4e2PZDgoc3")
         
         self.window = UIWindow.init(frame: UIScreen.mainScreen().bounds)
-        let icon = UIImage(named: "bmunIcon")?.imageWithRenderingMode(.AlwaysOriginal)
         
         let textFont = UIFont(name: "Avenir", size: 13.0)
         let titleTextAttributes: [String:NSObject] = [
@@ -35,6 +34,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         item1.titlePositionAdjustment = UIOffset(horizontal: 0.0, vertical: -12.0)
         delegateGuideNC.tabBarItem = item1
         delegateGuideNC.navigationBar.barTintColor = UIColor.blackColor()
+        delegateGuideNC.navigationBar.translucent = false
         delegateGuideNC.navigationBar.topItem?.title = "Delegate Guide"
 
         
@@ -45,6 +45,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         item2.titlePositionAdjustment = UIOffset(horizontal: 0.0, vertical: -12.0)
         committeesNC.tabBarItem = item2
         committeesNC.navigationBar.barTintColor = UIColor.blackColor()
+        committeesNC.navigationBar.translucent = false
         committeesNC.navigationBar.topItem?.title = "Committees"
         
         let liveUpdates = LiveUpdatesTableViewController()
@@ -54,6 +55,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         item3.titlePositionAdjustment = UIOffset(horizontal: 0.0, vertical: -12.0)
         liveUpdatesNC.tabBarItem = item3
         liveUpdatesNC.navigationBar.barTintColor = UIColor.blackColor()
+        liveUpdatesNC.navigationBar.translucent = false
         liveUpdatesNC.navigationBar.topItem?.title = "Live Updates"
 
         let questions = QuestionsViewController()
@@ -63,6 +65,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         item4.titlePositionAdjustment = UIOffset(horizontal: 0.0, vertical: -12.0)
         questionsNC.tabBarItem = item4
         questionsNC.navigationBar.barTintColor = UIColor.blackColor()
+        questionsNC.navigationBar.translucent = false
         questionsNC.navigationBar.topItem?.title = "Questions"
         
         let timeline = TimelineTableViewController()
@@ -72,6 +75,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         item5.titlePositionAdjustment = UIOffset(horizontal: 0.0, vertical: -12.0)
         timelineNC.tabBarItem = item5
         timelineNC.navigationBar.barTintColor = UIColor.blackColor()
+        timelineNC.navigationBar.translucent = false
         timelineNC.navigationBar.topItem?.title = "Timeline"
         
         let controllers = [delegateGuideNC, committeesNC, liveUpdatesNC, questionsNC, timelineNC]

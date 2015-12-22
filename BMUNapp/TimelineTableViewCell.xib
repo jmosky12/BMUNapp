@@ -1,75 +1,49 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1509" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TimelineTableViewCell" rowHeight="200" id="KGk-i7-Jjw" customClass="TimelineTableViewCell" customModule="BMUNapp" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TimelineTableViewCell" rowHeight="90" id="KGk-i7-Jjw" customClass="TimelineTableViewCell" customModule="BMUNapp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="90"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="320" height="199"/>
+                <rect key="frame" x="0.0" y="0.0" width="320" height="89"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Delegate Dance" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0c8-Z3-0Xf">
-                        <rect key="frame" x="8" y="8" width="304" height="50"/>
-                        <color key="backgroundColor" red="0.39311302889999999" green="0.62932045960000005" blue="0.77391098479999998" alpha="1" colorSpace="calibratedRGB"/>
-                        <constraints>
-                            <constraint firstAttribute="height" constant="50" id="Tm3-f4-pgO"/>
-                            <constraint firstAttribute="width" constant="304" id="bin-7t-Ro6"/>
-                        </constraints>
-                        <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="17"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Event" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7f9-4f-fbr">
+                        <rect key="frame" x="8" y="8" width="304" height="44"/>
+                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="25"/>
                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="8:00pm - 11:00pm" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SAO-Zi-B77">
-                        <rect key="frame" x="8" y="66" width="304" height="30"/>
-                        <constraints>
-                            <constraint firstAttribute="width" constant="304" id="YcL-Eq-34x"/>
-                            <constraint firstAttribute="height" constant="30" id="rZG-wj-saK"/>
-                        </constraints>
-                        <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="15"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Up5-Gb-Wht">
+                        <rect key="frame" x="8" y="60" width="304" height="21"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="At Berkeley High, no grinding" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="eg8-c3-wud">
-                        <rect key="frame" x="8" y="104" width="304" height="87"/>
-                        <color key="backgroundColor" red="0.095868879680000005" green="0.2879048387" blue="0.54906486730000004" alpha="1" colorSpace="calibratedRGB"/>
-                        <constraints>
-                            <constraint firstAttribute="height" constant="87" id="HNF-vk-OIE"/>
-                            <constraint firstAttribute="width" constant="304" id="Jzc-rV-qVs"/>
-                        </constraints>
-                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="15"/>
-                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                    </textView>
                 </subviews>
                 <color key="backgroundColor" red="0.095868879680000005" green="0.2879048387" blue="0.54906486730000004" alpha="1" colorSpace="calibratedRGB"/>
                 <constraints>
-                    <constraint firstItem="0c8-Z3-0Xf" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="82h-Bv-bQt"/>
-                    <constraint firstItem="SAO-Zi-B77" firstAttribute="top" secondItem="0c8-Z3-0Xf" secondAttribute="bottom" constant="8" symbolic="YES" id="Jbx-4z-Z7Y"/>
-                    <constraint firstItem="eg8-c3-wud" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="qoQ-mV-L2S"/>
-                    <constraint firstItem="SAO-Zi-B77" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="z3M-Uv-E3S"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="7f9-4f-fbr" secondAttribute="trailing" id="3Z4-dp-1JE"/>
+                    <constraint firstItem="Up5-Gb-Wht" firstAttribute="top" secondItem="7f9-4f-fbr" secondAttribute="bottom" constant="8" id="C2A-Bc-uT9"/>
+                    <constraint firstItem="Up5-Gb-Wht" firstAttribute="leading" secondItem="7f9-4f-fbr" secondAttribute="leading" id="Hht-To-Ra8"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="Up5-Gb-Wht" secondAttribute="bottom" id="UgI-g8-rOl"/>
+                    <constraint firstAttribute="topMargin" secondItem="7f9-4f-fbr" secondAttribute="top" id="fu0-Sk-QT2"/>
+                    <constraint firstItem="Up5-Gb-Wht" firstAttribute="trailing" secondItem="7f9-4f-fbr" secondAttribute="trailing" id="qn2-r4-5S2"/>
+                    <constraint firstAttribute="leadingMargin" secondItem="7f9-4f-fbr" secondAttribute="leading" id="wJK-hZ-JQo"/>
                 </constraints>
             </tableViewCellContentView>
-            <constraints>
-                <constraint firstAttribute="trailing" secondItem="eg8-c3-wud" secondAttribute="trailing" constant="8" id="20T-vb-OvH"/>
-                <constraint firstItem="0c8-Z3-0Xf" firstAttribute="top" secondItem="KGk-i7-Jjw" secondAttribute="top" constant="8" id="3dT-zE-EqV"/>
-                <constraint firstAttribute="trailing" secondItem="SAO-Zi-B77" secondAttribute="trailing" constant="8" id="6Ga-B3-nlY"/>
-                <constraint firstAttribute="bottom" secondItem="eg8-c3-wud" secondAttribute="bottom" constant="9" id="Icn-7R-Jon"/>
-                <constraint firstAttribute="trailing" secondItem="0c8-Z3-0Xf" secondAttribute="trailing" constant="8" id="RhG-Ls-6gQ"/>
-                <constraint firstItem="0c8-Z3-0Xf" firstAttribute="leading" secondItem="KGk-i7-Jjw" secondAttribute="leading" constant="8" id="lAD-Nd-QY6"/>
-                <constraint firstItem="eg8-c3-wud" firstAttribute="leading" secondItem="KGk-i7-Jjw" secondAttribute="leading" constant="8" id="rqL-1o-cLQ"/>
-                <constraint firstItem="SAO-Zi-B77" firstAttribute="leading" secondItem="KGk-i7-Jjw" secondAttribute="leading" constant="8" id="znN-hZ-n7y"/>
-            </constraints>
             <connections>
-                <outlet property="eventDetails" destination="eg8-c3-wud" id="5Rb-yc-XVR"/>
-                <outlet property="eventTime" destination="SAO-Zi-B77" id="KW6-Up-vEf"/>
-                <outlet property="eventTitle" destination="0c8-Z3-0Xf" id="uIv-g3-Wl4"/>
+                <outlet property="eventTime" destination="Up5-Gb-Wht" id="eHv-hw-UyD"/>
+                <outlet property="eventTitle" destination="7f9-4f-fbr" id="RSs-Xr-rT7"/>
             </connections>
-            <point key="canvasLocation" x="280" y="381"/>
+            <point key="canvasLocation" x="280" y="326"/>
         </tableViewCell>
     </objects>
 </document>

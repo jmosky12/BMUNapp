@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1509" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CommitteeDetailViewController" customModule="BMUNapp" customModuleProvider="target">
+            <connections>
+                <outlet property="headChairLabel" destination="780-Zj-b4T" id="8Wc-uK-vyz"/>
+                <outlet property="viceChairsLabel" destination="S2D-Q5-98W" id="Gxx-Ye-A9k"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Head Chair:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UHO-zS-wGx">
+                    <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="B90-QV-oex"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="23"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="B90-QV-oex"/>
+                        </mask>
+                    </variation>
+                    <variation key="widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="B90-QV-oex"/>
+                        </mask>
+                    </variation>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="780-Zj-b4T">
+                    <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="mAe-4g-NVt"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="18"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="mAe-4g-NVt"/>
+                        </mask>
+                    </variation>
+                    <variation key="widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="mAe-4g-NVt"/>
+                        </mask>
+                    </variation>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vice Chairs:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uqQ-Lr-p24">
+                    <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="HaG-5Z-1Ox"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="23"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="HaG-5Z-1Ox"/>
+                        </mask>
+                    </variation>
+                    <variation key="widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="HaG-5Z-1Ox"/>
+                        </mask>
+                    </variation>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="names" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S2D-Q5-98W">
+                    <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="4rE-W2-6g5"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="18"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="4rE-W2-6g5"/>
+                        </mask>
+                    </variation>
+                    <variation key="widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="4rE-W2-6g5"/>
+                        </mask>
+                    </variation>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Topic:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lt0-zX-oIg">
+                    <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="Sdv-ES-qEP"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="23"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="Sdv-ES-qEP"/>
+                        </mask>
+                    </variation>
+                    <variation key="widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="Sdv-ES-qEP"/>
+                        </mask>
+                    </variation>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.095868879680000005" green="0.2879048387" blue="0.54906486730000004" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="Lt0-zX-oIg" firstAttribute="trailing" secondItem="S2D-Q5-98W" secondAttribute="trailing" id="3lt-eH-0Ne"/>
+                <constraint firstItem="uqQ-Lr-p24" firstAttribute="leading" secondItem="780-Zj-b4T" secondAttribute="leading" id="Bsi-5x-jYa"/>
+                <constraint firstItem="Lt0-zX-oIg" firstAttribute="top" secondItem="S2D-Q5-98W" secondAttribute="bottom" constant="8" id="EEb-kZ-aG4"/>
+                <constraint firstItem="UHO-zS-wGx" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="8" id="Htj-9s-aaW"/>
+                <constraint firstItem="S2D-Q5-98W" firstAttribute="top" secondItem="uqQ-Lr-p24" secondAttribute="bottom" constant="8" id="HzU-P0-1xj"/>
+                <constraint firstItem="UHO-zS-wGx" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="NHE-MT-HMt"/>
+                <constraint firstItem="780-Zj-b4T" firstAttribute="leading" secondItem="UHO-zS-wGx" secondAttribute="leading" id="OHm-T1-ULC"/>
+                <constraint firstAttribute="trailing" secondItem="UHO-zS-wGx" secondAttribute="trailing" constant="8" id="TGd-An-gix"/>
+                <constraint firstItem="uqQ-Lr-p24" firstAttribute="top" secondItem="780-Zj-b4T" secondAttribute="bottom" constant="8" id="TuN-CH-1QG"/>
+                <constraint firstItem="S2D-Q5-98W" firstAttribute="trailing" secondItem="uqQ-Lr-p24" secondAttribute="trailing" id="VTi-h0-A7M"/>
+                <constraint firstItem="Lt0-zX-oIg" firstAttribute="leading" secondItem="S2D-Q5-98W" secondAttribute="leading" id="c1l-O7-ETy"/>
+                <constraint firstItem="780-Zj-b4T" firstAttribute="top" secondItem="UHO-zS-wGx" secondAttribute="bottom" constant="8" id="dyk-Is-o7s"/>
+                <constraint firstItem="S2D-Q5-98W" firstAttribute="leading" secondItem="uqQ-Lr-p24" secondAttribute="leading" id="lRH-6c-QBp"/>
+                <constraint firstItem="780-Zj-b4T" firstAttribute="trailing" secondItem="UHO-zS-wGx" secondAttribute="trailing" id="nbM-X8-rPH"/>
+                <constraint firstItem="uqQ-Lr-p24" firstAttribute="trailing" secondItem="780-Zj-b4T" secondAttribute="trailing" id="oOz-ZK-fvC"/>
+            </constraints>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="UHO-zS-wGx"/>
+                    <exclude reference="780-Zj-b4T"/>
+                    <exclude reference="uqQ-Lr-p24"/>
+                    <exclude reference="S2D-Q5-98W"/>
+                    <exclude reference="Lt0-zX-oIg"/>
+                </mask>
+                <mask key="constraints">
+                    <exclude reference="Htj-9s-aaW"/>
+                    <exclude reference="NHE-MT-HMt"/>
+                    <exclude reference="TGd-An-gix"/>
+                    <exclude reference="OHm-T1-ULC"/>
+                    <exclude reference="dyk-Is-o7s"/>
+                    <exclude reference="nbM-X8-rPH"/>
+                    <exclude reference="Bsi-5x-jYa"/>
+                    <exclude reference="TuN-CH-1QG"/>
+                    <exclude reference="oOz-ZK-fvC"/>
+                    <exclude reference="HzU-P0-1xj"/>
+                    <exclude reference="VTi-h0-A7M"/>
+                    <exclude reference="lRH-6c-QBp"/>
+                    <exclude reference="3lt-eH-0Ne"/>
+                    <exclude reference="EEb-kZ-aG4"/>
+                    <exclude reference="c1l-O7-ETy"/>
+                </mask>
+            </variation>
+            <variation key="widthClass=compact">
+                <mask key="subviews">
+                    <include reference="UHO-zS-wGx"/>
+                    <include reference="780-Zj-b4T"/>
+                    <include reference="uqQ-Lr-p24"/>
+                    <include reference="S2D-Q5-98W"/>
+                    <include reference="Lt0-zX-oIg"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="Htj-9s-aaW"/>
+                    <include reference="NHE-MT-HMt"/>
+                    <include reference="TGd-An-gix"/>
+                    <include reference="OHm-T1-ULC"/>
+                    <include reference="dyk-Is-o7s"/>
+                    <include reference="nbM-X8-rPH"/>
+                    <include reference="Bsi-5x-jYa"/>
+                    <include reference="TuN-CH-1QG"/>
+                    <include reference="oOz-ZK-fvC"/>
+                    <include reference="HzU-P0-1xj"/>
+                    <include reference="VTi-h0-A7M"/>
+                    <include reference="lRH-6c-QBp"/>
+                    <include reference="3lt-eH-0Ne"/>
+                    <include reference="EEb-kZ-aG4"/>
+                    <include reference="c1l-O7-ETy"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+</document>
