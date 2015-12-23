@@ -13,6 +13,8 @@
 		DF20B1B81BCAE34A007705BA /* DelegateGuideTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF20B1B71BCAE34A007705BA /* DelegateGuideTableViewController.swift */; };
 		DF20B1BB1BCAE380007705BA /* DelegateTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF20B1B91BCAE380007705BA /* DelegateTableViewCell.swift */; };
 		DF20B1BC1BCAE380007705BA /* DelegateTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF20B1BA1BCAE380007705BA /* DelegateTableViewCell.xib */; };
+		DF2702A41C14D8A200A4889D /* QuestionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2702A21C14D8A200A4889D /* QuestionsViewController.swift */; };
+		DF2702A51C14D8A200A4889D /* QuestionsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF2702A31C14D8A200A4889D /* QuestionsViewController.xib */; };
 		DF3160DF1BCB3C180058993A /* Caucus.pdf in Resources */ = {isa = PBXBuildFile; fileRef = DF3160D61BCB3C180058993A /* Caucus.pdf */; };
 		DF3160E01BCB3C180058993A /* CommitteeFundamentals.pdf in Resources */ = {isa = PBXBuildFile; fileRef = DF3160D71BCB3C180058993A /* CommitteeFundamentals.pdf */; };
 		DF3160E11BCB3C180058993A /* CommitteeStructure.pdf in Resources */ = {isa = PBXBuildFile; fileRef = DF3160D81BCB3C180058993A /* CommitteeStructure.pdf */; };
@@ -27,11 +29,11 @@
 		DF6071CA1BC8B62F007B35CC /* BMUNapp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DF6071C81BC8B62F007B35CC /* BMUNapp.xcdatamodeld */; };
 		DF6071CF1BC8B62F007B35CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF6071CD1BC8B62F007B35CC /* LaunchScreen.storyboard */; };
 		DF6071DB1BC8C871007B35CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF6071DA1BC8C871007B35CC /* Assets.xcassets */; };
+		DF64FDC31C2894480072C463 /* TextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF64FDC11C2894480072C463 /* TextViewController.swift */; };
+		DF64FDC41C2894480072C463 /* TextViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF64FDC21C2894480072C463 /* TextViewController.xib */; };
 		DF7A5EC11BCB99B900BDC91F /* TimelineTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7A5EBF1BCB99B900BDC91F /* TimelineTableViewCell.swift */; };
 		DF7A5EC21BCB99B900BDC91F /* TimelineTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF7A5EC01BCB99B900BDC91F /* TimelineTableViewCell.xib */; };
 		DF9A92E21BC8FDFE00BA3AE4 /* CommitteesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF9A92E11BC8FDFE00BA3AE4 /* CommitteesTableViewController.swift */; };
-		DFCC5D9A1BC99F5A00A09A1A /* CommitteeTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFCC5D991BC99F5A00A09A1A /* CommitteeTableCell.xib */; };
-		DFCC5D9C1BC99F9900A09A1A /* CommitteeTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFCC5D9B1BC99F9900A09A1A /* CommitteeTableCell.swift */; };
 		DFDC32661BE565D100729449 /* LiveUpdatesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFDC32641BE565D100729449 /* LiveUpdatesTableViewCell.swift */; };
 		DFDC32691BE56CA400729449 /* LiveUpdatesTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFDC32681BE56CA400729449 /* LiveUpdatesTableViewController.xib */; };
 		DFDF6EA61BE544CD009244FE /* TwitterManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFDF6EA51BE544CD009244FE /* TwitterManager.swift */; };
@@ -41,6 +43,10 @@
 		DFE372AB1BCB0DC500490A34 /* WebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFE372A91BCB0DC500490A34 /* WebViewController.xib */; };
 		DFF33C191BE9D1A500D7228D /* LiveUpdatesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFF33C171BE9D1A500D7228D /* LiveUpdatesTableViewCell.xib */; };
 		DFF33C1B1BE9DE6400D7228D /* twitterAvatar.png in Resources */ = {isa = PBXBuildFile; fileRef = DFF33C1A1BE9DE6400D7228D /* twitterAvatar.png */; };
+		DFF613771C180186003C810C /* CommitteeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF613751C180186003C810C /* CommitteeTableViewCell.swift */; };
+		DFF613781C180186003C810C /* CommitteeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFF613761C180186003C810C /* CommitteeTableViewCell.xib */; };
+		DFF6137B1C1801A2003C810C /* CommitteeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF613791C1801A2003C810C /* CommitteeDetailViewController.swift */; };
+		DFF6137C1C1801A2003C810C /* CommitteeDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFF6137A1C1801A2003C810C /* CommitteeDetailViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +58,9 @@
 		DF20B1B71BCAE34A007705BA /* DelegateGuideTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DelegateGuideTableViewController.swift; sourceTree = "<group>"; };
 		DF20B1B91BCAE380007705BA /* DelegateTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DelegateTableViewCell.swift; sourceTree = "<group>"; };
 		DF20B1BA1BCAE380007705BA /* DelegateTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DelegateTableViewCell.xib; sourceTree = "<group>"; };
+		DF2702981C14D50400A4889D /* BMUNapp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BMUNapp-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
+		DF2702A21C14D8A200A4889D /* QuestionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionsViewController.swift; sourceTree = "<group>"; };
+		DF2702A31C14D8A200A4889D /* QuestionsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QuestionsViewController.xib; sourceTree = "<group>"; };
 		DF3160D61BCB3C180058993A /* Caucus.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = Caucus.pdf; path = ../../../DelegateGuide/Caucus.pdf; sourceTree = "<group>"; };
 		DF3160D71BCB3C180058993A /* CommitteeFundamentals.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = CommitteeFundamentals.pdf; path = ../../../DelegateGuide/CommitteeFundamentals.pdf; sourceTree = "<group>"; };
 		DF3160D81BCB3C180058993A /* CommitteeStructure.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = CommitteeStructure.pdf; path = ../../../DelegateGuide/CommitteeStructure.pdf; sourceTree = "<group>"; };
@@ -68,11 +77,11 @@
 		DF6071CE1BC8B62F007B35CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DF6071D01BC8B62F007B35CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DF6071DA1BC8C871007B35CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DF64FDC11C2894480072C463 /* TextViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextViewController.swift; sourceTree = "<group>"; };
+		DF64FDC21C2894480072C463 /* TextViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TextViewController.xib; sourceTree = "<group>"; };
 		DF7A5EBF1BCB99B900BDC91F /* TimelineTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimelineTableViewCell.swift; sourceTree = "<group>"; };
 		DF7A5EC01BCB99B900BDC91F /* TimelineTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TimelineTableViewCell.xib; sourceTree = "<group>"; };
 		DF9A92E11BC8FDFE00BA3AE4 /* CommitteesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommitteesTableViewController.swift; sourceTree = "<group>"; };
-		DFCC5D991BC99F5A00A09A1A /* CommitteeTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommitteeTableCell.xib; sourceTree = "<group>"; };
-		DFCC5D9B1BC99F9900A09A1A /* CommitteeTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommitteeTableCell.swift; sourceTree = "<group>"; };
 		DFDC32641BE565D100729449 /* LiveUpdatesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveUpdatesTableViewCell.swift; sourceTree = "<group>"; };
 		DFDC32681BE56CA400729449 /* LiveUpdatesTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LiveUpdatesTableViewController.xib; sourceTree = "<group>"; };
 		DFDF6EA51BE544CD009244FE /* TwitterManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwitterManager.swift; sourceTree = "<group>"; };
@@ -82,6 +91,10 @@
 		DFE372A91BCB0DC500490A34 /* WebViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WebViewController.xib; sourceTree = "<group>"; };
 		DFF33C171BE9D1A500D7228D /* LiveUpdatesTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LiveUpdatesTableViewCell.xib; sourceTree = "<group>"; };
 		DFF33C1A1BE9DE6400D7228D /* twitterAvatar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = twitterAvatar.png; sourceTree = "<group>"; };
+		DFF613751C180186003C810C /* CommitteeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommitteeTableViewCell.swift; sourceTree = "<group>"; };
+		DFF613761C180186003C810C /* CommitteeTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommitteeTableViewCell.xib; sourceTree = "<group>"; };
+		DFF613791C1801A2003C810C /* CommitteeDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommitteeDetailViewController.swift; sourceTree = "<group>"; };
+		DFF6137A1C1801A2003C810C /* CommitteeDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommitteeDetailViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,8 +130,10 @@
 			isa = PBXGroup;
 			children = (
 				DF9A92E11BC8FDFE00BA3AE4 /* CommitteesTableViewController.swift */,
-				DFCC5D9B1BC99F9900A09A1A /* CommitteeTableCell.swift */,
-				DFCC5D991BC99F5A00A09A1A /* CommitteeTableCell.xib */,
+				DFF613751C180186003C810C /* CommitteeTableViewCell.swift */,
+				DFF613761C180186003C810C /* CommitteeTableViewCell.xib */,
+				DFF613791C1801A2003C810C /* CommitteeDetailViewController.swift */,
+				DFF6137A1C1801A2003C810C /* CommitteeDetailViewController.xib */,
 			);
 			name = Committees;
 			sourceTree = "<group>";
@@ -142,6 +157,17 @@
 				DFF33C171BE9D1A500D7228D /* LiveUpdatesTableViewCell.xib */,
 			);
 			name = LiveUpdates;
+			sourceTree = "<group>";
+		};
+		DF27029C1C14D86F00A4889D /* Questions */ = {
+			isa = PBXGroup;
+			children = (
+				DF2702A21C14D8A200A4889D /* QuestionsViewController.swift */,
+				DF2702A31C14D8A200A4889D /* QuestionsViewController.xib */,
+				DF64FDC11C2894480072C463 /* TextViewController.swift */,
+				DF64FDC21C2894480072C463 /* TextViewController.xib */,
+			);
+			name = Questions;
 			sourceTree = "<group>";
 		};
 		DF29E9931BDDA188006EAAC0 /* Files */ = {
@@ -191,10 +217,12 @@
 				DF20B1A81BC9B464007705BA /* Committees */,
 				DF20B1AA1BC9B48F007705BA /* LiveUpdates */,
 				DF20B1A91BC9B47E007705BA /* Timeline */,
+				DF27029C1C14D86F00A4889D /* Questions */,
 				DF6071CD1BC8B62F007B35CC /* LaunchScreen.storyboard */,
 				DF6071DA1BC8C871007B35CC /* Assets.xcassets */,
 				DF6071D01BC8B62F007B35CC /* Info.plist */,
 				DF6071C81BC8B62F007B35CC /* BMUNapp.xcdatamodeld */,
+				DF2702981C14D50400A4889D /* BMUNapp-Bridging-Header.h */,
 				DF29E9931BDDA188006EAAC0 /* Files */,
 			);
 			path = BMUNapp;
@@ -249,6 +277,7 @@
 		DF6071B61BC8B62F007B35CC /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0710;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Jake Moskowitz";
 				TargetAttributes = {
@@ -281,6 +310,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DFF613781C180186003C810C /* CommitteeTableViewCell.xib in Resources */,
 				DF6071CF1BC8B62F007B35CC /* LaunchScreen.storyboard in Resources */,
 				DF3160E51BCB3C180058993A /* Resolutions.pdf in Resources */,
 				DF3160E71BCB3C180058993A /* SpeechPreparation.pdf in Resources */,
@@ -291,12 +321,14 @@
 				DFF33C191BE9D1A500D7228D /* LiveUpdatesTableViewCell.xib in Resources */,
 				DF3160E61BCB3C180058993A /* SpeechDelivery.pdf in Resources */,
 				DF5C89731BDD9B600005AC62 /* map.pdf in Resources */,
+				DF2702A51C14D8A200A4889D /* QuestionsViewController.xib in Resources */,
 				DF20B1BC1BCAE380007705BA /* DelegateTableViewCell.xib in Resources */,
+				DF64FDC41C2894480072C463 /* TextViewController.xib in Resources */,
 				DFE372AB1BCB0DC500490A34 /* WebViewController.xib in Resources */,
 				DF3160DF1BCB3C180058993A /* Caucus.pdf in Resources */,
 				DFDC32691BE56CA400729449 /* LiveUpdatesTableViewController.xib in Resources */,
 				DF3160E31BCB3C180058993A /* PositionPaper.pdf in Resources */,
-				DFCC5D9A1BC99F5A00A09A1A /* CommitteeTableCell.xib in Resources */,
+				DFF6137C1C1801A2003C810C /* CommitteeDetailViewController.xib in Resources */,
 				DF7A5EC21BCB99B900BDC91F /* TimelineTableViewCell.xib in Resources */,
 				DFF33C1B1BE9DE6400D7228D /* twitterAvatar.png in Resources */,
 				DF3160E41BCB3C180058993A /* Research.pdf in Resources */,
@@ -359,9 +391,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				DF7A5EC11BCB99B900BDC91F /* TimelineTableViewCell.swift in Sources */,
+				DFF613771C180186003C810C /* CommitteeTableViewCell.swift in Sources */,
 				DF6071CA1BC8B62F007B35CC /* BMUNapp.xcdatamodeld in Sources */,
 				DFDC32661BE565D100729449 /* LiveUpdatesTableViewCell.swift in Sources */,
-				DFCC5D9C1BC99F9900A09A1A /* CommitteeTableCell.swift in Sources */,
+				DFF6137B1C1801A2003C810C /* CommitteeDetailViewController.swift in Sources */,
 				DF20B1B81BCAE34A007705BA /* DelegateGuideTableViewController.swift in Sources */,
 				DFDF6EA81BE5530C009244FE /* Tweet.swift in Sources */,
 				DF20B1BB1BCAE380007705BA /* DelegateTableViewCell.swift in Sources */,
@@ -369,7 +402,9 @@
 				DF6071C21BC8B62F007B35CC /* AppDelegate.swift in Sources */,
 				DF20B1B21BC9B513007705BA /* TimelineTableViewController.swift in Sources */,
 				DFE372AA1BCB0DC500490A34 /* WebViewController.swift in Sources */,
+				DF2702A41C14D8A200A4889D /* QuestionsViewController.swift in Sources */,
 				DFDF6EA61BE544CD009244FE /* TwitterManager.swift in Sources */,
+				DF64FDC31C2894480072C463 /* TextViewController.swift in Sources */,
 				DF9A92E21BC8FDFE00BA3AE4 /* CommitteesTableViewController.swift in Sources */,
 				DF0DB57A1BCC66C400F7E96F /* LiveUpdatesTableViewController.swift in Sources */,
 			);
@@ -475,11 +510,14 @@
 			baseConfigurationReference = 8FB3152DB09847D73955AEE0 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = BMUNapp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jmoskowitz.BMUNapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "BMUNapp-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -488,11 +526,13 @@
 			baseConfigurationReference = 8D2846E32CA8DE795A46F3C5 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = BMUNapp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jmoskowitz.BMUNapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "BMUNapp-Bridging-Header.h";
 			};
 			name = Release;
 		};

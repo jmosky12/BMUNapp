@@ -5,3 +5,5 @@ use_frameworks!
 source 'https://github.com/CocoaPods/Specs.git'
 
 pod 'STTwitter'
+pod 'DateTools'
+pod 'Parse'

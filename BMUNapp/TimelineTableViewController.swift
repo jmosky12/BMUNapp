@@ -40,6 +40,15 @@ class TimelineTableViewController: UITableViewController {
         ]
         self.navigationController!.navigationBar.titleTextAttributes = titleTextAttributes
     }
+    
+    override func shouldAutorotate() -> Bool {
+        return false
+    }
+    
+    override func supportedInterfaceOrientations() -> UIInterfaceOrientationMask {
+        return [UIInterfaceOrientationMask.Portrait]
+    }
+
 
     // MARK: - Table view data source
     

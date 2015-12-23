@@ -58,6 +58,15 @@ class LiveUpdatesTableViewController: UIViewController, UITableViewDataSource {
         self.navigationController!.navigationBar.titleTextAttributes = titleTextAttributes
     }
     
+    override func shouldAutorotate() -> Bool {
+        return false
+    }
+    
+    override func supportedInterfaceOrientations() -> UIInterfaceOrientationMask {
+        return [UIInterfaceOrientationMask.Portrait]
+    }
+
+    
     func getTweets(sender: AnyObject!) {
         if sender != nil {
             refreshControl.beginRefreshing()

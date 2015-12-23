@@ -47,5 +47,13 @@ class WebViewController: UIViewController {
             self.navigationController!.navigationBar.tintColor = UIColor.whiteColor()
         }
     }
+    
+    override func shouldAutorotate() -> Bool {
+        return false
+    }
+    
+    override func supportedInterfaceOrientations() -> UIInterfaceOrientationMask {
+        return [UIInterfaceOrientationMask.Portrait]
+    }
 
 }

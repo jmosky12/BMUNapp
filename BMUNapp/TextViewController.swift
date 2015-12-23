@@ -37,6 +37,15 @@ class TextViewController: UIViewController {
         delegate?.textViewFill(textView.text)
     }
     
+    override func shouldAutorotate() -> Bool {
+        return false
+    }
+    
+    override func supportedInterfaceOrientations() -> UIInterfaceOrientationMask {
+        return [UIInterfaceOrientationMask.Portrait]
+    }
+
+    
     func textTap() {
         if keyboard == true {
             textView.resignFirstResponder()
