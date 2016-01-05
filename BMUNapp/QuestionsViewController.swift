@@ -16,6 +16,7 @@ protocol QuestionsViewControllerDelegate {
 
 class QuestionsViewController: UIViewController, UITextFieldDelegate, UITextViewDelegate, QuestionsViewControllerDelegate {
     
+    @IBOutlet weak var detailHeightConstraint: NSLayoutConstraint!
     @IBOutlet weak var topicTextField: UITextField!
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var detailTextView: UITextView!
@@ -32,7 +33,7 @@ class QuestionsViewController: UIViewController, UITextFieldDelegate, UITextView
         super.viewDidLoad()
         
         let textColor = UIColor.whiteColor()
-        let textFont = UIFont(name: "Avenir", size: 40.0)
+        let textFont = UIFont(name: "Avenir", size: 35.0)
         let titleTextAttributes: [String:NSObject] = [
             NSFontAttributeName: textFont!,
             NSForegroundColorAttributeName: textColor,
@@ -52,6 +53,33 @@ class QuestionsViewController: UIViewController, UITextFieldDelegate, UITextView
         
         let textViewTapped = UITapGestureRecognizer(target: self, action: "textTapped")
         detailTextView.addGestureRecognizer(textViewTapped)
+        
+    }
+    
+    override func viewDidLayoutSubviews() {
+        var sysInfo = utsname()
+        uname(&sysInfo)
+        let machine = Mirror(reflecting: sysInfo.machine)
+        let identifier = machine.children.reduce("") { identifier, element in
+            guard let value = element.value as? Int8 where value != 0 else { return identifier }
+            return identifier + String(UnicodeScalar(UInt8(value)))
+        }
+        let shouldModify = platformType(identifier)
+        
+        if shouldModify {
+            self.detailHeightConstraint.constant = 50
+        }
+    }
+    
+    func platformType(platform : NSString) -> Bool {
+        if platform.hasPrefix("iPhone4") {
+            return true
+        } else if platform.hasPrefix("iPad") {
+            return true
+        } else if UIScreen.mainScreen().bounds.height <= 480.0 {
+            return true
+        }
+        return false
     }
     
     override func shouldAutorotate() -> Bool {

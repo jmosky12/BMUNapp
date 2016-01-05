@@ -50,7 +50,7 @@ class LiveUpdatesTableViewController: UIViewController, UITableViewDataSource {
         self.tableView.registerNib(nib, forCellReuseIdentifier: "liveUpdates")
         
         let textColor = UIColor.whiteColor()
-        let textFont = UIFont(name: "Avenir", size: 40.0)
+        let textFont = UIFont(name: "Avenir", size: 35.0)
         let titleTextAttributes: [String:NSObject] = [
             NSFontAttributeName: textFont!,
             NSForegroundColorAttributeName: textColor,

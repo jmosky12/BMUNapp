@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1509" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="QuestionsViewController" customModule="BMUNapp" customModuleProvider="target">
             <connections>
+                <outlet property="detailHeightConstraint" destination="gO1-AR-zIl" id="hOI-s8-hYy"/>
                 <outlet property="detailTextView" destination="xS0-Wc-yvR" id="CJr-fy-6Gu"/>
                 <outlet property="emailTextField" destination="TKa-KZ-Tkh" id="OTn-bW-dNh"/>
                 <outlet property="topicTextField" destination="q5V-ms-THz" id="MT4-X7-B4y"/>
@@ -133,7 +134,7 @@
                     <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
-                        <constraint firstAttribute="height" priority="750" constant="150" id="gO1-AR-zIl">
+                        <constraint firstAttribute="height" constant="150" id="gO1-AR-zIl">
                             <variation key="widthClass=compact" constant="130"/>
                         </constraint>
                     </constraints>
@@ -197,28 +198,28 @@
                     <exclude reference="xS0-Wc-yvR"/>
                 </mask>
                 <mask key="constraints">
-                    <exclude reference="3kb-iP-CHR"/>
-                    <exclude reference="aMC-5U-Ck1"/>
-                    <exclude reference="ia6-0g-jI9"/>
-                    <exclude reference="GXw-jA-KBn"/>
-                    <exclude reference="PhN-iC-DjZ"/>
-                    <exclude reference="QUf-fi-zN3"/>
-                    <exclude reference="0Vh-Cg-zbh"/>
-                    <exclude reference="2VY-Qn-dW7"/>
-                    <exclude reference="byz-Dc-xk2"/>
-                    <exclude reference="mbH-zJ-rCZ"/>
-                    <exclude reference="nQg-hl-9ch"/>
-                    <exclude reference="Vne-Xf-RtL"/>
-                    <exclude reference="cLa-3F-AnL"/>
-                    <exclude reference="jlM-GB-Tca"/>
                     <exclude reference="OEr-ps-fzZ"/>
                     <exclude reference="Odq-jf-08j"/>
                     <exclude reference="Qnq-xY-sM0"/>
                     <exclude reference="ZHc-bb-4SM"/>
                     <exclude reference="aJE-f3-LuQ"/>
+                    <exclude reference="0Vh-Cg-zbh"/>
+                    <exclude reference="2VY-Qn-dW7"/>
+                    <exclude reference="byz-Dc-xk2"/>
+                    <exclude reference="mbH-zJ-rCZ"/>
+                    <exclude reference="nQg-hl-9ch"/>
+                    <exclude reference="3kb-iP-CHR"/>
+                    <exclude reference="aMC-5U-Ck1"/>
+                    <exclude reference="ia6-0g-jI9"/>
                     <exclude reference="2cl-ah-Spq"/>
                     <exclude reference="7xl-Ak-DNV"/>
                     <exclude reference="b92-zP-dVB"/>
+                    <exclude reference="Vne-Xf-RtL"/>
+                    <exclude reference="cLa-3F-AnL"/>
+                    <exclude reference="jlM-GB-Tca"/>
+                    <exclude reference="GXw-jA-KBn"/>
+                    <exclude reference="PhN-iC-DjZ"/>
+                    <exclude reference="QUf-fi-zN3"/>
                     <exclude reference="DVb-wG-YIh"/>
                     <exclude reference="Fty-jb-bLQ"/>
                     <exclude reference="KlU-rN-So6"/>
@@ -236,28 +237,28 @@
                     <include reference="xS0-Wc-yvR"/>
                 </mask>
                 <mask key="constraints">
-                    <include reference="3kb-iP-CHR"/>
-                    <include reference="aMC-5U-Ck1"/>
-                    <include reference="ia6-0g-jI9"/>
-                    <include reference="GXw-jA-KBn"/>
-                    <include reference="PhN-iC-DjZ"/>
-                    <include reference="QUf-fi-zN3"/>
-                    <include reference="0Vh-Cg-zbh"/>
-                    <include reference="2VY-Qn-dW7"/>
-                    <include reference="byz-Dc-xk2"/>
-                    <include reference="mbH-zJ-rCZ"/>
-                    <include reference="nQg-hl-9ch"/>
-                    <include reference="Vne-Xf-RtL"/>
-                    <include reference="cLa-3F-AnL"/>
-                    <include reference="jlM-GB-Tca"/>
                     <include reference="OEr-ps-fzZ"/>
                     <include reference="Odq-jf-08j"/>
                     <include reference="Qnq-xY-sM0"/>
                     <include reference="ZHc-bb-4SM"/>
                     <include reference="aJE-f3-LuQ"/>
+                    <include reference="0Vh-Cg-zbh"/>
+                    <include reference="2VY-Qn-dW7"/>
+                    <include reference="byz-Dc-xk2"/>
+                    <include reference="mbH-zJ-rCZ"/>
+                    <include reference="nQg-hl-9ch"/>
+                    <include reference="3kb-iP-CHR"/>
+                    <include reference="aMC-5U-Ck1"/>
+                    <include reference="ia6-0g-jI9"/>
                     <include reference="2cl-ah-Spq"/>
                     <include reference="7xl-Ak-DNV"/>
                     <include reference="b92-zP-dVB"/>
+                    <include reference="Vne-Xf-RtL"/>
+                    <include reference="cLa-3F-AnL"/>
+                    <include reference="jlM-GB-Tca"/>
+                    <include reference="GXw-jA-KBn"/>
+                    <include reference="PhN-iC-DjZ"/>
+                    <include reference="QUf-fi-zN3"/>
                     <include reference="DVb-wG-YIh"/>
                     <include reference="Fty-jb-bLQ"/>
                     <include reference="KlU-rN-So6"/>

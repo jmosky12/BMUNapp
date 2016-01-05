@@ -33,7 +33,7 @@ class TimelineTableViewController: UITableViewController {
         tableView.rowHeight = UITableViewAutomaticDimension
         
         let textColor = UIColor.whiteColor()
-        let textFont = UIFont(name: "Avenir", size: 40.0)
+        let textFont = UIFont(name: "Avenir", size: 35.0)
         let titleTextAttributes: [String:NSObject] = [
             NSFontAttributeName: textFont!,
             NSForegroundColorAttributeName: textColor,

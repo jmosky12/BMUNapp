@@ -1,5 +1,5 @@
 PODS:
-  - Bolts/Tasks (1.5.0)
+  - Bolts/Tasks (1.5.1)
   - DateTools (1.7.0)
   - Parse (1.11.0):
     - Bolts/Tasks (~> 1.5)
@@ -11,7 +11,7 @@ DEPENDENCIES:
   - STTwitter
 
 SPEC CHECKSUMS:
-  Bolts: 722ab9a4f8b50fc4ed1b9998a5a7a2b3f16d80b4
+  Bolts: a12663244b1d3351c738882e71902fc74db54f64
   DateTools: 53288ee8b905fdc75897a1e6b5cc0144b14cba60
   Parse: 886af46a0a677402f6374bb97ac212e795f70afe
   STTwitter: eb85d8770ddb0f8989f341cf41ea875e90ac6e7f
