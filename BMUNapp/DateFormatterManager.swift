@@ -8,6 +8,8 @@
 
 import Foundation
 
+// Makes the "time ago" detail of each tweet formatted correctly
+
 class DateFormatterManager: NSObject {
     
     static let sharedInstance = DateFormatterManager()

@@ -29,14 +29,17 @@ class TextViewController: UIViewController {
         textView.becomeFirstResponder()
         textView.text = delegate?.sendOverText()
         
+        // Adds a gesture recognizer that will either bring up or release the keyboard
         let textViewTapped = UITapGestureRecognizer(target: self, action: "textTap")
         textView.addGestureRecognizer(textViewTapped)
     }
     
+    // Uses the delegate methods in QuestionsViewController to take text in the text view and populate the QuestionViewController.swift detailTextView once this view controller closes
     override func viewWillDisappear(animated: Bool) {
         delegate?.textViewFill(textView.text)
     }
     
+    // These two functions below prevent landscape mode
     override func shouldAutorotate() -> Bool {
         return false
     }
@@ -45,7 +48,7 @@ class TextViewController: UIViewController {
         return [UIInterfaceOrientationMask.Portrait]
     }
 
-    
+    // Detects whether or not to bring up or release the keyboard
     func textTap() {
         if keyboard == true {
             textView.resignFirstResponder()

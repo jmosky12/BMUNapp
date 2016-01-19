@@ -8,13 +8,6 @@
 
 import UIKit
 
-/*TO DO:
- -fix CommitteeDetailViewController
- -make icon for app
- -prep for app store
- -change questions email
-*/
-
 class DelegateGuideTableViewController: UITableViewController {
     
     init() {
@@ -33,10 +26,12 @@ class DelegateGuideTableViewController: UITableViewController {
         let nib: UINib = UINib(nibName: "DelegateTableViewCell", bundle: nil)
         self.tableView.registerNib(nib, forCellReuseIdentifier: "DelegateTableViewCell")
         
+        // Ensures table cell separators are set up correctly
         tableView.separatorInset = UIEdgeInsetsZero
         tableView.preservesSuperviewLayoutMargins = false
         tableView.layoutMargins = UIEdgeInsetsZero
         
+        // Sets characteristics for top bar text
         let textColor = UIColor.whiteColor()
         let textFont = UIFont(name: "Avenir", size: 35.0)
         let titleTextAttributes: [String:NSObject] = [
@@ -48,6 +43,7 @@ class DelegateGuideTableViewController: UITableViewController {
         
     }
     
+    // These two functions below prevent landscape mode
     override func shouldAutorotate() -> Bool {
         return false
     }
@@ -63,6 +59,7 @@ class DelegateGuideTableViewController: UITableViewController {
         return 9
     }
     
+    // Makes it easier to differentiate & access properties of each delegate guide section & its info
     enum DelegateCellType: String {
         case Research = "Research"
         case Papers = "Position Papers"
@@ -99,6 +96,7 @@ class DelegateGuideTableViewController: UITableViewController {
     
     }
 
+    // Sets the properties of the cell at each index using the bindData method from DelegateTableViewCell.swift and the enum above
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("DelegateTableViewCell", forIndexPath: indexPath) as! DelegateTableViewCell
         switch(indexPath.row) {
@@ -126,7 +124,7 @@ class DelegateGuideTableViewController: UITableViewController {
         return cell
     }
 
-    
+    // Prepares to load the PDF using the WebViewController.swift for the specific cell
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         let fileName: String!
             switch(indexPath.row) {

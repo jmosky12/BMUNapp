@@ -14,6 +14,7 @@ class TwitterManager: NSObject {
     static let sharedInstance = TwitterManager()
     private let twitter: STTwitterAPI
     
+    // Sets up our twitter access
     override init() {
         let consumerKey = "BfBhtc3rO3lJHdo5ES7YhJVWe"
         let consumerSecret = "FEqiPVMcQDT9DIk5oSkho0MnBKPyStydN8nPX3Jbz5ZwfHR0v2"
@@ -22,6 +23,7 @@ class TwitterManager: NSObject {
         
     }
     
+    // Authenticates our access to bmun's twitter
     func authenticate(cb: () -> ()) {
         twitter.verifyCredentialsWithUserSuccessBlock({ (token: String!, userID: String!) -> Void in
             cb()
@@ -30,7 +32,7 @@ class TwitterManager: NSObject {
         }
     }
     
-    //eventually add parameter to tell how many tweets to grab
+    // After authenticating using the wrapAuthenticate method, this accesses the berkeleyMUN twitter and returns a dictionary that contains all of our tweets and the details of each
     func getTweets(success: ([Tweet]) -> (), error: (NSError) -> ()) {
         wrapAuthenticate { [weak self] () -> () in
             self?.twitter.getUserTimelineWithScreenName("berkeleyMUN", successBlock: { (response: [AnyObject]!) -> Void in

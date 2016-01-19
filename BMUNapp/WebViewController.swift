@@ -8,6 +8,8 @@
 
 import UIKit
 
+//Supports loading Delegate Guide PDF's and the potential to load webpages in the app
+
 class WebViewController: UIViewController {
     
     @IBOutlet var webView: UIWebView!
@@ -37,6 +39,7 @@ class WebViewController: UIViewController {
         let textColor = UIColor.whiteColor()
         let textFont = UIFont(name: "Avenir", size: 40.0)
         
+        // Sets characteristics for top bar text
         if fileName == "map" {
             let titleTextAttributes: [String:NSObject] = [
                 NSFontAttributeName: textFont!,
@@ -48,6 +51,7 @@ class WebViewController: UIViewController {
         }
     }
     
+    // These two functions below prevent landscape mode
     override func shouldAutorotate() -> Bool {
         return false
     }

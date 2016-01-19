@@ -25,6 +25,7 @@ class TimelineTableViewController: UITableViewController {
         let nib: UINib = UINib(nibName: "TimelineTableViewCell", bundle: nil)
         self.tableView.registerNib(nib, forCellReuseIdentifier: "TimelineTableViewCell")
         
+        // Ensures table cell separators are set up correctly
         tableView.separatorInset = UIEdgeInsetsZero
         tableView.preservesSuperviewLayoutMargins = false
         tableView.layoutMargins = UIEdgeInsetsZero
@@ -32,6 +33,7 @@ class TimelineTableViewController: UITableViewController {
         tableView.estimatedRowHeight = 100
         tableView.rowHeight = UITableViewAutomaticDimension
         
+        // Sets characteristics for top bar text
         let textColor = UIColor.whiteColor()
         let textFont = UIFont(name: "Avenir", size: 35.0)
         let titleTextAttributes: [String:NSObject] = [
@@ -41,6 +43,7 @@ class TimelineTableViewController: UITableViewController {
         self.navigationController!.navigationBar.titleTextAttributes = titleTextAttributes
     }
     
+    // These two functions below prevent landscape mode
     override func shouldAutorotate() -> Bool {
         return false
     }
@@ -55,7 +58,7 @@ class TimelineTableViewController: UITableViewController {
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return 3
     }
-
+    
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         switch(section) {
         case 0:
@@ -69,6 +72,7 @@ class TimelineTableViewController: UITableViewController {
         }
     }
 
+    // Sets corresponding info for each cell that represents a specific event of that day
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("TimelineTableViewCell", forIndexPath: indexPath) as! TimelineTableViewCell
         let event = cell.eventTitle
@@ -139,6 +143,7 @@ class TimelineTableViewController: UITableViewController {
         return title
     }
     
+    // Designs header of each section that has that day's date
     override func tableView(tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let headerView: UIView = UIView()
         headerView.frame = CGRectMake(0, 0, 320, 30)

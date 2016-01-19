@@ -32,6 +32,7 @@ class QuestionsViewController: UIViewController, UITextFieldDelegate, UITextView
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // Sets characteristics for top bar text
         let textColor = UIColor.whiteColor()
         let textFont = UIFont(name: "Avenir", size: 35.0)
         let titleTextAttributes: [String:NSObject] = [
@@ -51,11 +52,13 @@ class QuestionsViewController: UIViewController, UITextFieldDelegate, UITextView
         topicTextField.delegate = self
         emailTextField.delegate = self
         
+        // Adds gesture recognizer that will open TextViewController.swift when the text view is tapped
         let textViewTapped = UITapGestureRecognizer(target: self, action: "textTapped")
         detailTextView.addGestureRecognizer(textViewTapped)
         
     }
     
+    // Resizes the text view's height if the screen height is less than 480p
     override func viewDidLayoutSubviews() {
         var sysInfo = utsname()
         uname(&sysInfo)
@@ -71,6 +74,7 @@ class QuestionsViewController: UIViewController, UITextFieldDelegate, UITextView
         }
     }
     
+    // Checks if the type of device being used is one with a screen height less than 480p
     func platformType(platform : NSString) -> Bool {
         if platform.hasPrefix("iPhone4") {
             return true
@@ -82,6 +86,7 @@ class QuestionsViewController: UIViewController, UITextFieldDelegate, UITextView
         return false
     }
     
+    // These two functions below prevent landscape mode
     override func shouldAutorotate() -> Bool {
         return false
     }
@@ -90,7 +95,7 @@ class QuestionsViewController: UIViewController, UITextFieldDelegate, UITextView
         return [UIInterfaceOrientationMask.Portrait]
     }
 
-    
+    // Makes sure email entered in emailTextField follows standard email convention
     func isValidEmail(email: String) -> Bool {
         let emailRegEx = "^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$"
         
@@ -98,17 +103,20 @@ class QuestionsViewController: UIViewController, UITextFieldDelegate, UITextView
         return emailTest.evaluateWithObject(email)
     }
     
+    // Releases keyboard if return is pressed while typing in a text field
     func textFieldShouldReturn(textField: UITextField) -> Bool {
         textField.resignFirstResponder()
         return true
     }
     
+    // Linked to the gesture recognizer for the text view; opens up TextViewController.swift
     func textTapped() {
         let vc = TextViewController()
         vc.delegate = self
         self.navigationController?.pushViewController(vc, animated: true)
     }
-
+    
+    // Calls the BmunCloudCode main.js file that formats the info in the text view and text fields into an email and uses Parse & Mailgun to send it to feeback@bmun.org
     func didPressSend() {
         if topicTextField.text != "" && emailTextField.text != "" && detailTextView.text != "" {
             

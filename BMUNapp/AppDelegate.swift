@@ -27,6 +27,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             NSFontAttributeName: textFont!
         ]
         
+        // Sets tab bar's view controllers and their properties on the tab bar
         let delegateGuide = DelegateGuideTableViewController()
         let delegateGuideNC = UINavigationController(rootViewController: delegateGuide)
         let item1 = UITabBarItem(title: "Guide", image: nil, tag: 1)
@@ -36,7 +37,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         delegateGuideNC.navigationBar.barTintColor = UIColor.blackColor()
         delegateGuideNC.navigationBar.translucent = false
         delegateGuideNC.navigationBar.topItem?.title = "Delegate Guide"
-
         
         let committees = CommitteesTableViewController()
         let committeesNC = UINavigationController(rootViewController: committees)
@@ -86,6 +86,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.rootViewController = tabBarController
         self.window?.makeKeyAndVisible()
         
+        // Sets characteristics for the tab bar at the bottom
         UITabBar.appearance().tintColor = UIColor.whiteColor()
         UITabBar.appearance().barTintColor = UIColor.blackColor()
         UITabBar.appearance().tintColor = UIColor.blueColor()

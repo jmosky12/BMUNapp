@@ -15,9 +15,11 @@ class CommitteeTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         
+        // Ensures table cell separators are set up correctly
         self.separatorInset = UIEdgeInsetsZero
         self.preservesSuperviewLayoutMargins = false
         self.layoutMargins = UIEdgeInsetsZero
+        
         self.selectionStyle = .None
     }
     

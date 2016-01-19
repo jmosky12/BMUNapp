@@ -18,6 +18,7 @@ class CommitteeDetailViewController: UIViewController {
     
     let topics = ["Extremist Groups in sub-Saharan Africa, Disarmament of the Arctic Circle", "Workers Rights, Evaluating the Impacts of Sex Tourism", "International Law in Post-Confict regions, Cultural law in a time of western law", "Climate Change-Induced Agricultural Disasters, Prevention and Mitigation of Food-borne Diseases", "Most Effective Use of Aid: Malaria vs. HIV, Drug Addiction: Crime or Health Issue?", "Gender Equity in Education, Electoral Violence in Africa", "Democratization and Ensuring Participation in Fair Elections, Preserving Sovereignty in Times of Disaster Relief", "Cash Transfers as a Form of Aid, Structural Adjustment Programs", "The Syrian Civil War, Open Agenda", "Russia v. Ukraine", "Unrest in the West: Tibet & Xianjiang (Chinese), Foreign Investment in Latin America (English)", "Reducing the Incidence of the Unbanked, Developing Frameworks to Address Infrastructure Gap in Asia", "Situation in Yemen, Protection of Cultural Property in Armed Conflict", "Economic Impacts of Cyber Warfare, Treatment of Immigrants in the European Union", "Open Agenda", "Economic Development Policy: Alternatives to Neoliberalism? (English), Preparing for Environmental Change:  Disaster Risk Management Strategies (Español)", "Cold War Berlin", "Heir to England: Preservation of the House of Tudor", "Entrepreneurship"]
     
+    // Intitializes with the tag specified in CommitteeTableViewController.swift's didSelectRowAtIndexPath methof
     init(tag: String) {
         self.tag = tag
         super.init(nibName: "CommitteeDetailViewController", bundle: nil)
@@ -33,7 +34,8 @@ class CommitteeDetailViewController: UIViewController {
         navigationController?.navigationBar.tintColor = UIColor.whiteColor()
         
         var topicsText: NSString
-            
+        
+        // Sets the labels' info based on the tag from the init call
         switch(tag) {
         case "00":
             topicsText = topics[0]
@@ -46,7 +48,7 @@ class CommitteeDetailViewController: UIViewController {
         case "02":
             topicsText = topics[2]
             headChairLabel.text = "Kimberly Nguyen"
-            viceChairsLabel.text = "Itago Kangashi, Chelsea Evans, Trent Gomberg"
+            viceChairsLabel.text = "Itago Kangashi, Jessica Zhao, Chelsea Evans, Trent Gomberg"
         case "10":
             topicsText = topics[3]
             headChairLabel.text = "Manu Vaish"
@@ -120,6 +122,7 @@ class CommitteeDetailViewController: UIViewController {
         let attributes: [String: AnyObject] = [NSFontAttributeName: UIFont(name: "Thonburi", size: 18)!]
         let rect: CGRect = topicsText.boundingRectWithSize(CGSizeMake(UIScreen.mainScreen().bounds.width - 16, CGFloat.max), options: .UsesLineFragmentOrigin, attributes: attributes, context: nil)
         
+        // Since the topics label has varying height that can't easily be constrained in auto layout, this creates and sets the labels' properties based on the topic text
         let topicsLabel = UILabel(frame: CGRectMake(8, 213, UIScreen.mainScreen().bounds.width - 16, rect.height))
         topicsLabel.numberOfLines = 0
         topicsLabel.lineBreakMode = NSLineBreakMode.ByWordWrapping
@@ -131,6 +134,7 @@ class CommitteeDetailViewController: UIViewController {
       
     }
     
+    // These two functions below prevent landscape mode
     override func shouldAutorotate() -> Bool {
         return false
     }

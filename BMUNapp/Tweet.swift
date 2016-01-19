@@ -16,6 +16,7 @@ class Tweet: NSObject {
     let profileImageURL: NSURL?
     let screenName: String!
     
+    // Using the dictionary of tweets and their details from TwitterManager.swift, this selects the important characteristics and assigns them to the constants above
     init?(dict: NSDictionary) {
         if let user = dict["user"] as? NSDictionary, txt = dict["text"] as? String, crt = dict["created_at"] as? String {
             text = txt

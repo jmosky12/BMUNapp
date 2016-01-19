@@ -28,6 +28,7 @@ class CommitteesTableViewController: UITableViewController {
         tableView.estimatedRowHeight = 127
         tableView.rowHeight = UITableViewAutomaticDimension
         
+        // Sets characteristics for top bar text
         let textColor = UIColor.whiteColor()
         let textFont = UIFont(name: "Avenir", size: 35.0)
         let titleTextAttributes: [String:NSObject] = [
@@ -37,6 +38,7 @@ class CommitteesTableViewController: UITableViewController {
         self.navigationController!.navigationBar.titleTextAttributes = titleTextAttributes
     }
     
+    // These two functions below prevent landscape mode
     override func shouldAutorotate() -> Bool {
         return false
     }
@@ -52,6 +54,7 @@ class CommitteesTableViewController: UITableViewController {
         return 4
     }
     
+    // Gives section titles to the different groupings of committees
     override func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         let title: String!
         switch(section) {
@@ -69,6 +72,7 @@ class CommitteesTableViewController: UITableViewController {
         return title
     }
 
+    // Specifies the number of committee cells needed under each section specified above
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         let num: Int!
         switch(section) {
@@ -86,6 +90,7 @@ class CommitteesTableViewController: UITableViewController {
         return num
     }
 
+    // Sets each cell up with its committee title
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("committeeCell", forIndexPath: indexPath) as! CommitteeTableViewCell
         let committee = cell.committeeLabel
@@ -154,12 +159,14 @@ class CommitteesTableViewController: UITableViewController {
         return cell
     }
     
+    // Detects when a cell has been selected, prepares it with a unique tag that details which committee was selected, and opens a CommitteeDetailViewController with that tag
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         let tag = "\(indexPath.section)\(indexPath.row)"
         let vc = CommitteeDetailViewController(tag: tag)
         self.navigationController?.pushViewController(vc, animated: true)
     }
     
+    // Designs the section header
     override func tableView(tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let headerView: UIView = UIView()
         headerView.frame = CGRectMake(0, 0, 320, 30)

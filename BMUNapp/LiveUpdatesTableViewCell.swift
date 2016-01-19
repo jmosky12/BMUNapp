@@ -24,9 +24,11 @@ class LiveUpdatesTableViewCell: UITableViewCell {
         avatar.layer.cornerRadius = 3.0
         avatar.clipsToBounds = true
         
+        // Ensures table cell separators are set up correctly
         self.separatorInset = UIEdgeInsetsZero
         self.preservesSuperviewLayoutMargins = false
         self.layoutMargins = UIEdgeInsetsZero
+        
         self.selectionStyle = .None
     }
 
