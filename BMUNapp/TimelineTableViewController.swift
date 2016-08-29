@@ -62,11 +62,11 @@ class TimelineTableViewController: UITableViewController {
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         switch(section) {
         case 0:
-            return 2
+            return 7
         case 1:
-            return 4
+            return 6
         case 2:
-            return 2
+            return 3
         default:
             return 1
         }
@@ -81,9 +81,24 @@ class TimelineTableViewController: UITableViewController {
         case 0:
             switch(indexPath.row) {
             case 0:
-                event.text = "Opening Ceremonies (Pauley Ballroom)"
-                time.text = " 5:30pm-6:30pm"
+                event.text = "Registration (Kerr Lobby)"
+                time.text = " 12:00pm-4:00pm"
             case 1:
+                event.text = "International Students Reception (315 Wheeler)"
+                time.text = " 2:30pm-4:30pm"
+            case 2:
+                event.text = "Procedure Workshops (2060 VLSB)"
+                time.text = " 3:00pm-4:00pm"
+            case 3:
+                event.text = "Line Up For Opening Ceremonies (Sproul Plaza)"
+                time.text = " 4:00pm-5:00pm"
+            case 4:
+                event.text = "Opening Ceremonies (Paulley Ballroom)"
+                time.text = " 5:30pm-6:30pm"
+            case 5:
+                event.text = "Committee Meet Up (Lower Sproul)"
+                time.text = " 6:30pm-7:00pm"
+            case 6:
                 event.text = "First Committee Session"
                 time.text = " 7:00pm-9:45pm"
             default:
@@ -96,13 +111,19 @@ class TimelineTableViewController: UITableViewController {
                 event.text = "Second Committee Session"
                 time.text = " 9:00am-12:45pm"
             case 1:
-                event.text = "Lunch"
-                time.text = " 12:45pm-2:00pm"
+                event.text = "Advisors Meeting (Stephens Lounge)"
+                time.text = " 10:00am-11:30am"
             case 2:
-                event.text = "Third Committee Session"
-                time.text = " 2:00pm-5:00pm"
+                event.text = "Lunch Break"
+                time.text = " 12:45pm-1:45pm"
             case 3:
-                event.text = "Delegate Dance (Pauley Ballroom)"
+                event.text = "Third Committee Session"
+                time.text = " 1:45pm-4:45pm"
+            case 4:
+                event.text = "Head Delegate Meeting (170 Barrows)"
+                time.text = " 5:00pm-6:00pm"
+            case 5:
+                event.text = "Delegate Dance (Paulley Ballroom)"
                 time.text = " 7:30pm-10:30pm"
             default:
                 event.text = "Uh Oh"
@@ -114,7 +135,10 @@ class TimelineTableViewController: UITableViewController {
                 event.text = "Fourth Committee Session"
                 time.text = " 9:30am-12:30pm"
             case 1:
-                event.text = "Closing Ceremonies (Pauley Ballroom)"
+                event.text = "Lunch Break"
+                time.text = " 12:30pm-2:00pm"
+            case 2:
+                event.text = "Closing Ceremonies (Paulley Ballroom)"
                 time.text = " 2:00pm-3:30pm"
             default:
                 event.text = "Uh Oh"

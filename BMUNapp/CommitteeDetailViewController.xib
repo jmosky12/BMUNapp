@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1509" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CommitteeDetailViewController" customModule="BMUNapp" customModuleProvider="target">
@@ -139,21 +139,21 @@
                     <exclude reference="Lt0-zX-oIg"/>
                 </mask>
                 <mask key="constraints">
-                    <exclude reference="Htj-9s-aaW"/>
-                    <exclude reference="NHE-MT-HMt"/>
-                    <exclude reference="TGd-An-gix"/>
                     <exclude reference="OHm-T1-ULC"/>
                     <exclude reference="dyk-Is-o7s"/>
                     <exclude reference="nbM-X8-rPH"/>
-                    <exclude reference="Bsi-5x-jYa"/>
-                    <exclude reference="TuN-CH-1QG"/>
-                    <exclude reference="oOz-ZK-fvC"/>
-                    <exclude reference="HzU-P0-1xj"/>
-                    <exclude reference="VTi-h0-A7M"/>
-                    <exclude reference="lRH-6c-QBp"/>
                     <exclude reference="3lt-eH-0Ne"/>
                     <exclude reference="EEb-kZ-aG4"/>
                     <exclude reference="c1l-O7-ETy"/>
+                    <exclude reference="HzU-P0-1xj"/>
+                    <exclude reference="VTi-h0-A7M"/>
+                    <exclude reference="lRH-6c-QBp"/>
+                    <exclude reference="Htj-9s-aaW"/>
+                    <exclude reference="NHE-MT-HMt"/>
+                    <exclude reference="TGd-An-gix"/>
+                    <exclude reference="Bsi-5x-jYa"/>
+                    <exclude reference="TuN-CH-1QG"/>
+                    <exclude reference="oOz-ZK-fvC"/>
                 </mask>
             </variation>
             <variation key="widthClass=compact">
@@ -165,21 +165,21 @@
                     <include reference="Lt0-zX-oIg"/>
                 </mask>
                 <mask key="constraints">
-                    <include reference="Htj-9s-aaW"/>
-                    <include reference="NHE-MT-HMt"/>
-                    <include reference="TGd-An-gix"/>
                     <include reference="OHm-T1-ULC"/>
                     <include reference="dyk-Is-o7s"/>
                     <include reference="nbM-X8-rPH"/>
-                    <include reference="Bsi-5x-jYa"/>
-                    <include reference="TuN-CH-1QG"/>
-                    <include reference="oOz-ZK-fvC"/>
-                    <include reference="HzU-P0-1xj"/>
-                    <include reference="VTi-h0-A7M"/>
-                    <include reference="lRH-6c-QBp"/>
                     <include reference="3lt-eH-0Ne"/>
                     <include reference="EEb-kZ-aG4"/>
                     <include reference="c1l-O7-ETy"/>
+                    <include reference="HzU-P0-1xj"/>
+                    <include reference="VTi-h0-A7M"/>
+                    <include reference="lRH-6c-QBp"/>
+                    <include reference="Htj-9s-aaW"/>
+                    <include reference="NHE-MT-HMt"/>
+                    <include reference="TGd-An-gix"/>
+                    <include reference="Bsi-5x-jYa"/>
+                    <include reference="TuN-CH-1QG"/>
+                    <include reference="oOz-ZK-fvC"/>
                 </mask>
             </variation>
         </view>

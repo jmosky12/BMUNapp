@@ -1,9 +1,9 @@
 PODS:
-  - Bolts/Tasks (1.5.1)
+  - Bolts/Tasks (1.6.0)
   - DateTools (1.7.0)
-  - Parse (1.11.0):
+  - Parse (1.12.0):
     - Bolts/Tasks (~> 1.5)
-  - STTwitter (0.2.2)
+  - STTwitter (0.2.3)
 
 DEPENDENCIES:
   - DateTools
@@ -11,9 +11,9 @@ DEPENDENCIES:
   - STTwitter
 
 SPEC CHECKSUMS:
-  Bolts: a12663244b1d3351c738882e71902fc74db54f64
+  Bolts: f52a250053bb517ca874523c3913776359ab3def
   DateTools: 53288ee8b905fdc75897a1e6b5cc0144b14cba60
-  Parse: 886af46a0a677402f6374bb97ac212e795f70afe
-  STTwitter: eb85d8770ddb0f8989f341cf41ea875e90ac6e7f
+  Parse: de2c52a9a1421b91ae7594ab8ce191afd184f19b
+  STTwitter: 77386cb6f1807fbfc0e321b9233bdecc9786195d
 
 COCOAPODS: 0.39.0

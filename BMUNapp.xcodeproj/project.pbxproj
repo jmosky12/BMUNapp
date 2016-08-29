@@ -15,15 +15,6 @@
 		DF20B1BC1BCAE380007705BA /* DelegateTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF20B1BA1BCAE380007705BA /* DelegateTableViewCell.xib */; };
 		DF2702A41C14D8A200A4889D /* QuestionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2702A21C14D8A200A4889D /* QuestionsViewController.swift */; };
 		DF2702A51C14D8A200A4889D /* QuestionsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF2702A31C14D8A200A4889D /* QuestionsViewController.xib */; };
-		DF3160DF1BCB3C180058993A /* Caucus.pdf in Resources */ = {isa = PBXBuildFile; fileRef = DF3160D61BCB3C180058993A /* Caucus.pdf */; };
-		DF3160E01BCB3C180058993A /* CommitteeFundamentals.pdf in Resources */ = {isa = PBXBuildFile; fileRef = DF3160D71BCB3C180058993A /* CommitteeFundamentals.pdf */; };
-		DF3160E11BCB3C180058993A /* CommitteeStructure.pdf in Resources */ = {isa = PBXBuildFile; fileRef = DF3160D81BCB3C180058993A /* CommitteeStructure.pdf */; };
-		DF3160E21BCB3C180058993A /* Packing.pdf in Resources */ = {isa = PBXBuildFile; fileRef = DF3160D91BCB3C180058993A /* Packing.pdf */; };
-		DF3160E31BCB3C180058993A /* PositionPaper.pdf in Resources */ = {isa = PBXBuildFile; fileRef = DF3160DA1BCB3C180058993A /* PositionPaper.pdf */; };
-		DF3160E41BCB3C180058993A /* Research.pdf in Resources */ = {isa = PBXBuildFile; fileRef = DF3160DB1BCB3C180058993A /* Research.pdf */; };
-		DF3160E51BCB3C180058993A /* Resolutions.pdf in Resources */ = {isa = PBXBuildFile; fileRef = DF3160DC1BCB3C180058993A /* Resolutions.pdf */; };
-		DF3160E61BCB3C180058993A /* SpeechDelivery.pdf in Resources */ = {isa = PBXBuildFile; fileRef = DF3160DD1BCB3C180058993A /* SpeechDelivery.pdf */; };
-		DF3160E71BCB3C180058993A /* SpeechPreparation.pdf in Resources */ = {isa = PBXBuildFile; fileRef = DF3160DE1BCB3C180058993A /* SpeechPreparation.pdf */; };
 		DF5C89731BDD9B600005AC62 /* map.pdf in Resources */ = {isa = PBXBuildFile; fileRef = DF5C89721BDD9B600005AC62 /* map.pdf */; };
 		DF6071C21BC8B62F007B35CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6071C11BC8B62F007B35CC /* AppDelegate.swift */; };
 		DF6071CA1BC8B62F007B35CC /* BMUNapp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DF6071C81BC8B62F007B35CC /* BMUNapp.xcdatamodeld */; };
@@ -34,6 +25,15 @@
 		DF7A5EC11BCB99B900BDC91F /* TimelineTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7A5EBF1BCB99B900BDC91F /* TimelineTableViewCell.swift */; };
 		DF7A5EC21BCB99B900BDC91F /* TimelineTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF7A5EC01BCB99B900BDC91F /* TimelineTableViewCell.xib */; };
 		DF9A92E21BC8FDFE00BA3AE4 /* CommitteesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF9A92E11BC8FDFE00BA3AE4 /* CommitteesTableViewController.swift */; };
+		DFD257411C6C437800F9853D /* Caucus.pdf in Resources */ = {isa = PBXBuildFile; fileRef = DFD257381C6C437800F9853D /* Caucus.pdf */; };
+		DFD257421C6C437800F9853D /* CommitteeFundamentals.pdf in Resources */ = {isa = PBXBuildFile; fileRef = DFD257391C6C437800F9853D /* CommitteeFundamentals.pdf */; };
+		DFD257431C6C437800F9853D /* CommitteeStructure.pdf in Resources */ = {isa = PBXBuildFile; fileRef = DFD2573A1C6C437800F9853D /* CommitteeStructure.pdf */; };
+		DFD257441C6C437800F9853D /* Packing.pdf in Resources */ = {isa = PBXBuildFile; fileRef = DFD2573B1C6C437800F9853D /* Packing.pdf */; };
+		DFD257451C6C437800F9853D /* PositionPaper.pdf in Resources */ = {isa = PBXBuildFile; fileRef = DFD2573C1C6C437800F9853D /* PositionPaper.pdf */; };
+		DFD257461C6C437800F9853D /* Research.pdf in Resources */ = {isa = PBXBuildFile; fileRef = DFD2573D1C6C437800F9853D /* Research.pdf */; };
+		DFD257471C6C437800F9853D /* Resolutions.pdf in Resources */ = {isa = PBXBuildFile; fileRef = DFD2573E1C6C437800F9853D /* Resolutions.pdf */; };
+		DFD257481C6C437800F9853D /* SpeechDelivery.pdf in Resources */ = {isa = PBXBuildFile; fileRef = DFD2573F1C6C437800F9853D /* SpeechDelivery.pdf */; };
+		DFD257491C6C437800F9853D /* SpeechPreparation.pdf in Resources */ = {isa = PBXBuildFile; fileRef = DFD257401C6C437800F9853D /* SpeechPreparation.pdf */; };
 		DFDC32661BE565D100729449 /* LiveUpdatesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFDC32641BE565D100729449 /* LiveUpdatesTableViewCell.swift */; };
 		DFDC32691BE56CA400729449 /* LiveUpdatesTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFDC32681BE56CA400729449 /* LiveUpdatesTableViewController.xib */; };
 		DFDF6EA61BE544CD009244FE /* TwitterManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFDF6EA51BE544CD009244FE /* TwitterManager.swift */; };
@@ -61,15 +61,6 @@
 		DF2702981C14D50400A4889D /* BMUNapp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BMUNapp-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
 		DF2702A21C14D8A200A4889D /* QuestionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionsViewController.swift; sourceTree = "<group>"; };
 		DF2702A31C14D8A200A4889D /* QuestionsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QuestionsViewController.xib; sourceTree = "<group>"; };
-		DF3160D61BCB3C180058993A /* Caucus.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = Caucus.pdf; path = ../../../DelegateGuide/Caucus.pdf; sourceTree = "<group>"; };
-		DF3160D71BCB3C180058993A /* CommitteeFundamentals.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = CommitteeFundamentals.pdf; path = ../../../DelegateGuide/CommitteeFundamentals.pdf; sourceTree = "<group>"; };
-		DF3160D81BCB3C180058993A /* CommitteeStructure.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = CommitteeStructure.pdf; path = ../../../DelegateGuide/CommitteeStructure.pdf; sourceTree = "<group>"; };
-		DF3160D91BCB3C180058993A /* Packing.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = Packing.pdf; path = ../../../DelegateGuide/Packing.pdf; sourceTree = "<group>"; };
-		DF3160DA1BCB3C180058993A /* PositionPaper.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = PositionPaper.pdf; path = ../../../DelegateGuide/PositionPaper.pdf; sourceTree = "<group>"; };
-		DF3160DB1BCB3C180058993A /* Research.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = Research.pdf; path = ../../../DelegateGuide/Research.pdf; sourceTree = "<group>"; };
-		DF3160DC1BCB3C180058993A /* Resolutions.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = Resolutions.pdf; path = ../../../DelegateGuide/Resolutions.pdf; sourceTree = "<group>"; };
-		DF3160DD1BCB3C180058993A /* SpeechDelivery.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = SpeechDelivery.pdf; path = ../../../DelegateGuide/SpeechDelivery.pdf; sourceTree = "<group>"; };
-		DF3160DE1BCB3C180058993A /* SpeechPreparation.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = SpeechPreparation.pdf; path = ../../../DelegateGuide/SpeechPreparation.pdf; sourceTree = "<group>"; };
 		DF5C89721BDD9B600005AC62 /* map.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = map.pdf; path = ../../map.pdf; sourceTree = "<group>"; };
 		DF6071BE1BC8B62F007B35CC /* BMUNapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BMUNapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF6071C11BC8B62F007B35CC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -82,6 +73,15 @@
 		DF7A5EBF1BCB99B900BDC91F /* TimelineTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimelineTableViewCell.swift; sourceTree = "<group>"; };
 		DF7A5EC01BCB99B900BDC91F /* TimelineTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TimelineTableViewCell.xib; sourceTree = "<group>"; };
 		DF9A92E11BC8FDFE00BA3AE4 /* CommitteesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommitteesTableViewController.swift; sourceTree = "<group>"; };
+		DFD257381C6C437800F9853D /* Caucus.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Caucus.pdf; sourceTree = "<group>"; };
+		DFD257391C6C437800F9853D /* CommitteeFundamentals.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = CommitteeFundamentals.pdf; sourceTree = "<group>"; };
+		DFD2573A1C6C437800F9853D /* CommitteeStructure.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = CommitteeStructure.pdf; sourceTree = "<group>"; };
+		DFD2573B1C6C437800F9853D /* Packing.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Packing.pdf; sourceTree = "<group>"; };
+		DFD2573C1C6C437800F9853D /* PositionPaper.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = PositionPaper.pdf; sourceTree = "<group>"; };
+		DFD2573D1C6C437800F9853D /* Research.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Research.pdf; sourceTree = "<group>"; };
+		DFD2573E1C6C437800F9853D /* Resolutions.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Resolutions.pdf; sourceTree = "<group>"; };
+		DFD2573F1C6C437800F9853D /* SpeechDelivery.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = SpeechDelivery.pdf; sourceTree = "<group>"; };
+		DFD257401C6C437800F9853D /* SpeechPreparation.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = SpeechPreparation.pdf; sourceTree = "<group>"; };
 		DFDC32641BE565D100729449 /* LiveUpdatesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveUpdatesTableViewCell.swift; sourceTree = "<group>"; };
 		DFDC32681BE56CA400729449 /* LiveUpdatesTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LiveUpdatesTableViewController.xib; sourceTree = "<group>"; };
 		DFDF6EA51BE544CD009244FE /* TwitterManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwitterManager.swift; sourceTree = "<group>"; };
@@ -173,17 +173,17 @@
 		DF29E9931BDDA188006EAAC0 /* Files */ = {
 			isa = PBXGroup;
 			children = (
+				DFD257381C6C437800F9853D /* Caucus.pdf */,
+				DFD257391C6C437800F9853D /* CommitteeFundamentals.pdf */,
+				DFD2573A1C6C437800F9853D /* CommitteeStructure.pdf */,
+				DFD2573B1C6C437800F9853D /* Packing.pdf */,
+				DFD2573C1C6C437800F9853D /* PositionPaper.pdf */,
+				DFD2573D1C6C437800F9853D /* Research.pdf */,
+				DFD2573E1C6C437800F9853D /* Resolutions.pdf */,
+				DFD2573F1C6C437800F9853D /* SpeechDelivery.pdf */,
+				DFD257401C6C437800F9853D /* SpeechPreparation.pdf */,
 				DFF33C1A1BE9DE6400D7228D /* twitterAvatar.png */,
 				DF5C89721BDD9B600005AC62 /* map.pdf */,
-				DF3160D61BCB3C180058993A /* Caucus.pdf */,
-				DF3160D71BCB3C180058993A /* CommitteeFundamentals.pdf */,
-				DF3160D81BCB3C180058993A /* CommitteeStructure.pdf */,
-				DF3160D91BCB3C180058993A /* Packing.pdf */,
-				DF3160DA1BCB3C180058993A /* PositionPaper.pdf */,
-				DF3160DB1BCB3C180058993A /* Research.pdf */,
-				DF3160DC1BCB3C180058993A /* Resolutions.pdf */,
-				DF3160DD1BCB3C180058993A /* SpeechDelivery.pdf */,
-				DF3160DE1BCB3C180058993A /* SpeechPreparation.pdf */,
 			);
 			name = Files;
 			sourceTree = "<group>";
@@ -312,26 +312,26 @@
 			files = (
 				DFF613781C180186003C810C /* CommitteeTableViewCell.xib in Resources */,
 				DF6071CF1BC8B62F007B35CC /* LaunchScreen.storyboard in Resources */,
-				DF3160E51BCB3C180058993A /* Resolutions.pdf in Resources */,
-				DF3160E71BCB3C180058993A /* SpeechPreparation.pdf in Resources */,
+				DFD257451C6C437800F9853D /* PositionPaper.pdf in Resources */,
+				DFD257421C6C437800F9853D /* CommitteeFundamentals.pdf in Resources */,
 				DF6071DB1BC8C871007B35CC /* Assets.xcassets in Resources */,
-				DF3160E01BCB3C180058993A /* CommitteeFundamentals.pdf in Resources */,
-				DF3160E11BCB3C180058993A /* CommitteeStructure.pdf in Resources */,
-				DF3160E21BCB3C180058993A /* Packing.pdf in Resources */,
 				DFF33C191BE9D1A500D7228D /* LiveUpdatesTableViewCell.xib in Resources */,
-				DF3160E61BCB3C180058993A /* SpeechDelivery.pdf in Resources */,
+				DFD257471C6C437800F9853D /* Resolutions.pdf in Resources */,
+				DFD257411C6C437800F9853D /* Caucus.pdf in Resources */,
+				DFD257441C6C437800F9853D /* Packing.pdf in Resources */,
+				DFD257431C6C437800F9853D /* CommitteeStructure.pdf in Resources */,
+				DFD257461C6C437800F9853D /* Research.pdf in Resources */,
 				DF5C89731BDD9B600005AC62 /* map.pdf in Resources */,
+				DFD257481C6C437800F9853D /* SpeechDelivery.pdf in Resources */,
 				DF2702A51C14D8A200A4889D /* QuestionsViewController.xib in Resources */,
+				DFD257491C6C437800F9853D /* SpeechPreparation.pdf in Resources */,
 				DF20B1BC1BCAE380007705BA /* DelegateTableViewCell.xib in Resources */,
 				DF64FDC41C2894480072C463 /* TextViewController.xib in Resources */,
 				DFE372AB1BCB0DC500490A34 /* WebViewController.xib in Resources */,
-				DF3160DF1BCB3C180058993A /* Caucus.pdf in Resources */,
 				DFDC32691BE56CA400729449 /* LiveUpdatesTableViewController.xib in Resources */,
-				DF3160E31BCB3C180058993A /* PositionPaper.pdf in Resources */,
 				DFF6137C1C1801A2003C810C /* CommitteeDetailViewController.xib in Resources */,
 				DF7A5EC21BCB99B900BDC91F /* TimelineTableViewCell.xib in Resources */,
 				DFF33C1B1BE9DE6400D7228D /* twitterAvatar.png in Resources */,
-				DF3160E41BCB3C180058993A /* Research.pdf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
