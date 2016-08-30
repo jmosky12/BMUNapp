@@ -1,1 +1,1 @@
-
+web: gunicorn bmunguide.wsgi
