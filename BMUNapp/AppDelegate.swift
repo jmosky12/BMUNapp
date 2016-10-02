@@ -23,6 +23,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window = UIWindow.init(frame: UIScreen.mainScreen().bounds)
         
         let textFont = UIFont(name: "Avenir", size: 13.0)
+        let textColor = UIColor.redColor()
+        let textColorAttribute: [String:NSObject] = [
+            NSForegroundColorAttributeName: textColor
+        ]
         let titleTextAttributes: [String:NSObject] = [
             NSFontAttributeName: textFont!
         ]
@@ -78,7 +82,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         timelineNC.navigationBar.translucent = false
         timelineNC.navigationBar.topItem?.title = "Timeline"
         
-        let controllers = [delegateGuideNC, committeesNC, liveUpdatesNC, questionsNC, timelineNC]
+        let store = StoreCollectionViewController()
+        let storeNC = UINavigationController(rootViewController: store)
+        let item6 = UITabBarItem(title: "Store", image: nil, tag: 6)
+        item6.setTitleTextAttributes(titleTextAttributes, forState: .Normal)
+        item6.setTitleTextAttributes(textColorAttribute, forState: .Normal)
+        item6.titlePositionAdjustment = UIOffset(horizontal: 0.0, vertical: -12.0)
+        storeNC.tabBarItem = item6
+        storeNC.navigationBar.barTintColor = UIColor.blackColor()
+        storeNC.navigationBar.translucent = false
+        storeNC.navigationBar.topItem?.title = "Store"
+        
+        let controllers = [delegateGuideNC, committeesNC, liveUpdatesNC, questionsNC, timelineNC, storeNC]
         
         let tabBarController = UITabBarController()
         tabBarController.viewControllers = controllers
