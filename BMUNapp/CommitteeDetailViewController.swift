@@ -12,7 +12,7 @@ class CommitteeDetailViewController: UIViewController {
     
     @IBOutlet weak var headChairLabel: UILabel!
     @IBOutlet weak var viceChairsLabel: UILabel!
-    //@IBOutlet weak var topicsLabel: UILabel!
+    @IBOutlet weak var topicsLabel: UILabel!
     
     var tag: String!
     
@@ -33,104 +33,94 @@ class CommitteeDetailViewController: UIViewController {
         edgesForExtendedLayout = UIRectEdge()
         navigationController?.navigationBar.tintColor = UIColor.white
         
-        var topicsText: NSString
         
         // Sets the labels' info based on the tag from the init call
         switch(tag) {
         case "00":
-            topicsText = topics[0] as NSString
+            self.topicsLabel.text = topics[0]
             headChairLabel.text = "Tiffany Gean"
             viceChairsLabel.text = "Eric Dumas, Sherry Guo, Michael Pollack"
         case "01":
-            topicsText = topics[1] as NSString
+            self.topicsLabel.text = topics[1]
             headChairLabel.text = "Isabel Viegas de Lima"
             viceChairsLabel.text = "Octavio Farfan, Sarah Yue, Himaja Jangle"
         case "02":
-            topicsText = topics[2] as NSString
+            self.topicsLabel.text = topics[2]
             headChairLabel.text = "Kimberly Nguyen"
             viceChairsLabel.text = "Itago Kangashi, Jessica Zhao, Chelsea Evans, Trent Gomberg"
         case "10":
-            topicsText = topics[3] as NSString
+            self.topicsLabel.text = topics[3]
             headChairLabel.text = "Manu Vaish"
             viceChairsLabel.text = "Adam Umemoto, Emily Yan, Jacob Hands"
         case "11":
-            topicsText = topics[4] as NSString
+            self.topicsLabel.text = topics[4]
             headChairLabel.text = "Hunter Conrad"
             viceChairsLabel.text = "Stacey Dojiri, Nicholas Spelta, TJ Ford"
         case "12":
-            topicsText = topics[5] as NSString
+            self.topicsLabel.text = topics[5]
             headChairLabel.text = "Emily Reece"
             viceChairsLabel.text = "Katie Lee, Sita McGuire, Daksh Bhatia"
         case "13":
-            topicsText = topics[6] as NSString
+            self.topicsLabel.text = topics[6]
             headChairLabel.text = "Benjy Malings"
             viceChairsLabel.text = "David McDonogh, Amanda Lee, Patricia Midy"
         case "14":
-            topicsText = topics[7] as NSString
+            self.topicsLabel.text = topics[7]
             headChairLabel.text = "Jonas Majewski"
             viceChairsLabel.text = "Rob Purviance, Nicola Evans, Andy Luo"
         case "20":
-            topicsText = topics[8] as NSString
+            self.topicsLabel.text = topics[8]
             headChairLabel.text = "Trevor Dowds"
             viceChairsLabel.text = "Kendra Singh, Liam Campbell"
         case "21":
-            topicsText = topics[9] as NSString
+            self.topicsLabel.text = topics[9]
             headChairLabel.text = "Liz Zarka"
             viceChairsLabel.text = "Jake Moskowitz, Colin Garcia, Michael McDonald"
         case "22":
-            topicsText = topics[10] as NSString
+            self.topicsLabel.text = topics[10]
             headChairLabel.text = "Rita Hu"
             viceChairsLabel.text = "Haochen Zhou, Lucia Zhang"
         case "23":
-            topicsText = topics[11] as NSString
+            self.topicsLabel.text = topics[11]
             headChairLabel.text = "Mischa Fritz"
             viceChairsLabel.text = "Lilac Peterson, Michael Nakada"
         case "24":
-            topicsText = topics[12] as NSString
+            self.topicsLabel.text = topics[12]
             headChairLabel.text = "Gloria Cheung"
             viceChairsLabel.text = "Zoe Brouns, Alexander Wilfert"
         case "25":
-            topicsText = topics[13] as NSString
+            self.topicsLabel.text = topics[13]
             headChairLabel.text = "Pranay Patil"
             viceChairsLabel.text = "Brandon Doan, Danny Tuthill, Sarah Bauer"
         case "26":
-            topicsText = topics[14] as NSString
+            self.topicsLabel.text = topics[14]
             headChairLabel.text = "Natasha Cougoule"
             viceChairsLabel.text = "Sey Kim, Ashley Njoroge, Emma Lautanen, Hyunwook Kim"
         case "27":
-            topicsText = topics[15] as NSString
+            self.topicsLabel.text = topics[15]
             headChairLabel.text = "Brett Buckingham"
             viceChairsLabel.text = "Adrian Hernandez, Jane Kim"
         case "30":
-            topicsText = topics[16] as NSString
+            self.topicsLabel.text = topics[16]
             headChairLabel.text = "Nate Parke"
             viceChairsLabel.text = "Jai Malhotra, Jing Liong, Jessie Mao, Tushita Saraf, Micheal Eliot"
         case "31":
-            topicsText = topics[17] as NSString
+            self.topicsLabel.text = topics[17]
             headChairLabel.text = "Eric Cherwin"
             viceChairsLabel.text = "Mekhala Hoskote, Arjun Banerjee"
         case "32":
-            topicsText = topics[18] as NSString
+            self.topicsLabel.text = topics[18]
             headChairLabel.text = "Vishal Kalyanasundaram"
             viceChairsLabel.text = "Ben Sher, Jacky Tian"
         default:
-            topicsText = "Hit Default"
+            self.topicsLabel.text = "Hit Default"
             headChairLabel.text = "Hit Default"
             viceChairsLabel.text = "Hit Default"
         }
-        
-        let attributes: [String: AnyObject] = [NSFontAttributeName: UIFont(name: "Thonburi", size: 18)!]
-        let rect: CGRect = topicsText.boundingRect(with: CGSize(width: UIScreen.main.bounds.width - 16, height: CGFloat.greatestFiniteMagnitude), options: .usesLineFragmentOrigin, attributes: attributes, context: nil)
+
         
         // Since the topics label has varying height that can't easily be constrained in auto layout, this creates and sets the labels' properties based on the topic text
-        let topicsLabel = UILabel(frame: CGRect(x: 8, y: 213, width: UIScreen.main.bounds.width - 16, height: rect.height))
-        topicsLabel.numberOfLines = 0
-        topicsLabel.lineBreakMode = NSLineBreakMode.byWordWrapping
-        topicsLabel.font = UIFont(name: "Thonburi", size: 18)
-        topicsLabel.text = topicsText as String
-        topicsLabel.textColor = UIColor.white
-        topicsLabel.textAlignment = .center
-        view.addSubview(topicsLabel)
+      
       
     }
     
