@@ -21,15 +21,15 @@ class CommitteesTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = UIColor(red: 24.0/255.0, green: 70.0/255.0, blue: 148.0/255.0, alpha: 1.0)
-        edgesForExtendedLayout = .None
+        edgesForExtendedLayout = UIRectEdge()
         let nib: UINib = UINib(nibName: "CommitteeTableViewCell", bundle: nil)
-        self.tableView.registerNib(nib, forCellReuseIdentifier: "committeeCell")
+        self.tableView.register(nib, forCellReuseIdentifier: "committeeCell")
         
         tableView.estimatedRowHeight = 127
         tableView.rowHeight = UITableViewAutomaticDimension
         
         // Sets characteristics for top bar text
-        let textColor = UIColor.whiteColor()
+        let textColor = UIColor.white
         let textFont = UIFont(name: "Avenir", size: 35.0)
         let titleTextAttributes: [String:NSObject] = [
             NSFontAttributeName: textFont!,
@@ -39,23 +39,23 @@ class CommitteesTableViewController: UITableViewController {
     }
     
     // These two functions below prevent landscape mode
-    override func shouldAutorotate() -> Bool {
+    override var shouldAutorotate : Bool {
         return false
     }
     
-    override func supportedInterfaceOrientations() -> UIInterfaceOrientationMask {
-        return [UIInterfaceOrientationMask.Portrait]
+    override var supportedInterfaceOrientations : UIInterfaceOrientationMask {
+        return [UIInterfaceOrientationMask.portrait]
     }
 
 
     // MARK: - Table view data source
 
-    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+    override func numberOfSections(in tableView: UITableView) -> Int {
         return 4
     }
     
     // Gives section titles to the different groupings of committees
-    override func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         let title: String!
         switch(section) {
             case 0:
@@ -73,7 +73,7 @@ class CommitteesTableViewController: UITableViewController {
     }
 
     // Specifies the number of committee cells needed under each section specified above
-    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         let num: Int!
         switch(section) {
             case 0:
@@ -91,90 +91,90 @@ class CommitteesTableViewController: UITableViewController {
     }
 
     // Sets each cell up with its committee title
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("committeeCell", forIndexPath: indexPath) as! CommitteeTableViewCell
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "committeeCell", for: indexPath) as! CommitteeTableViewCell
         let committee = cell.committeeLabel
-        switch(indexPath.section) {
+        switch((indexPath as NSIndexPath).section) {
         case 0:
-            switch(indexPath.row) {
+            switch((indexPath as NSIndexPath).row) {
             case 0:
-                committee.text = "1st Disarmament & International Security"
+                committee?.text = "1st Disarmament & International Security"
             case 1:
-                committee.text = "3rd Social, Cultural & Humanitarian"
+                committee?.text = "3rd Social, Cultural & Humanitarian"
             case 2:
-                committee.text = "6th Legal"
+                committee?.text = "6th Legal"
             default:
-                committee.text = "Committee Name"
+                committee?.text = "Committee Name"
             }
         case 1:
-            switch(indexPath.row) {
+            switch((indexPath as NSIndexPath).row) {
             case 0:
-                committee.text = "Food & Agricultural Organization"
+                committee?.text = "Food & Agricultural Organization"
             case 1:
-                committee.text = "World Health Organization"
+                committee?.text = "World Health Organization"
             case 2:
-                committee.text = "United Nations Human Rights Council"
+                committee?.text = "United Nations Human Rights Council"
             case 3:
-                committee.text = "United Nations Development Programme"
+                committee?.text = "United Nations Development Programme"
             case 4:
-                committee.text = "World Bank"
+                committee?.text = "World Bank"
             default:
-                committee.text = "Committee Name"
+                committee?.text = "Committee Name"
             }
         case 2:
-            switch(indexPath.row) {
+            switch((indexPath as NSIndexPath).row) {
             case 0:
-                committee.text = "Security Council"
+                committee?.text = "Security Council"
             case 1:
-                committee.text = "International Court of Justice"
+                committee?.text = "International Court of Justice"
             case 2:
-                committee.text = "Chinese State Council (Chinese Bilingual)"
+                committee?.text = "Chinese State Council (Chinese Bilingual)"
             case 3:
-                committee.text = "Asian Infrastructure Investment Bank"
+                committee?.text = "Asian Infrastructure Investment Bank"
             case 4:
-                committee.text = "Arab League (THIMUN)"
+                committee?.text = "Arab League (THIMUN)"
             case 5:
-                committee.text = "European Union"
+                committee?.text = "European Union"
             case 6:
-                committee.text = "Press Corps"
+                committee?.text = "Press Corps"
             case 7:
-                committee.text = "The Community of Latin American and Caribbean States (Spanish Bilingual)"
+                committee?.text = "The Community of Latin American and Caribbean States (Spanish Bilingual)"
             default:
-                committee.text = "Committee Name"
+                committee?.text = "Committee Name"
             }
         case 3:
-            switch(indexPath.row) {
+            switch((indexPath as NSIndexPath).row) {
             case 0:
-                committee.text = "Joint Cabinet Crisis"
+                committee?.text = "Joint Cabinet Crisis"
             case 1:
-                committee.text = "Tudor Court"
+                committee?.text = "Tudor Court"
             case 2:
-                committee.text = "Berkeley Venture Capital"
+                committee?.text = "Berkeley Venture Capital"
             default:
-                committee.text = "Committee Name"
+                committee?.text = "Committee Name"
             }
         default:
-            committee.text = "Committee Name"
+            committee?.text = "Committee Name"
         }
         return cell
     }
     
     // Detects when a cell has been selected, prepares it with a unique tag that details which committee was selected, and opens a CommitteeDetailViewController with that tag
-    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        let tag = "\(indexPath.section)\(indexPath.row)"
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let tag = "\((indexPath as NSIndexPath).section)\((indexPath as NSIndexPath).row)"
         let vc = CommitteeDetailViewController(tag: tag)
         self.navigationController?.pushViewController(vc, animated: true)
     }
     
     // Designs the section header
-    override func tableView(tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+    override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let headerView: UIView = UIView()
-        headerView.frame = CGRectMake(0, 0, 320, 30)
-        headerView.backgroundColor = UIColor.blackColor()
+        headerView.frame = CGRect(x: 0, y: 0, width: 320, height: 30)
+        headerView.backgroundColor = UIColor.black
         
-        let titleLabel = UILabel(frame: CGRectMake(5, 0, 320, 30))
+        let titleLabel = UILabel(frame: CGRect(x: 5, y: 0, width: 320, height: 30))
         titleLabel.font = UIFont(name: "Thonburi", size: 18)
-        titleLabel.textColor = UIColor.whiteColor()
+        titleLabel.textColor = UIColor.white
         switch(section) {
         case 0:
             titleLabel.text = "Bloc A"

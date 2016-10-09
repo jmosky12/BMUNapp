@@ -19,18 +19,18 @@ class DelegateTableViewCell: UITableViewCell {
         super.awakeFromNib()
         
         // Ensures table cell separators are set up correctly
-        self.separatorInset = UIEdgeInsetsZero
+        self.separatorInset = UIEdgeInsets.zero
         self.preservesSuperviewLayoutMargins = false
-        self.layoutMargins = UIEdgeInsetsZero
+        self.layoutMargins = UIEdgeInsets.zero
         
         backgroundImage.clipsToBounds = true
         
-        self.backgroundColor = UIColor.clearColor()
-        self.selectionStyle = .None
+        self.backgroundColor = UIColor.clear
+        self.selectionStyle = .none
     }
 
     // Sets the properties of the cell depending on the enum specified in the cellForRowAtIndexPath method in DelegateTableViewController.swift
-    func bindData(type: DelegateGuideTableViewController.DelegateCellType) {
+    func bindData(_ type: DelegateGuideTableViewController.DelegateCellType) {
         self.type = type
         backgroundImage.image = type.backgroundImage()
         cellLabel.text = type.rawValue

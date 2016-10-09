@@ -14,22 +14,22 @@ class DateFormatterManager: NSObject {
     
     static let sharedInstance = DateFormatterManager()
     
-    let formatter = NSDateFormatter()
-    let prettyFormatter = NSDateFormatter()
+    let formatter = DateFormatter()
+    let prettyFormatter = DateFormatter()
     
     override init() {
         formatter.dateFormat = "EEE MMM d HH:mm:ss Z y"
-        prettyFormatter.dateStyle = .ShortStyle
-        prettyFormatter.timeStyle = .ShortStyle
+        prettyFormatter.dateStyle = .short
+        prettyFormatter.timeStyle = .short
         super.init()
     }
     
-    func pretty(date: NSDate) -> String {
-        return prettyFormatter.stringFromDate(date)
+    func pretty(_ date: Date) -> String {
+        return prettyFormatter.string(from: date)
     }
     
-    func format(s: String) -> NSDate? {
-        return formatter.dateFromString(s)
+    func format(_ s: String) -> Date? {
+        return formatter.date(from: s)
     }
     
 }

@@ -25,11 +25,11 @@ class LiveUpdatesTableViewCell: UITableViewCell {
         avatar.clipsToBounds = true
         
         // Ensures table cell separators are set up correctly
-        self.separatorInset = UIEdgeInsetsZero
+        self.separatorInset = UIEdgeInsets.zero
         self.preservesSuperviewLayoutMargins = false
-        self.layoutMargins = UIEdgeInsetsZero
+        self.layoutMargins = UIEdgeInsets.zero
         
-        self.selectionStyle = .None
+        self.selectionStyle = .none
     }
 
     

@@ -36,6 +36,10 @@
 		DFD257491C6C437800F9853D /* SpeechPreparation.pdf in Resources */ = {isa = PBXBuildFile; fileRef = DFD257401C6C437800F9853D /* SpeechPreparation.pdf */; };
 		DFDC32661BE565D100729449 /* LiveUpdatesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFDC32641BE565D100729449 /* LiveUpdatesTableViewCell.swift */; };
 		DFDC32691BE56CA400729449 /* LiveUpdatesTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFDC32681BE56CA400729449 /* LiveUpdatesTableViewController.xib */; };
+		DFDCCDE21DAAEAAE00269E9E /* StoreCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFDCCDE01DAAEAAE00269E9E /* StoreCollectionViewController.swift */; };
+		DFDCCDE31DAAEAAE00269E9E /* StoreCollectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFDCCDE11DAAEAAE00269E9E /* StoreCollectionViewController.xib */; };
+		DFDCCDE61DAAEAC400269E9E /* StoreCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFDCCDE41DAAEAC400269E9E /* StoreCollectionViewCell.swift */; };
+		DFDCCDE71DAAEAC400269E9E /* StoreCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFDCCDE51DAAEAC400269E9E /* StoreCollectionViewCell.xib */; };
 		DFDF6EA61BE544CD009244FE /* TwitterManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFDF6EA51BE544CD009244FE /* TwitterManager.swift */; };
 		DFDF6EA81BE5530C009244FE /* Tweet.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFDF6EA71BE5530C009244FE /* Tweet.swift */; };
 		DFDF6EAA1BE55760009244FE /* DateFormatterManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFDF6EA91BE55760009244FE /* DateFormatterManager.swift */; };
@@ -84,6 +88,10 @@
 		DFD257401C6C437800F9853D /* SpeechPreparation.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = SpeechPreparation.pdf; sourceTree = "<group>"; };
 		DFDC32641BE565D100729449 /* LiveUpdatesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveUpdatesTableViewCell.swift; sourceTree = "<group>"; };
 		DFDC32681BE56CA400729449 /* LiveUpdatesTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LiveUpdatesTableViewController.xib; sourceTree = "<group>"; };
+		DFDCCDE01DAAEAAE00269E9E /* StoreCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoreCollectionViewController.swift; sourceTree = "<group>"; };
+		DFDCCDE11DAAEAAE00269E9E /* StoreCollectionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StoreCollectionViewController.xib; sourceTree = "<group>"; };
+		DFDCCDE41DAAEAC400269E9E /* StoreCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoreCollectionViewCell.swift; sourceTree = "<group>"; };
+		DFDCCDE51DAAEAC400269E9E /* StoreCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StoreCollectionViewCell.xib; sourceTree = "<group>"; };
 		DFDF6EA51BE544CD009244FE /* TwitterManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwitterManager.swift; sourceTree = "<group>"; };
 		DFDF6EA71BE5530C009244FE /* Tweet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tweet.swift; sourceTree = "<group>"; };
 		DFDF6EA91BE55760009244FE /* DateFormatterManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateFormatterManager.swift; sourceTree = "<group>"; };
@@ -217,6 +225,7 @@
 				DF20B1A81BC9B464007705BA /* Committees */,
 				DF20B1AA1BC9B48F007705BA /* LiveUpdates */,
 				DF20B1A91BC9B47E007705BA /* Timeline */,
+				DFDCCDDF1DAAEA4000269E9E /* Store */,
 				DF27029C1C14D86F00A4889D /* Questions */,
 				DF6071CD1BC8B62F007B35CC /* LaunchScreen.storyboard */,
 				DF6071DA1BC8C871007B35CC /* Assets.xcassets */,
@@ -236,6 +245,17 @@
 				DF20B1BA1BCAE380007705BA /* DelegateTableViewCell.xib */,
 			);
 			name = DelegateGuide;
+			sourceTree = "<group>";
+		};
+		DFDCCDDF1DAAEA4000269E9E /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				DFDCCDE01DAAEAAE00269E9E /* StoreCollectionViewController.swift */,
+				DFDCCDE11DAAEAAE00269E9E /* StoreCollectionViewController.xib */,
+				DFDCCDE41DAAEAC400269E9E /* StoreCollectionViewCell.swift */,
+				DFDCCDE51DAAEAC400269E9E /* StoreCollectionViewCell.xib */,
+			);
+			name = Store;
 			sourceTree = "<group>";
 		};
 		DFDF6EA41BE544B3009244FE /* Models */ = {
@@ -278,12 +298,13 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0710;
-				LastUpgradeCheck = 0700;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "Jake Moskowitz";
 				TargetAttributes = {
 					DF6071BD1BC8B62F007B35CC = {
 						CreatedOnToolsVersion = 7.0.1;
 						DevelopmentTeam = 89G3G578BR;
+						LastSwiftMigration = 0800;
 					};
 				};
 			};
@@ -323,8 +344,10 @@
 				DFD257461C6C437800F9853D /* Research.pdf in Resources */,
 				DF5C89731BDD9B600005AC62 /* map.pdf in Resources */,
 				DFD257481C6C437800F9853D /* SpeechDelivery.pdf in Resources */,
+				DFDCCDE31DAAEAAE00269E9E /* StoreCollectionViewController.xib in Resources */,
 				DF2702A51C14D8A200A4889D /* QuestionsViewController.xib in Resources */,
 				DFD257491C6C437800F9853D /* SpeechPreparation.pdf in Resources */,
+				DFDCCDE71DAAEAC400269E9E /* StoreCollectionViewCell.xib in Resources */,
 				DF20B1BC1BCAE380007705BA /* DelegateTableViewCell.xib in Resources */,
 				DF64FDC41C2894480072C463 /* TextViewController.xib in Resources */,
 				DFE372AB1BCB0DC500490A34 /* WebViewController.xib in Resources */,
@@ -393,7 +416,9 @@
 				DF7A5EC11BCB99B900BDC91F /* TimelineTableViewCell.swift in Sources */,
 				DFF613771C180186003C810C /* CommitteeTableViewCell.swift in Sources */,
 				DF6071CA1BC8B62F007B35CC /* BMUNapp.xcdatamodeld in Sources */,
+				DFDCCDE61DAAEAC400269E9E /* StoreCollectionViewCell.swift in Sources */,
 				DFDC32661BE565D100729449 /* LiveUpdatesTableViewCell.swift in Sources */,
+				DFDCCDE21DAAEAAE00269E9E /* StoreCollectionViewController.swift in Sources */,
 				DFF6137B1C1801A2003C810C /* CommitteeDetailViewController.swift in Sources */,
 				DF20B1B81BCAE34A007705BA /* DelegateGuideTableViewController.swift in Sources */,
 				DFDF6EA81BE5530C009244FE /* Tweet.swift in Sources */,
@@ -437,8 +462,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -481,8 +508,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -501,6 +530,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -521,6 +551,7 @@
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "BMUNapp-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -540,6 +571,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "BMUNapp-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;

@@ -21,18 +21,18 @@ class DelegateGuideTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.backgroundColor = UIColor.blackColor()
-        edgesForExtendedLayout = .None
+        view.backgroundColor = UIColor.black
+        edgesForExtendedLayout = UIRectEdge()
         let nib: UINib = UINib(nibName: "DelegateTableViewCell", bundle: nil)
-        self.tableView.registerNib(nib, forCellReuseIdentifier: "DelegateTableViewCell")
+        self.tableView.register(nib, forCellReuseIdentifier: "DelegateTableViewCell")
         
         // Ensures table cell separators are set up correctly
-        tableView.separatorInset = UIEdgeInsetsZero
+        tableView.separatorInset = UIEdgeInsets.zero
         tableView.preservesSuperviewLayoutMargins = false
-        tableView.layoutMargins = UIEdgeInsetsZero
+        tableView.layoutMargins = UIEdgeInsets.zero
         
         // Sets characteristics for top bar text
-        let textColor = UIColor.whiteColor()
+        let textColor = UIColor.white
         let textFont = UIFont(name: "Avenir", size: 35.0)
         let titleTextAttributes: [String:NSObject] = [
             NSFontAttributeName: textFont!,
@@ -44,18 +44,18 @@ class DelegateGuideTableViewController: UITableViewController {
     }
     
     // These two functions below prevent landscape mode
-    override func shouldAutorotate() -> Bool {
+    override var shouldAutorotate : Bool {
         return false
     }
     
-    override func supportedInterfaceOrientations() -> UIInterfaceOrientationMask {
-        return [UIInterfaceOrientationMask.Portrait]
+    override var supportedInterfaceOrientations : UIInterfaceOrientationMask {
+        return [UIInterfaceOrientationMask.portrait]
     }
 
 
     // MARK: - Table view data source
 
-    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 9
     }
     
@@ -97,9 +97,9 @@ class DelegateGuideTableViewController: UITableViewController {
     }
 
     // Sets the properties of the cell at each index using the bindData method from DelegateTableViewCell.swift and the enum above
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("DelegateTableViewCell", forIndexPath: indexPath) as! DelegateTableViewCell
-        switch(indexPath.row) {
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "DelegateTableViewCell", for: indexPath) as! DelegateTableViewCell
+        switch((indexPath as NSIndexPath).row) {
         case 0:
             cell.bindData(.Research)
         case 1:
@@ -125,9 +125,9 @@ class DelegateGuideTableViewController: UITableViewController {
     }
 
     // Prepares to load the PDF using the WebViewController.swift for the specific cell
-    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let fileName: String!
-            switch(indexPath.row) {
+            switch((indexPath as NSIndexPath).row) {
             case 0:
                 fileName = "Research"
             case 1:
@@ -153,7 +153,7 @@ class DelegateGuideTableViewController: UITableViewController {
         self.navigationController?.pushViewController(vc, animated: true)
     }
     
-    override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 152.0
     }
 

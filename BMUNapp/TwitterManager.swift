@@ -12,7 +12,7 @@ import STTwitter
 class TwitterManager: NSObject {
     
     static let sharedInstance = TwitterManager()
-    private let twitter: STTwitterAPI
+    fileprivate let twitter: STTwitterAPI
     
     // Sets up our twitter access
     override init() {
@@ -24,30 +24,30 @@ class TwitterManager: NSObject {
     }
     
     // Authenticates our access to bmun's twitter
-    func authenticate(cb: () -> ()) {
-        twitter.verifyCredentialsWithUserSuccessBlock({ (token: String!, userID: String!) -> Void in
+    func authenticate(_ cb: @escaping () -> ()) {
+        twitter.verifyCredentials(userSuccessBlock: { (token: String?, userID: String?) -> Void in
             cb()
-            }) { (error: NSError!) -> Void in
+            }) { (error: Error?) -> Void in
                 print("here's the error: \(error)")
         }
     }
     
     // After authenticating using the wrapAuthenticate method, this accesses the berkeleyMUN twitter and returns a dictionary that contains all of our tweets and the details of each
-    func getTweets(success: ([Tweet]) -> (), error: (NSError) -> ()) {
+    func getTweets(_ success: @escaping ([Tweet]) -> (), error: @escaping (Error?) -> ()) {
         wrapAuthenticate { [weak self] () -> () in
-            self?.twitter.getUserTimelineWithScreenName("berkeleyMUN", successBlock: { (response: [AnyObject]!) -> Void in
+            self?.twitter.getUserTimeline(withScreenName: "berkeleyMUN", successBlock: { (response: [Any]?) -> Void in
                 if let statuses = response as? [NSDictionary] {
                     success(statuses.map(Tweet.init).filter { $0 != nil }.map { $0! })
                 } else {
                     success([])
                 }
-                }) { (err: NSError!) -> Void in
+                }) { (err: Error?) -> Void in
                     error(err)
             }
         }
     }
     
-    private func wrapAuthenticate(cb: () -> ()) {
+    fileprivate func wrapAuthenticate(_ cb: @escaping () -> ()) {
         if isAuthenticated() {
             cb()
         } else {

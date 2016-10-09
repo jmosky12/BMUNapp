@@ -27,16 +27,16 @@ class WebViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        edgesForExtendedLayout = .None
+        edgesForExtendedLayout = UIRectEdge()
         
-        let path: String = NSBundle.mainBundle().pathForResource(fileName, ofType: "pdf")!
-        let targetURL: NSURL = NSURL(fileURLWithPath: path)
-        let request: NSURLRequest = NSURLRequest(URL: targetURL)
+        let path: String = Bundle.main.path(forResource: fileName, ofType: "pdf")!
+        let targetURL: URL = URL(fileURLWithPath: path)
+        let request: URLRequest = URLRequest(url: targetURL)
         webView.loadRequest(request)
         webView.scalesPageToFit = true
         view.addSubview(webView)
         
-        let textColor = UIColor.whiteColor()
+        let textColor = UIColor.white
         let textFont = UIFont(name: "Avenir", size: 40.0)
         
         // Sets characteristics for top bar text
@@ -47,17 +47,17 @@ class WebViewController: UIViewController {
             ]
             self.navigationController!.navigationBar.titleTextAttributes = titleTextAttributes
         } else {
-            self.navigationController!.navigationBar.tintColor = UIColor.whiteColor()
+            self.navigationController!.navigationBar.tintColor = UIColor.white
         }
     }
     
     // These two functions below prevent landscape mode
-    override func shouldAutorotate() -> Bool {
+    override var shouldAutorotate : Bool {
         return false
     }
     
-    override func supportedInterfaceOrientations() -> UIInterfaceOrientationMask {
-        return [UIInterfaceOrientationMask.Portrait]
+    override var supportedInterfaceOrientations : UIInterfaceOrientationMask {
+        return [UIInterfaceOrientationMask.portrait]
     }
 
 }

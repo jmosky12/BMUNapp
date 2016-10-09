@@ -10,7 +10,7 @@ import UIKit
 import Parse
 
 protocol QuestionsViewControllerDelegate {
-    func textViewFill(text: String)
+    func textViewFill(_ text: String)
     func sendOverText() -> String
 }
 
@@ -33,7 +33,7 @@ class QuestionsViewController: UIViewController, UITextFieldDelegate, UITextView
         super.viewDidLoad()
         
         // Sets characteristics for top bar text
-        let textColor = UIColor.whiteColor()
+        let textColor = UIColor.white
         let textFont = UIFont(name: "Avenir", size: 35.0)
         let titleTextAttributes: [String:NSObject] = [
             NSFontAttributeName: textFont!,
@@ -41,19 +41,19 @@ class QuestionsViewController: UIViewController, UITextFieldDelegate, UITextView
         ]
         self.navigationController!.navigationBar.titleTextAttributes = titleTextAttributes
 
-        edgesForExtendedLayout = .None
-        let sendButton = UIBarButtonItem(title: "Send", style: .Plain, target: self, action: "didPressSend")
+        edgesForExtendedLayout = UIRectEdge()
+        let sendButton = UIBarButtonItem(title: "Send", style: .plain, target: self, action: #selector(QuestionsViewController.didPressSend))
         navigationItem.rightBarButtonItem = sendButton
-        navigationController?.navigationBar.tintColor = UIColor.whiteColor()
+        navigationController?.navigationBar.tintColor = UIColor.white
         
         detailTextView.layer.cornerRadius = 5.0
-        detailTextView.editable = false
+        detailTextView.isEditable = false
         
         topicTextField.delegate = self
         emailTextField.delegate = self
         
         // Adds gesture recognizer that will open TextViewController.swift when the text view is tapped
-        let textViewTapped = UITapGestureRecognizer(target: self, action: "textTapped")
+        let textViewTapped = UITapGestureRecognizer(target: self, action: #selector(QuestionsViewController.textTapped))
         detailTextView.addGestureRecognizer(textViewTapped)
         
     }
@@ -64,10 +64,10 @@ class QuestionsViewController: UIViewController, UITextFieldDelegate, UITextView
         uname(&sysInfo)
         let machine = Mirror(reflecting: sysInfo.machine)
         let identifier = machine.children.reduce("") { identifier, element in
-            guard let value = element.value as? Int8 where value != 0 else { return identifier }
+            guard let value = element.value as? Int8 , value != 0 else { return identifier }
             return identifier + String(UnicodeScalar(UInt8(value)))
         }
-        let shouldModify = platformType(identifier)
+        let shouldModify = platformType(identifier as NSString)
         
         if shouldModify {
             self.detailHeightConstraint.constant = 50
@@ -75,36 +75,36 @@ class QuestionsViewController: UIViewController, UITextFieldDelegate, UITextView
     }
     
     // Checks if the type of device being used is one with a screen height less than 480p
-    func platformType(platform : NSString) -> Bool {
+    func platformType(_ platform : NSString) -> Bool {
         if platform.hasPrefix("iPhone4") {
             return true
         } else if platform.hasPrefix("iPad") {
             return true
-        } else if UIScreen.mainScreen().bounds.height <= 480.0 {
+        } else if UIScreen.main.bounds.height <= 480.0 {
             return true
         }
         return false
     }
     
     // These two functions below prevent landscape mode
-    override func shouldAutorotate() -> Bool {
+    override var shouldAutorotate : Bool {
         return false
     }
     
-    override func supportedInterfaceOrientations() -> UIInterfaceOrientationMask {
-        return [UIInterfaceOrientationMask.Portrait]
+    override var supportedInterfaceOrientations : UIInterfaceOrientationMask {
+        return [UIInterfaceOrientationMask.portrait]
     }
 
     // Makes sure email entered in emailTextField follows standard email convention
-    func isValidEmail(email: String) -> Bool {
+    func isValidEmail(_ email: String) -> Bool {
         let emailRegEx = "^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$"
         
         let emailTest = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
-        return emailTest.evaluateWithObject(email)
+        return emailTest.evaluate(with: email)
     }
     
     // Releases keyboard if return is pressed while typing in a text field
-    func textFieldShouldReturn(textField: UITextField) -> Bool {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
         return true
     }
@@ -126,22 +126,22 @@ class QuestionsViewController: UIViewController, UITextFieldDelegate, UITextView
                     "topic": topicTextField.text!,
                     "email": emailTextField.text!,
                     "body": detailTextView.text
-                ]
+                ] as [String : Any]
         
-                PFCloud.callFunctionInBackground("sendEmail", withParameters: params) { (res: AnyObject?, err: NSError?) -> Void in
+                PFCloud.callFunction(inBackground: "sendEmail", withParameters: params) { (res: Any?, err: Error?) -> Void in
                     print("Res: \(res), err: \(err)")
                 }
             
-                let finishedSending = UIAlertController(title: "Email Sent", message: "Your email has successfully been sent to our staff.", preferredStyle: .Alert)
-                finishedSending.addAction(UIAlertAction(title: "Ok", style: .Default, handler: nil))
-                self.presentViewController(finishedSending, animated: true, completion: nil)
+                let finishedSending = UIAlertController(title: "Email Sent", message: "Your email has successfully been sent to our staff.", preferredStyle: .alert)
+                finishedSending.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
+                self.present(finishedSending, animated: true, completion: nil)
                 emailTextField.text = ""
                 topicTextField.text = ""
                 detailTextView.text = ""
             } else {
-                let alert = UIAlertController(title: "Invalid Email", message: "Please Re-enter", preferredStyle: .Alert)
-                alert.addAction(UIAlertAction(title: "Ok", style: .Default, handler: nil))
-                self.presentViewController(alert, animated: true, completion: nil)
+                let alert = UIAlertController(title: "Invalid Email", message: "Please Re-enter", preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
+                self.present(alert, animated: true, completion: nil)
             }
             
         }
@@ -150,7 +150,7 @@ class QuestionsViewController: UIViewController, UITextFieldDelegate, UITextView
     
     //MARK: Delegate
     
-    func textViewFill(text: String) {
+    func textViewFill(_ text: String) {
         detailTextView.text = text
     }
     
