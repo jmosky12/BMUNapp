@@ -9,4 +9,6 @@ pod 'STTwitter'
 pod 'DateTools'
 pod 'Parse'
 pod 'Moltin'
+pod 'Firebase/Core'
+pod 'Firebase/Database'
 end

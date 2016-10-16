@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3FCCF25796D6009C7B73749B /* Pods_BMUNapp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86DE14C2F5ED1A649C154B1E /* Pods_BMUNapp.framework */; };
+		D7370FE91DB33E6B008A4AF3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D7370FE81DB33E6B008A4AF3 /* GoogleService-Info.plist */; };
 		DF0DB57A1BCC66C400F7E96F /* LiveUpdatesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0DB5791BCC66C400F7E96F /* LiveUpdatesTableViewController.swift */; };
 		DF20B1B21BC9B513007705BA /* TimelineTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF20B1B11BC9B513007705BA /* TimelineTableViewController.swift */; };
 		DF20B1B81BCAE34A007705BA /* DelegateGuideTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF20B1B71BCAE34A007705BA /* DelegateGuideTableViewController.swift */; };
@@ -58,6 +59,7 @@
 		1A40B2455F503F56524A9D6D /* Pods-BMUNapp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BMUNapp.release.xcconfig"; path = "Pods/Target Support Files/Pods-BMUNapp/Pods-BMUNapp.release.xcconfig"; sourceTree = "<group>"; };
 		5AEF90D4EA0CE2BF09B0B928 /* Pods-BMUNapp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BMUNapp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BMUNapp/Pods-BMUNapp.debug.xcconfig"; sourceTree = "<group>"; };
 		86DE14C2F5ED1A649C154B1E /* Pods_BMUNapp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BMUNapp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7370FE81DB33E6B008A4AF3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		DF0DB5791BCC66C400F7E96F /* LiveUpdatesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveUpdatesTableViewController.swift; sourceTree = "<group>"; };
 		DF20B1B11BC9B513007705BA /* TimelineTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimelineTableViewController.swift; sourceTree = "<group>"; };
 		DF20B1B71BCAE34A007705BA /* DelegateGuideTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DelegateGuideTableViewController.swift; sourceTree = "<group>"; };
@@ -230,6 +232,7 @@
 				DF27029C1C14D86F00A4889D /* Questions */,
 				DF6071CD1BC8B62F007B35CC /* LaunchScreen.storyboard */,
 				DF6071DA1BC8C871007B35CC /* Assets.xcassets */,
+				D7370FE81DB33E6B008A4AF3 /* GoogleService-Info.plist */,
 				DF6071D01BC8B62F007B35CC /* Info.plist */,
 				DF6071C81BC8B62F007B35CC /* BMUNapp.xcdatamodeld */,
 				DF29E9931BDDA188006EAAC0 /* Files */,
@@ -344,6 +347,7 @@
 				DF2702A51C14D8A200A4889D /* QuestionsViewController.xib in Resources */,
 				DFDCCE0B1DAAF38900269E9E /* CommitteeStructure.pdf in Resources */,
 				DFDCCE121DAAF38900269E9E /* SpeechPreparation.pdf in Resources */,
+				D7370FE91DB33E6B008A4AF3 /* GoogleService-Info.plist in Resources */,
 				DFDCCDE71DAAEAC400269E9E /* StoreCollectionViewCell.xib in Resources */,
 				DFDCCE111DAAF38900269E9E /* SpeechDelivery.pdf in Resources */,
 				DFDCCE0E1DAAF38900269E9E /* PositionPaper.pdf in Resources */,
@@ -565,7 +569,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				INFOPLIST_FILE = BMUNapp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

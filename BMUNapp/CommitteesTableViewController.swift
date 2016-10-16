@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class CommitteesTableViewController: UITableViewController {
     
@@ -93,69 +94,13 @@ class CommitteesTableViewController: UITableViewController {
     // Sets each cell up with its committee title
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "committeeCell", for: indexPath) as! CommitteeTableViewCell
-        let committee = cell.committeeLabel
-        switch((indexPath as NSIndexPath).section) {
-        case 0:
-            switch((indexPath as NSIndexPath).row) {
-            case 0:
-                committee?.text = "1st Disarmament & International Security"
-            case 1:
-                committee?.text = "3rd Social, Cultural & Humanitarian"
-            case 2:
-                committee?.text = "6th Legal"
-            default:
-                committee?.text = "Committee Name"
-            }
-        case 1:
-            switch((indexPath as NSIndexPath).row) {
-            case 0:
-                committee?.text = "Food & Agricultural Organization"
-            case 1:
-                committee?.text = "World Health Organization"
-            case 2:
-                committee?.text = "United Nations Human Rights Council"
-            case 3:
-                committee?.text = "United Nations Development Programme"
-            case 4:
-                committee?.text = "World Bank"
-            default:
-                committee?.text = "Committee Name"
-            }
-        case 2:
-            switch((indexPath as NSIndexPath).row) {
-            case 0:
-                committee?.text = "Security Council"
-            case 1:
-                committee?.text = "International Court of Justice"
-            case 2:
-                committee?.text = "Chinese State Council (Chinese Bilingual)"
-            case 3:
-                committee?.text = "Asian Infrastructure Investment Bank"
-            case 4:
-                committee?.text = "Arab League (THIMUN)"
-            case 5:
-                committee?.text = "European Union"
-            case 6:
-                committee?.text = "Press Corps"
-            case 7:
-                committee?.text = "The Community of Latin American and Caribbean States (Spanish Bilingual)"
-            default:
-                committee?.text = "Committee Name"
-            }
-        case 3:
-            switch((indexPath as NSIndexPath).row) {
-            case 0:
-                committee?.text = "Joint Cabinet Crisis"
-            case 1:
-                committee?.text = "Tudor Court"
-            case 2:
-                committee?.text = "Berkeley Venture Capital"
-            default:
-                committee?.text = "Committee Name"
-            }
-        default:
-            committee?.text = "Committee Name"
-        }
+        let label = cell.viewWithTag(1) as? UILabel
+        let sectionRef = FIRDatabase.database().reference().child("Committee").child(String(indexPath.section))
+        let committeeRef = sectionRef.child(String(indexPath.row))
+        let currentRef = committeeRef.child("name")
+        currentRef.observeSingleEvent(of: .value, with: { (snapshot) in
+            label?.text = snapshot.value as? String
+        })
         return cell
     }
     
