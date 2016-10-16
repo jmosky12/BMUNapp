@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4EF22D4DEDDA95194F186CFF /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18A63B60C131A465D6F95EC2 /* Pods.framework */; };
+		3FCCF25796D6009C7B73749B /* Pods_BMUNapp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86DE14C2F5ED1A649C154B1E /* Pods_BMUNapp.framework */; };
 		DF0DB57A1BCC66C400F7E96F /* LiveUpdatesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0DB5791BCC66C400F7E96F /* LiveUpdatesTableViewController.swift */; };
 		DF20B1B21BC9B513007705BA /* TimelineTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF20B1B11BC9B513007705BA /* TimelineTableViewController.swift */; };
 		DF20B1B81BCAE34A007705BA /* DelegateGuideTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF20B1B71BCAE34A007705BA /* DelegateGuideTableViewController.swift */; };
@@ -55,14 +55,14 @@
 
 /* Begin PBXFileReference section */
 		18A63B60C131A465D6F95EC2 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8D2846E32CA8DE795A46F3C5 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
-		8FB3152DB09847D73955AEE0 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		1A40B2455F503F56524A9D6D /* Pods-BMUNapp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BMUNapp.release.xcconfig"; path = "Pods/Target Support Files/Pods-BMUNapp/Pods-BMUNapp.release.xcconfig"; sourceTree = "<group>"; };
+		5AEF90D4EA0CE2BF09B0B928 /* Pods-BMUNapp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BMUNapp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BMUNapp/Pods-BMUNapp.debug.xcconfig"; sourceTree = "<group>"; };
+		86DE14C2F5ED1A649C154B1E /* Pods_BMUNapp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BMUNapp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF0DB5791BCC66C400F7E96F /* LiveUpdatesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveUpdatesTableViewController.swift; sourceTree = "<group>"; };
 		DF20B1B11BC9B513007705BA /* TimelineTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimelineTableViewController.swift; sourceTree = "<group>"; };
 		DF20B1B71BCAE34A007705BA /* DelegateGuideTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DelegateGuideTableViewController.swift; sourceTree = "<group>"; };
 		DF20B1B91BCAE380007705BA /* DelegateTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DelegateTableViewCell.swift; sourceTree = "<group>"; };
 		DF20B1BA1BCAE380007705BA /* DelegateTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DelegateTableViewCell.xib; sourceTree = "<group>"; };
-		DF2702981C14D50400A4889D /* BMUNapp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BMUNapp-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
 		DF2702A21C14D8A200A4889D /* QuestionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionsViewController.swift; sourceTree = "<group>"; };
 		DF2702A31C14D8A200A4889D /* QuestionsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QuestionsViewController.xib; sourceTree = "<group>"; };
 		DF6071BE1BC8B62F007B35CC /* BMUNapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BMUNapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -110,7 +110,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4EF22D4DEDDA95194F186CFF /* Pods.framework in Frameworks */,
+				3FCCF25796D6009C7B73749B /* Pods_BMUNapp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -121,15 +121,16 @@
 			isa = PBXGroup;
 			children = (
 				18A63B60C131A465D6F95EC2 /* Pods.framework */,
+				86DE14C2F5ED1A649C154B1E /* Pods_BMUNapp.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		7DABF7E807028E7C1343D1F1 /* Pods */ = {
+		90B4C0DAEA3A672BCC6BEDEE /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				8FB3152DB09847D73955AEE0 /* Pods.debug.xcconfig */,
-				8D2846E32CA8DE795A46F3C5 /* Pods.release.xcconfig */,
+				5AEF90D4EA0CE2BF09B0B928 /* Pods-BMUNapp.debug.xcconfig */,
+				1A40B2455F503F56524A9D6D /* Pods-BMUNapp.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -201,8 +202,8 @@
 			children = (
 				DF6071C01BC8B62F007B35CC /* BMUNapp */,
 				DF6071BF1BC8B62F007B35CC /* Products */,
-				7DABF7E807028E7C1343D1F1 /* Pods */,
 				302BA906696314B2F8415B51 /* Frameworks */,
+				90B4C0DAEA3A672BCC6BEDEE /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -231,7 +232,6 @@
 				DF6071DA1BC8C871007B35CC /* Assets.xcassets */,
 				DF6071D01BC8B62F007B35CC /* Info.plist */,
 				DF6071C81BC8B62F007B35CC /* BMUNapp.xcdatamodeld */,
-				DF2702981C14D50400A4889D /* BMUNapp-Bridging-Header.h */,
 				DF29E9931BDDA188006EAAC0 /* Files */,
 			);
 			path = BMUNapp;
@@ -275,12 +275,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DF6071D31BC8B62F007B35CC /* Build configuration list for PBXNativeTarget "BMUNapp" */;
 			buildPhases = (
-				47DA2319AB93C6CF974B05BB /* Check Pods Manifest.lock */,
+				22FE33F4ED28DCFF2092B204 /* [CP] Check Pods Manifest.lock */,
 				DF6071BA1BC8B62F007B35CC /* Sources */,
 				DF6071BB1BC8B62F007B35CC /* Frameworks */,
 				DF6071BC1BC8B62F007B35CC /* Resources */,
-				A249A6FC09519FE98D4C9131 /* Embed Pods Frameworks */,
-				C3D9270B9A7EE6951A001B10 /* Copy Pods Resources */,
+				FA4F8960D0D321FEF97A69C8 /* [CP] Embed Pods Frameworks */,
+				895930DA02DD4DB78ADCA257 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -361,49 +361,49 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		47DA2319AB93C6CF974B05BB /* Check Pods Manifest.lock */ = {
+		22FE33F4ED28DCFF2092B204 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		A249A6FC09519FE98D4C9131 /* Embed Pods Frameworks */ = {
+		895930DA02DD4DB78ADCA257 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BMUNapp/Pods-BMUNapp-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		C3D9270B9A7EE6951A001B10 /* Copy Pods Resources */ = {
+		FA4F8960D0D321FEF97A69C8 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BMUNapp/Pods-BMUNapp-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -537,7 +537,7 @@
 		};
 		DF6071D41BC8B62F007B35CC /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8FB3152DB09847D73955AEE0 /* Pods.debug.xcconfig */;
+			baseConfigurationReference = 5AEF90D4EA0CE2BF09B0B928 /* Pods-BMUNapp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -549,7 +549,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.jmoskowitz.bmunguide;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "BMUNapp-Bridging-Header.h";
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -558,7 +560,7 @@
 		};
 		DF6071D51BC8B62F007B35CC /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8D2846E32CA8DE795A46F3C5 /* Pods.release.xcconfig */;
+			baseConfigurationReference = 1A40B2455F503F56524A9D6D /* Pods-BMUNapp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -570,7 +572,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.jmoskowitz.bmunguide;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "BMUNapp-Bridging-Header.h";
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
