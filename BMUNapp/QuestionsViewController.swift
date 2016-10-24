@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import Parse
+//import Parse
 
 protocol QuestionsViewControllerDelegate {
     func textViewFill(_ text: String)
@@ -118,7 +118,7 @@ class QuestionsViewController: UIViewController, UITextFieldDelegate, UITextView
     
     // Calls the BmunCloudCode main.js file that formats the info in the text view and text fields into an email and uses Parse & Mailgun to send it to feeback@bmun.org
     func didPressSend() {
-        if topicTextField.text != "" && emailTextField.text != "" && detailTextView.text != "" {
+        /*if topicTextField.text != "" && emailTextField.text != "" && detailTextView.text != "" {
             
             if isValidEmail(emailTextField.text!) {
         
@@ -144,7 +144,7 @@ class QuestionsViewController: UIViewController, UITextFieldDelegate, UITextView
                 self.present(alert, animated: true, completion: nil)
             }
             
-        }
+        }*/
         
     }
     

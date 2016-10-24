@@ -7,10 +7,12 @@
 //
 
 import UIKit
+import Moltin
 
 private let reuseIdentifier = "storeCell"
 
 class StoreCollectionViewController: UICollectionViewController {
+    var products = [AnyObject]()
     
     init() {
         super.init(nibName: "StoreCollectionViewController", bundle: nil);
@@ -33,6 +35,20 @@ class StoreCollectionViewController: UICollectionViewController {
         flowLayout.itemSize = CGSize(width: 200, height: 200)
         flowLayout.scrollDirection = .horizontal
         self.collectionView?.collectionViewLayout = flowLayout
+        
+        //Moltin stuff
+        Moltin.sharedInstance().setPublicId("lT03XQXXnjSKcqWTR77B7oBc6ZTHXvCW6Qh9TfVdlT")
+        Moltin.sharedInstance().product.listing(withParameters: ["limit": 100], success: { (response) -> Void in
+            // products is an array of all of the products that match the parameters...
+            self.products = response?["result"] as! [AnyObject]
+            print("Got products: \(self.products)")
+            
+            self.collectionView?.reloadData()
+            
+            }, failure: { (response, error) -> Void in
+                print("Couldn't get products, something went wrong...")
+                print(error)
+        })
     
     }
 
@@ -45,14 +61,15 @@ class StoreCollectionViewController: UICollectionViewController {
 
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 6
+        return products.count
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath)
     
+        let product = products[(indexPath as NSIndexPath).row] as! [String:AnyObject]
         let label = cell.viewWithTag(1) as? UILabel
-        label!.text = "Store"
+        label!.text = product["title"] as? String
     
         return cell
     }
