@@ -8,6 +8,5 @@ target "BMUNapp" do
 pod 'STTwitter'
 pod 'DateTools'
 pod 'Moltin'
-pod 'Firebase/Core'
-pod 'Firebase/Database'
+pod 'SwiftyJSON'
 end

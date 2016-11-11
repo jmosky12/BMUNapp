@@ -41,7 +41,7 @@ class StoreCollectionViewController: UICollectionViewController {
         Moltin.sharedInstance().product.listing(withParameters: ["limit": 100], success: { (response) -> Void in
             // products is an array of all of the products that match the parameters...
             self.products = response?["result"] as! [AnyObject]
-            print("Got products: \(self.products)")
+            //print("Got products: \(self.products)")
             
             self.collectionView?.reloadData()
             

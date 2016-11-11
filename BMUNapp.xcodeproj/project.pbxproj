@@ -10,6 +10,8 @@
 		3FCCF25796D6009C7B73749B /* Pods_BMUNapp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86DE14C2F5ED1A649C154B1E /* Pods_BMUNapp.framework */; };
 		D7370FE91DB33E6B008A4AF3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D7370FE81DB33E6B008A4AF3 /* GoogleService-Info.plist */; };
 		DF0DB57A1BCC66C400F7E96F /* LiveUpdatesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0DB5791BCC66C400F7E96F /* LiveUpdatesTableViewController.swift */; };
+		DF1C80F11DC1C83B004AE050 /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1C80F01DC1C83B004AE050 /* Storage.swift */; };
+		DF1C80F31DC1C977004AE050 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF1C80F21DC1C977004AE050 /* SwiftyJSON.framework */; };
 		DF20B1B21BC9B513007705BA /* TimelineTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF20B1B11BC9B513007705BA /* TimelineTableViewController.swift */; };
 		DF20B1B81BCAE34A007705BA /* DelegateGuideTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF20B1B71BCAE34A007705BA /* DelegateGuideTableViewController.swift */; };
 		DF20B1BB1BCAE380007705BA /* DelegateTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF20B1B91BCAE380007705BA /* DelegateTableViewCell.swift */; };
@@ -61,6 +63,8 @@
 		86DE14C2F5ED1A649C154B1E /* Pods_BMUNapp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BMUNapp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7370FE81DB33E6B008A4AF3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		DF0DB5791BCC66C400F7E96F /* LiveUpdatesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveUpdatesTableViewController.swift; sourceTree = "<group>"; };
+		DF1C80F01DC1C83B004AE050 /* Storage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
+		DF1C80F21DC1C977004AE050 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = "../../../Library/Developer/Xcode/DerivedData/BMUNapp-dgtemznigqxarochqeyvfecyhsjy/Build/Products/Release-iphonesimulator/SwiftyJSON/SwiftyJSON.framework"; sourceTree = "<group>"; };
 		DF20B1B11BC9B513007705BA /* TimelineTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimelineTableViewController.swift; sourceTree = "<group>"; };
 		DF20B1B71BCAE34A007705BA /* DelegateGuideTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DelegateGuideTableViewController.swift; sourceTree = "<group>"; };
 		DF20B1B91BCAE380007705BA /* DelegateTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DelegateTableViewCell.swift; sourceTree = "<group>"; };
@@ -112,6 +116,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF1C80F31DC1C977004AE050 /* SwiftyJSON.framework in Frameworks */,
 				3FCCF25796D6009C7B73749B /* Pods_BMUNapp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -122,6 +127,7 @@
 		302BA906696314B2F8415B51 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DF1C80F21DC1C977004AE050 /* SwiftyJSON.framework */,
 				18A63B60C131A465D6F95EC2 /* Pods.framework */,
 				86DE14C2F5ED1A649C154B1E /* Pods_BMUNapp.framework */,
 			);
@@ -236,6 +242,7 @@
 				DF6071D01BC8B62F007B35CC /* Info.plist */,
 				DF6071C81BC8B62F007B35CC /* BMUNapp.xcdatamodeld */,
 				DF29E9931BDDA188006EAAC0 /* Files */,
+				DF1C80F01DC1C83B004AE050 /* Storage.swift */,
 			);
 			path = BMUNapp;
 			sourceTree = "<group>";
@@ -427,6 +434,7 @@
 				DFF6137B1C1801A2003C810C /* CommitteeDetailViewController.swift in Sources */,
 				DF20B1B81BCAE34A007705BA /* DelegateGuideTableViewController.swift in Sources */,
 				DFDF6EA81BE5530C009244FE /* Tweet.swift in Sources */,
+				DF1C80F11DC1C83B004AE050 /* Storage.swift in Sources */,
 				DF20B1BB1BCAE380007705BA /* DelegateTableViewCell.swift in Sources */,
 				DFDF6EAA1BE55760009244FE /* DateFormatterManager.swift in Sources */,
 				DF6071C21BC8B62F007B35CC /* AppDelegate.swift in Sources */,

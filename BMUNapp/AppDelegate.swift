@@ -8,20 +8,38 @@
 
 import UIKit
 import CoreData
-//import Parse
-import Firebase
-
+import SwiftyJSON
+import Foundation
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-    
-
+    private let apiURL = "https://api.mlab.com/api/1/databases/bmunguide/collections/BMUN?apiKey=JI0kCishO2bE688ivZhIUl-bv-UJ3bKg"
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
-        FIRApp.configure()
+        Storage.getRequest(url: NSURL(string: apiURL)!) {
+            (data, response, error) in
+            do {
+                let json = try JSONSerialization.jsonObject(with: data!, options: []) as? NSArray
+                let dict = json?[0] as? [String: Any]
+                let committees = dict?["Committee"] as? [String: Any]
+                for (key, _) in committees! {
+                    if key == "0" {
+                        Storage.blocACommittees = committees?[key] as? [String: Any]
+                    } else if key == "1" {
+                        Storage.blocBCommittees = committees?[key] as? [String: Any]
+                    } else if key == "2" {
+                        Storage.specializedCommittees = committees?[key] as? [String: Any]
+                    } else {
+                        Storage.crisisCommittees = committees?[key] as? [String: Any]
+                    }
+                }
+            } catch let error {
+                print("error: \(error)")
+            }
+        }
         
         //Parse.setApplicationId("INbyDC9BcrJRZiBzuPT2p2oquTMZq9tuTiAqRNOf", clientKey: "FoOfryHoH7L6L6VMH0qltbZuAzE37D4e2PZDgoc3")
         

@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import Firebase
 
 class CommitteesTableViewController: UITableViewController {
     
@@ -78,13 +77,13 @@ class CommitteesTableViewController: UITableViewController {
         let num: Int!
         switch(section) {
             case 0:
-                num = 3
+                num = Storage.blocACommittees?.count
             case 1:
-                num = 5
+                num = Storage.blocBCommittees?.count
             case 2:
-                num = 8
+                num = Storage.specializedCommittees?.count
             case 3:
-                num = 3
+                num = Storage.crisisCommittees?.count
             default:
                 num = 5
         }
@@ -95,12 +94,32 @@ class CommitteesTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "committeeCell", for: indexPath) as! CommitteeTableViewCell
         let label = cell.viewWithTag(1) as? UILabel
-        let sectionRef = FIRDatabase.database().reference().child("Committee").child(String(indexPath.section))
+        var committee: [String: Any]?
+        
+        var text: String?
+        switch(indexPath.section) {
+        case 0:
+            committee = Storage.blocACommittees?[String(indexPath.row)] as! [String : Any]?
+            text = committee?["name"] as? String
+        case 1:
+            committee = Storage.blocBCommittees?[String(indexPath.row)] as! [String : Any]?
+            text = committee?["name"] as? String
+        case 2:
+            committee = Storage.specializedCommittees?[String(indexPath.row)] as! [String : Any]?
+            text = committee?["name"] as? String
+        case 3:
+            committee = Storage.crisisCommittees?[String(indexPath.row)] as! [String : Any]?
+            text = committee?["name"] as? String
+        default:
+            text = "label"
+        }
+        label?.text = text
+        /*let sectionRef = FIRDatabase.database().reference().child("Committee").child(String(indexPath.section))
         let committeeRef = sectionRef.child(String(indexPath.row))
         let currentRef = committeeRef.child("name")
         currentRef.observeSingleEvent(of: .value, with: { (snapshot) in
             label?.text = snapshot.value as? String
-        })
+        })*/
         return cell
     }
     
@@ -135,5 +154,4 @@ class CommitteesTableViewController: UITableViewController {
         headerView.addSubview(titleLabel)
         return headerView
     }
-
 }
