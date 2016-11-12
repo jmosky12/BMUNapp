@@ -85,7 +85,7 @@ class CommitteesTableViewController: UITableViewController {
             case 3:
                 num = Storage.crisisCommittees?.count
             default:
-                num = 5
+                num = 0
         }
         return num
     }
@@ -123,10 +123,9 @@ class CommitteesTableViewController: UITableViewController {
         return cell
     }
     
-    // Detects when a cell has been selected, prepares it with a unique tag that details which committee was selected, and opens a CommitteeDetailViewController with that tag
+    // Detects when a cell has been selected, and opens a CommitteeDetailViewController with the section and row info that tells it which committee to load
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let tag = "\((indexPath as NSIndexPath).section)\((indexPath as NSIndexPath).row)"
-        let vc = CommitteeDetailViewController(tag: tag)
+        let vc = CommitteeDetailViewController(section: indexPath.section, row: indexPath.row)
         self.navigationController?.pushViewController(vc, animated: true)
     }
     

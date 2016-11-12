@@ -98,7 +98,7 @@ class LiveUpdatesTableViewController: UIViewController, UITableViewDataSource {
         
         cell.tweetText.text = tweet.text
         cell.date.text = String(describing: (tweet.createdAt as NSDate?)!.timeIntervalSinceReferenceDate)
-        cell.screenName.text = "@\(tweet.screenName)"
+        cell.screenName.text = "@\(tweet.screenName!)"
         cell.userName.text = tweet.username
         cell.avatar.image = UIImage(named: "twitterAvatar")
         

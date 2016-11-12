@@ -28,9 +28,9 @@
                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="muK-F2-9PY">
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="muK-F2-9PY">
                             <constraints>
-                                <constraint firstAttribute="height" constant="25" id="IQC-8u-qWQ"/>
+                                <constraint firstAttribute="height" relation="lessThanOrEqual" constant="25" id="IQC-8u-qWQ"/>
                             </constraints>
                             <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="18"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -46,7 +46,7 @@
                         </label>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="TFy-uv-UxO">
                             <constraints>
-                                <constraint firstAttribute="height" constant="50" id="1Kl-9g-jZZ"/>
+                                <constraint firstAttribute="height" relation="lessThanOrEqual" constant="50" id="1Kl-9g-jZZ"/>
                             </constraints>
                             <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="18"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -62,7 +62,7 @@
                         </label>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="jNE-oT-IwQ">
                             <constraints>
-                                <constraint firstAttribute="height" constant="70" id="3F4-V4-kmq"/>
+                                <constraint firstAttribute="height" relation="lessThanOrEqual" constant="150" id="3F4-V4-kmq"/>
                             </constraints>
                             <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="18"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -76,7 +76,7 @@
                         <constraint firstItem="muK-F2-9PY" firstAttribute="trailing" secondItem="IWR-P1-5Gc" secondAttribute="trailing" id="ERK-OV-d4N"/>
                         <constraint firstItem="jNE-oT-IwQ" firstAttribute="top" secondItem="pqH-FB-Bs2" secondAttribute="bottom" constant="8" id="H8q-Gd-uH7"/>
                         <constraint firstAttribute="trailing" secondItem="IWR-P1-5Gc" secondAttribute="trailing" constant="8" id="LB7-dd-8ap"/>
-                        <constraint firstItem="645-DW-J1w" firstAttribute="top" secondItem="muK-F2-9PY" secondAttribute="bottom" constant="8" id="M5g-JW-9oE"/>
+                        <constraint firstItem="645-DW-J1w" firstAttribute="top" secondItem="muK-F2-9PY" secondAttribute="bottom" constant="30" id="M5g-JW-9oE"/>
                         <constraint firstItem="TFy-uv-UxO" firstAttribute="leading" secondItem="645-DW-J1w" secondAttribute="leading" id="Scz-Dn-QWo"/>
                         <constraint firstItem="645-DW-J1w" firstAttribute="trailing" secondItem="muK-F2-9PY" secondAttribute="trailing" id="TlU-e3-9Wh"/>
                         <constraint firstItem="jNE-oT-IwQ" firstAttribute="trailing" secondItem="pqH-FB-Bs2" secondAttribute="trailing" id="WhP-2F-niF"/>
@@ -86,10 +86,10 @@
                         <constraint firstItem="IWR-P1-5Gc" firstAttribute="centerX" secondItem="eAf-fe-8ff" secondAttribute="centerX" id="kGL-1k-aES"/>
                         <constraint firstItem="645-DW-J1w" firstAttribute="leading" secondItem="muK-F2-9PY" secondAttribute="leading" id="kOC-EY-0cg"/>
                         <constraint firstItem="jNE-oT-IwQ" firstAttribute="leading" secondItem="pqH-FB-Bs2" secondAttribute="leading" id="nBr-Tq-Vjq"/>
-                        <constraint firstAttribute="bottom" secondItem="jNE-oT-IwQ" secondAttribute="bottom" constant="348" id="pTj-wQ-wS1"/>
+                        <constraint firstAttribute="bottom" secondItem="jNE-oT-IwQ" secondAttribute="bottom" constant="268" id="pTj-wQ-wS1"/>
                         <constraint firstItem="pqH-FB-Bs2" firstAttribute="leading" secondItem="TFy-uv-UxO" secondAttribute="leading" id="sfF-DS-p4O"/>
                         <constraint firstItem="IWR-P1-5Gc" firstAttribute="leading" secondItem="eAf-fe-8ff" secondAttribute="leading" constant="8" id="vqw-VH-h4Q"/>
-                        <constraint firstItem="pqH-FB-Bs2" firstAttribute="top" secondItem="TFy-uv-UxO" secondAttribute="bottom" constant="8" id="xk5-5z-cMp"/>
+                        <constraint firstItem="pqH-FB-Bs2" firstAttribute="top" secondItem="TFy-uv-UxO" secondAttribute="bottom" constant="30" id="xk5-5z-cMp"/>
                     </constraints>
                 </scrollView>
             </subviews>
