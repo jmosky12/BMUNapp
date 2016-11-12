@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import DateTools
 
 class LiveUpdatesTableViewController: UIViewController, UITableViewDataSource {
     
@@ -97,7 +98,10 @@ class LiveUpdatesTableViewController: UIViewController, UITableViewDataSource {
         let tweet = tweets[(indexPath as NSIndexPath).row]
         
         cell.tweetText.text = tweet.text
-        cell.date.text = String(describing: (tweet.createdAt as NSDate?)!.timeIntervalSinceReferenceDate)
+        let date = NSDate(string: tweet.strDate!, formatString: "EEE MMM d HH:mm:ss Z y")
+        print(Mirror.init(reflecting: date).subjectType)
+        print(date)
+        cell.date.text = String(describing: date!.shortTimeAgoSinceNow)
         cell.screenName.text = "@\(tweet.screenName!)"
         cell.userName.text = tweet.username
         cell.avatar.image = UIImage(named: "twitterAvatar")
